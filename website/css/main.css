@@ -88,3 +88,124 @@ footer{
 
     padding:20px;
 }
+
+nav{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 60px;
+
+    background:#003366;
+}
+
+nav ul{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:20px;
+}
+
+.logo{
+
+    color:white;
+
+    font-size:24px;
+
+    font-weight:bold;
+}
+
+.hero{
+
+    text-align:center;
+
+    padding:90px 20px;
+
+    background:white;
+}
+
+.hero h1{
+
+    font-size:48px;
+
+    color:#003366;
+}
+
+.hero h2{
+
+    margin:15px 0;
+
+    color:#555;
+}
+
+.hero p{
+
+    font-size:20px;
+
+    margin-bottom:35px;
+}
+
+.hero-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+}
+
+.button{
+
+    padding:14px 28px;
+
+    border-radius:6px;
+
+    text-decoration:none;
+
+    font-weight:bold;
+}
+
+.primary{
+
+    background:#003366;
+
+    color:white;
+}
+
+.secondary{
+
+    border:2px solid #003366;
+
+    color:#003366;
+}
+
+.skills{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+    margin-top:20px;
+}
+
+.skills span{
+
+    background:#003366;
+
+    color:white;
+
+    padding:10px 16px;
+
+    border-radius:20px;
+
+    font-size:14px;
+}

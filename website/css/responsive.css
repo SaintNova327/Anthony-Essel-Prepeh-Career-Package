@@ -1,0 +1,108 @@
+/* ==========================================
+   Responsive Design
+   ========================================== */
+
+@media (max-width: 992px) {
+
+    nav {
+
+        flex-direction: column;
+        padding: 20px;
+
+    }
+
+    nav ul {
+
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    .hero {
+
+        padding: 70px 20px;
+    }
+
+    .hero h1 {
+
+        font-size: 38px;
+    }
+
+    .hero h2 {
+
+        font-size: 26px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .hero h1 {
+
+        font-size: 32px;
+    }
+
+    .hero h2 {
+
+        font-size: 22px;
+    }
+
+    .hero p {
+
+        font-size: 18px;
+    }
+
+    .hero-buttons {
+
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button {
+
+        width: 240px;
+        text-align: center;
+    }
+
+    .skills {
+
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    body {
+
+        font-size: 15px;
+    }
+
+    nav ul {
+
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .hero {
+
+        padding: 50px 15px;
+    }
+
+    .hero h1 {
+
+        font-size: 28px;
+    }
+
+    .hero h2 {
+
+        font-size: 20px;
+    }
+
+    .hero p {
+
+        font-size: 16px;
+    }
+
+}

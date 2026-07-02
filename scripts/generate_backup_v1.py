@@ -1,6 +1,6 @@
 """
 Career Package Document Generator
-Version 2.0
+Anthony Essel Prepeh Career Package
 """
 
 from pathlib import Path
@@ -12,9 +12,8 @@ DATA_DIR = PROJECT_ROOT / "data"
 DOCS_DIR = PROJECT_ROOT / "docs"
 
 
-def read_file(filename):
-    """Read a file from the data folder."""
-
+def read_markdown(filename):
+    """Read a markdown file from the data folder."""
     file_path = DATA_DIR / filename
 
     if not file_path.exists():
@@ -24,54 +23,49 @@ def read_file(filename):
     return file_path.read_text(encoding="utf-8")
 
 
-def write_file(filename, content):
-    """Write a file into docs."""
-
+def write_markdown(filename, content):
+    """Write a markdown file into docs."""
     output = DOCS_DIR / filename
-
     output.write_text(content, encoding="utf-8")
 
 
 def generate_resume():
 
-    print("Generating resume...")
+    print("Generating Resume...")
 
-    files = [
+    sections = [
         "career_summary.md",
-        "education.md",
-        "coursework.md",
         "skills.md",
-        "software.md",
-        "projects.md",
         "experience.md",
+        "projects.md",
+        "education.md",
         "certificates.md",
+        "software.md",
         "memberships.md",
-        "references.md",
-        "portfolio.md"
     ]
 
     resume = "# Anthony Essel Prepeh\n\n"
 
-    for file in files:
+    for section in sections:
 
-        text = read_file(file)
+        text = read_markdown(section)
 
         text = remove_emojis(text)
 
         resume += text + "\n\n"
 
-    write_file("resume.md", resume)
+    write_markdown("resume.md", resume)
 
     print("✓ resume.md created")
 
 
 def main():
 
-    print("=" * 60)
+    print("=" * 50)
 
     print("Career Package Generator")
 
-    print("=" * 60)
+    print("=" * 50)
 
     generate_resume()
 

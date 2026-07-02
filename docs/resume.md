@@ -1,11 +1,5 @@
-# YOUR NAME
+# Anthony Essel Prepeh
 
-📍   
-📧  | 📞  | 🔗 
-
----
-
-## Professional Summary
 # career_summary.md
 
 # Career Summary Database
@@ -272,9 +266,469 @@ This document integrates information from:
 
 **End of career_summary.md**
 
+# education.md
+
+# Education
+
+This document serves as the official record of Anthony Essel Prepeh's educational background. It is the primary source for all resumes, curriculum vitae (CVs), cover letters, portfolio content, and professional profiles.
+
 ---
 
-## Skills
+# Personal Information
+
+**Full Name:** Anthony Essel Prepeh
+
+**Nationality:** Ghanaian
+
+**Location:** Obuasi, Ashanti Region, Ghana
+
+**Email:** anthonyesselprepehanthony@gmail.com
+
+**Phone:** +233 24 259 2148
+
+---
+
+# Current Education
+
+## Bachelor of Science (BSc) Geological Engineering
+
+**Institution**
+
+Kwame Nkrumah University of Science and Technology (KNUST)
+
+Kumasi, Ashanti Region, Ghana
+
+**Faculty**
+
+Faculty of Geological and Mining Engineering
+
+**Department**
+
+Department of Geological Engineering
+
+**Programme**
+
+Bachelor of Science (BSc) Geological Engineering
+
+**Study Level**
+
+Undergraduate
+
+**Status**
+
+Final Year Student
+
+**Expected Graduation**
+
+November 2026
+
+---
+
+# Programme Overview
+
+The Bachelor of Science in Geological Engineering programme combines geology and engineering principles to prepare graduates for careers in:
+
+- Engineering Geology
+- Hydrogeology
+- Geotechnical Engineering
+- Mineral Exploration
+- Environmental Geology
+- Exploration Geochemistry
+- Exploration Geophysics
+- Groundwater Development
+- Geological Mapping
+- Mining Support Engineering
+- Infrastructure Site Investigation
+
+The programme provides a strong foundation in earth sciences, engineering design, field investigations, laboratory analysis, and geospatial technologies.
+
+---
+
+# Academic Focus Areas
+
+Throughout the programme, emphasis has been placed on developing competence in the following areas:
+
+## Geological Sciences
+
+- Physical Geology
+- Mineralogy
+- Optical Mineralogy
+- Petrology
+- Structural Geology
+- Stratigraphy
+- Geochemistry
+- Geophysics
+- Economic Geology
+- Regional Geology
+
+## Engineering
+
+- Engineering Geology
+- Rock Engineering
+- Soil Mechanics
+- Foundation Engineering
+- Geotechnical Engineering
+- Engineering Geological Investigations
+- Engineering Management
+
+## Water Resources
+
+- Basic Hydrology
+- Principles of Hydrogeology
+- Groundwater Development
+- Water Resource Assessment
+
+## Exploration
+
+- Exploration Geochemistry
+- Exploration Geophysics
+- Geological Field Mapping
+- Mineral Evaluation
+
+## Geospatial Technologies
+
+- Geographic Information Systems (GIS)
+- Remote Sensing
+- Photogeology
+- Large Scale Surveying
+
+---
+
+# Technical Competencies Developed
+
+The programme has developed practical knowledge and skills in:
+
+- Geological field mapping
+- Geological data collection
+- Geological report writing
+- Geological interpretation
+- Core logging
+- Geological sampling
+- Structural interpretation
+- Engineering site investigation
+- Hydrogeological assessment
+- GIS applications
+- Remote sensing
+- Technical presentation
+- Technical communication
+- Engineering problem solving
+
+---
+
+# Academic Projects
+
+Academic projects undertaken during the programme are documented separately in:
+
+```
+
+data/projects.md
+
+```
+
+---
+
+# Professional Development
+
+Professional development activities include:
+
+- Geological field training
+- Laboratory practical sessions
+- Engineering design exercises
+- Industrial attachment
+- Technical presentations
+- Engineering report writing
+- Independent research
+
+---
+
+# Professional Memberships
+
+Current memberships include:
+
+- AGA Trust Fund
+- Society of Economic Geologists (SEG) Student Chapter
+
+---
+
+# Related Files
+
+This document works together with the following files:
+
+- coursework.md
+- skills.md
+- software.md
+- projects.md
+- experience.md
+- certificates.md
+- memberships.md
+- references.md
+- portfolio.md
+- career_summary.md
+
+---
+
+# Revision History
+
+| Version | Date | Description |
+|----------|------|-------------|
+| 1.0 | July 2026 | Initial education database created. |
+
+---
+
+**End of education.md**
+
+# coursework.md
+
+# Coursework
+
+This document contains the complete coursework completed as part of the Bachelor of Science (BSc) Geological Engineering programme at Kwame Nkrumah University of Science and Technology (KNUST).
+
+It serves as the official academic course record for portfolio development, resumes, curriculum vitae (CVs), professional profiles, and future career documentation.
+
+---
+
+# Programme Information
+
+**Programme:** Bachelor of Science (BSc) Geological Engineering
+
+**Institution:** Kwame Nkrumah University of Science and Technology (KNUST)
+
+**Expected Graduation:** November 2026
+
+---
+
+# Year One
+
+## Semester One
+
+| Course Code | Course Title |
+|-------------|--------------|
+| CE 151 | Elementary Structures |
+| ENGL 157 | Communication Skills |
+| FC 181 | French for Communication Purposes I |
+| GED 151 | Basic Geology |
+| GED 153 | Engineering Technology |
+| MATH 151 | Algebra |
+| ME 159 | Technical Drawing |
+| ME 161 | Basic Mechanics |
+
+---
+
+## Semester Two
+
+| Course Code | Course Title |
+|-------------|--------------|
+| CE 156 | Elementary Fluid Mechanics |
+| CE 164 | Civil Engineering Drawing |
+| EE 152 | Basic Electronics |
+| ENGL 158 | Communication Skills II |
+| FC 182 | French for Communication Purposes II |
+| GED 152 | Basic Mineral Science |
+| GED 164 | Computer Applications |
+| MATH 152 | Calculus with Several Variables |
+
+---
+
+# Year Two
+
+## Semester One
+
+| Course Code | Course Title |
+|-------------|--------------|
+| CE 251 | Strength of Materials |
+| CE 255 | Theory of Structures |
+| CENG 291 | Engineering in Society |
+| GED 251 | Mineralogy |
+| GED 253 | Physical Geology |
+| GED 267 | Computer Programming |
+| MATH 251 | Differential Equations |
+
+---
+
+## Semester Two
+
+| Course Code | Course Title |
+|-------------|--------------|
+| CE 256 | Fluid Mechanics |
+| GE 282 | Large Scale Surveying |
+| GED 252 | Stratigraphy |
+| GED 254 | Rock Engineering |
+| GED 258 | Optical Mineralogy |
+| GED 262 | Introduction to Soil Mechanics |
+| MATH 252 | Analysis IV |
+
+---
+
+# Year Three
+
+## Semester One
+
+| Course Code | Course Title |
+|-------------|--------------|
+| GED 351 | Petrology |
+| GED 357 | Basic Hydrology |
+| GED 365 | Geological Field Mapping |
+| GED 369 | Photogeology and Remote Sensing |
+| GED 375 | Principles of Engineering Geology |
+| GED 379 | Soil Mechanics |
+| MATH 351 | Numerical Analysis |
+| STAT 253 | Probability and Statistics |
+
+---
+
+## Semester Two
+
+| Course Code | Course Title |
+|-------------|--------------|
+| GED 342 | Mining Principles |
+| GED 352 | Principles of Geochemistry |
+| GED 354 | Principles of Geophysics |
+| GED 364 | Structural Geology |
+| GED 366 | Mineral Economics and Evaluation |
+| GED 368 | GIS Applications |
+| GED 370 | Foundation Engineering |
+
+---
+
+# Year Four
+
+## Semester One
+
+| Course Code | Course Title |
+|-------------|--------------|
+| CE 477 | Geotechnical Engineering I |
+| GED 451 | Regional Geology |
+| GED 457 | Project I |
+| GED 459 | Exploration Geochemistry |
+| GED 461 | Exploration Geophysics |
+| GED 465 | Engineering Geological Investigations |
+| GED 471 | Industrial Training |
+| GED 475 | Principles of Hydrogeology |
+
+---
+
+## Semester Two
+
+| Course Code | Course Title |
+|-------------|--------------|
+| GED 452 | Advanced Engineering Geology |
+| GED 454 | Environmental Geology |
+| GED 458 | Project II |
+| GED 462 | Economic Geology |
+| GED 464 | Engineering Management |
+| GED 468 | Geostatistics |
+| GED 476 | Groundwater Development |
+
+---
+
+# Knowledge Areas Developed
+
+The coursework has provided academic and practical training in:
+
+## Geological Sciences
+
+- Physical Geology
+- Mineralogy
+- Optical Mineralogy
+- Petrology
+- Structural Geology
+- Stratigraphy
+- Regional Geology
+- Economic Geology
+- Environmental Geology
+
+## Engineering
+
+- Engineering Geology
+- Rock Engineering
+- Soil Mechanics
+- Foundation Engineering
+- Geotechnical Engineering
+- Engineering Geological Investigations
+- Engineering Management
+
+## Hydrogeology
+
+- Basic Hydrology
+- Principles of Hydrogeology
+- Groundwater Development
+
+## Exploration
+
+- Exploration Geochemistry
+- Exploration Geophysics
+- Mineral Economics and Evaluation
+- Mining Principles
+
+## Geospatial Technologies
+
+- GIS Applications
+- Photogeology
+- Remote Sensing
+- Large Scale Surveying
+
+## Mathematics and Computing
+
+- Algebra
+- Calculus
+- Differential Equations
+- Numerical Analysis
+- Probability and Statistics
+- Computer Applications
+- Computer Programming
+
+## Engineering Fundamentals
+
+- Fluid Mechanics
+- Strength of Materials
+- Theory of Structures
+- Basic Mechanics
+- Technical Drawing
+- Civil Engineering Drawing
+
+---
+
+# Academic Highlights
+
+The curriculum integrates:
+
+- Geological science
+- Engineering principles
+- Hydrogeology
+- Exploration techniques
+- Geospatial technologies
+- Field investigations
+- Laboratory analysis
+- Engineering design
+- Technical communication
+- Research methods
+
+This multidisciplinary training provides a strong foundation for careers in geological engineering, mineral exploration, groundwater development, geotechnical engineering, environmental geology, and engineering consulting.
+
+---
+
+# Related Files
+
+This document supports:
+
+- education.md
+- skills.md
+- software.md
+- projects.md
+- career_summary.md
+
+---
+
+# Revision History
+
+| Version | Date | Description |
+|----------|------|-------------|
+| 1.0 | July 2026 | Initial coursework database created. |
+
+---
+
+**End of coursework.md**
+
 # skills.md
 
 # Skills Database
@@ -543,16 +997,13 @@ This document supports:
 
 **End of skills.md**
 
----
+# software.md
 
-## Professional Experience
-# experience.md
+# Software & Technology Database
 
-# Professional Experience Database
+This document is the master inventory of software, programming languages, digital tools, engineering applications, and AI technologies used by Anthony Essel Prepeh.
 
-This document is the master record of Anthony Essel Prepeh's professional experience, industrial training, internships, leadership roles, volunteer work, consulting activities, and other career-related engagements.
-
-It serves as the primary source for resumes, curriculum vitae (CVs), cover letters, LinkedIn profile, portfolio website, and future professional documentation.
+It serves as the primary source for resumes, curriculum vitae (CVs), portfolio website, LinkedIn profile, GitHub profile, and technical documentation.
 
 ---
 
@@ -568,199 +1019,181 @@ It serves as the primary source for resumes, curriculum vitae (CVs), cover lette
 
 ---
 
-# Professional Profile
+# Proficiency Levels
 
-Anthony Essel Prepeh is a final-year Geological Engineering student with academic training in geological mapping, engineering geology, hydrogeology, geotechnical engineering, exploration geochemistry, exploration geophysics, GIS, and groundwater development.
-
-He is currently building technical expertise through coursework, field investigations, laboratory practicals, research activities, and professional development projects.
-
----
-
-# Industrial Training
-
-## Industrial Training (GED 471)
-
-**Status**
-
-Pending completion / To be updated
-
-**Organisation**
-
-To be added
-
-**Location**
-
-To be added
-
-**Duration**
-
-To be added
-
-**Supervisor**
-
-To be added
-
-### Responsibilities
-
-To be documented after completion.
-
-### Skills Developed
-
-To be documented after completion.
-
-### Key Achievements
-
-To be documented after completion.
+| Level | Description |
+|--------|-------------|
+| Beginner | Basic understanding and limited practical experience |
+| Intermediate | Comfortable performing academic and professional tasks |
+| Advanced | Strong working knowledge with independent problem-solving |
+| Learning | Currently studying and actively improving |
 
 ---
 
-# Employment History
+# Productivity Software
 
-No full-time professional employment has been recorded at this stage.
-
-This section will be updated as professional experience is gained.
-
----
-
-# Internship History
-
-No internship information has been added yet.
-
-Future entries should include:
-
-- Organisation
-- Position
-- Duration
-- Responsibilities
-- Projects
-- Achievements
-- Technical skills applied
+| Software | Proficiency | Primary Use |
+|----------|-------------|-------------|
+| Microsoft Word | Advanced | Technical reports, resumes, assignments |
+| Microsoft Excel | Intermediate | Data analysis, calculations, tables |
+| Microsoft PowerPoint | Advanced | Presentations and academic seminars |
+| Microsoft Outlook | Intermediate | Professional email communication |
+| Adobe Acrobat Reader | Advanced | Viewing and reviewing PDF documents |
 
 ---
 
-# Academic Experience
+# Programming Languages
 
-The following academic activities have contributed to professional development:
-
-- Geological field mapping
-- Engineering geological investigations
-- Laboratory practical sessions
-- Technical presentations
-- Engineering report writing
-- Geological data interpretation
-- Independent research
-- Team-based engineering assignments
+| Language | Proficiency | Purpose |
+|----------|-------------|---------|
+| Python | Learning | Automation, data analysis, scripting |
+| Markdown | Intermediate | Documentation and technical writing |
+| HTML | Learning | Portfolio website development |
+| CSS | Learning | Website styling |
+| JavaScript | Learning | Interactive web development |
 
 ---
 
-# Leadership & Service
+# Version Control
 
-Professional and leadership experience will be added as opportunities arise.
-
-Future entries may include:
-
-- Student leadership positions
-- Committee memberships
-- Event organisation
-- Community service
-- Technical workshops
-- Mentoring activities
+| Software | Proficiency | Purpose |
+|----------|-------------|---------|
+| Git | Learning | Version control |
+| GitHub | Learning | Source code management |
+| GitHub Desktop | Intermediate | Repository management |
 
 ---
 
-# Volunteer Experience
+# Development Tools
 
-No volunteer experience has been recorded yet.
-
-Future volunteer activities should include:
-
-- Organisation
-- Role
-- Duration
-- Responsibilities
-- Impact
+| Software | Proficiency | Purpose |
+|----------|-------------|---------|
+| Visual Studio Code | Intermediate | Code editing and documentation |
+| Pandoc | Learning | Document conversion |
+| Windows Command Line | Learning | Git and automation tasks |
 
 ---
 
-# Research Experience
+# Geological & Engineering Software
 
-Current research activities include:
+## Currently Studying
 
-## Undergraduate Research Project
-
-**Status**
-
-In Progress
-
-**Programme**
-
-Bachelor of Science (BSc) Geological Engineering
-
-**Institution**
-
-Kwame Nkrumah University of Science and Technology (KNUST)
-
-Further details will be added upon completion of the project.
+| Software | Status | Purpose |
+|----------|--------|---------|
+| ArcGIS Pro | Planned | GIS analysis |
+| QGIS | Planned | Open-source GIS |
+| Leapfrog Geo | Planned | Geological modelling |
+| RockWorks | Planned | Geological visualization |
+| Surfer | Planned | Surface modelling |
+| AutoCAD | Planned | Engineering drawings |
+| Civil 3D | Planned | Civil engineering design |
+| MODFLOW | Planned | Groundwater modelling |
 
 ---
 
-# Professional Development Activities
+# GIS & Remote Sensing
 
-Current professional development includes:
-
-- Career portfolio development
-- GitHub repository development
-- Technical documentation
-- Resume development
-- Portfolio website development
-- AI-assisted productivity workflows
-- Continuous professional learning
+| Software | Status | Purpose |
+|----------|--------|---------|
+| GIS Applications | Academic Training | Spatial analysis |
+| Remote Sensing Tools | Academic Training | Geological interpretation |
+| Photogeology Techniques | Academic Training | Image interpretation |
 
 ---
 
-# Experience Development Roadmap
+# Artificial Intelligence Tools
 
-Future experience to be documented includes:
-
-- Industrial training
-- Graduate internships
-- Graduate engineering roles
-- Research assistantships
-- Consulting projects
-- GIS projects
-- Hydrogeological investigations
-- Engineering geology projects
-- Professional presentations
-- Conference participation
-- Publications
+| Tool | Purpose |
+|------|---------|
+| ChatGPT | Research assistance, technical writing, career development |
+| GitHub Copilot | Code generation and software development |
+| Codex | Repository development and automation planning |
 
 ---
 
-# Experience Entry Template
+# Documentation Tools
 
-Each future experience should include:
+| Software | Purpose |
+|----------|---------|
+| Markdown | Technical documentation |
+| GitHub README | Project documentation |
+| Microsoft Word | Professional reports |
+| PDF | Document distribution |
 
-## Organisation
+---
 
-## Position
+# Online Platforms
 
-## Employment Type
+| Platform | Purpose |
+|----------|---------|
+| GitHub | Portfolio and version control |
+| LinkedIn | Professional networking |
+| YouTube | Educational portfolio |
+| Google Drive | Cloud storage and collaboration |
 
-## Location
+---
 
-## Duration
+# Software Used in This Career Repository
 
-## Responsibilities
+This project is developed using:
 
-## Technologies Used
+- Git
+- GitHub
+- GitHub Desktop
+- Visual Studio Code
+- Markdown
+- Python
+- Pandoc
+- ChatGPT
+- GitHub Copilot
+- Codex
 
-## Skills Applied
+---
 
-## Key Achievements
+# Current Development Roadmap
 
-## Lessons Learned
+The following technologies are planned for future development:
 
-## Supporting Documents
+## Web Development
+
+- HTML5
+- CSS3
+- JavaScript
+- React
+- Tailwind CSS
+
+## Data Science
+
+- NumPy
+- Pandas
+- Matplotlib
+
+## Geological Engineering
+
+- ArcGIS Pro
+- QGIS
+- Leapfrog Geo
+- RockWorks
+- MODFLOW
+- Surfer
+
+## Professional Productivity
+
+- Microsoft Project
+- Power BI
+
+---
+
+# Learning Objectives
+
+Current priorities include:
+
+- Strengthening Python programming
+- Mastering Git and GitHub workflows
+- Building a professional portfolio website
+- Developing automation scripts
+- Learning GIS software
+- Expanding web development skills
 
 ---
 
@@ -771,12 +1204,8 @@ This document supports:
 - education.md
 - coursework.md
 - skills.md
-- software.md
 - projects.md
-- certificates.md
-- memberships.md
-- references.md
-- portfolio.md
+- experience.md
 - career_summary.md
 
 ---
@@ -785,15 +1214,12 @@ This document supports:
 
 | Version | Date | Description |
 |----------|------|-------------|
-| 1.0 | July 2026 | Initial professional experience database created. |
+| 1.0 | July 2026 | Initial software inventory created. |
 
 ---
 
-**End of experience.md**
+**End of software.md**
 
----
-
-## Projects
 # projects.md
 
 # Projects Database
@@ -1066,202 +1492,233 @@ This document supports:
 
 **End of projects.md**
 
----
+# experience.md
 
-## Education
-# education.md
+# Professional Experience Database
 
-# Education
+This document is the master record of Anthony Essel Prepeh's professional experience, industrial training, internships, leadership roles, volunteer work, consulting activities, and other career-related engagements.
 
-This document serves as the official record of Anthony Essel Prepeh's educational background. It is the primary source for all resumes, curriculum vitae (CVs), cover letters, portfolio content, and professional profiles.
+It serves as the primary source for resumes, curriculum vitae (CVs), cover letters, LinkedIn profile, portfolio website, and future professional documentation.
 
 ---
 
 # Personal Information
 
-**Full Name:** Anthony Essel Prepeh
+**Name:** Anthony Essel Prepeh
 
-**Nationality:** Ghanaian
+**Programme:** Bachelor of Science (BSc) Geological Engineering
 
-**Location:** Obuasi, Ashanti Region, Ghana
+**Institution:** Kwame Nkrumah University of Science and Technology (KNUST)
 
-**Email:** anthonyesselprepehanthony@gmail.com
-
-**Phone:** +233 24 259 2148
+**Expected Graduation:** November 2026
 
 ---
 
-# Current Education
+# Professional Profile
 
-## Bachelor of Science (BSc) Geological Engineering
+Anthony Essel Prepeh is a final-year Geological Engineering student with academic training in geological mapping, engineering geology, hydrogeology, geotechnical engineering, exploration geochemistry, exploration geophysics, GIS, and groundwater development.
 
-**Institution**
+He is currently building technical expertise through coursework, field investigations, laboratory practicals, research activities, and professional development projects.
 
-Kwame Nkrumah University of Science and Technology (KNUST)
+---
 
-Kumasi, Ashanti Region, Ghana
+# Industrial Training
 
-**Faculty**
+## Industrial Training (GED 471)
 
-Faculty of Geological and Mining Engineering
+**Status**
 
-**Department**
+Pending completion / To be updated
 
-Department of Geological Engineering
+**Organisation**
+
+To be added
+
+**Location**
+
+To be added
+
+**Duration**
+
+To be added
+
+**Supervisor**
+
+To be added
+
+### Responsibilities
+
+To be documented after completion.
+
+### Skills Developed
+
+To be documented after completion.
+
+### Key Achievements
+
+To be documented after completion.
+
+---
+
+# Employment History
+
+No full-time professional employment has been recorded at this stage.
+
+This section will be updated as professional experience is gained.
+
+---
+
+# Internship History
+
+No internship information has been added yet.
+
+Future entries should include:
+
+- Organisation
+- Position
+- Duration
+- Responsibilities
+- Projects
+- Achievements
+- Technical skills applied
+
+---
+
+# Academic Experience
+
+The following academic activities have contributed to professional development:
+
+- Geological field mapping
+- Engineering geological investigations
+- Laboratory practical sessions
+- Technical presentations
+- Engineering report writing
+- Geological data interpretation
+- Independent research
+- Team-based engineering assignments
+
+---
+
+# Leadership & Service
+
+Professional and leadership experience will be added as opportunities arise.
+
+Future entries may include:
+
+- Student leadership positions
+- Committee memberships
+- Event organisation
+- Community service
+- Technical workshops
+- Mentoring activities
+
+---
+
+# Volunteer Experience
+
+No volunteer experience has been recorded yet.
+
+Future volunteer activities should include:
+
+- Organisation
+- Role
+- Duration
+- Responsibilities
+- Impact
+
+---
+
+# Research Experience
+
+Current research activities include:
+
+## Undergraduate Research Project
+
+**Status**
+
+In Progress
 
 **Programme**
 
 Bachelor of Science (BSc) Geological Engineering
 
-**Study Level**
+**Institution**
 
-Undergraduate
+Kwame Nkrumah University of Science and Technology (KNUST)
 
-**Status**
-
-Final Year Student
-
-**Expected Graduation**
-
-November 2026
+Further details will be added upon completion of the project.
 
 ---
 
-# Programme Overview
+# Professional Development Activities
 
-The Bachelor of Science in Geological Engineering programme combines geology and engineering principles to prepare graduates for careers in:
+Current professional development includes:
 
-- Engineering Geology
-- Hydrogeology
-- Geotechnical Engineering
-- Mineral Exploration
-- Environmental Geology
-- Exploration Geochemistry
-- Exploration Geophysics
-- Groundwater Development
-- Geological Mapping
-- Mining Support Engineering
-- Infrastructure Site Investigation
-
-The programme provides a strong foundation in earth sciences, engineering design, field investigations, laboratory analysis, and geospatial technologies.
+- Career portfolio development
+- GitHub repository development
+- Technical documentation
+- Resume development
+- Portfolio website development
+- AI-assisted productivity workflows
+- Continuous professional learning
 
 ---
 
-# Academic Focus Areas
+# Experience Development Roadmap
 
-Throughout the programme, emphasis has been placed on developing competence in the following areas:
+Future experience to be documented includes:
 
-## Geological Sciences
-
-- Physical Geology
-- Mineralogy
-- Optical Mineralogy
-- Petrology
-- Structural Geology
-- Stratigraphy
-- Geochemistry
-- Geophysics
-- Economic Geology
-- Regional Geology
-
-## Engineering
-
-- Engineering Geology
-- Rock Engineering
-- Soil Mechanics
-- Foundation Engineering
-- Geotechnical Engineering
-- Engineering Geological Investigations
-- Engineering Management
-
-## Water Resources
-
-- Basic Hydrology
-- Principles of Hydrogeology
-- Groundwater Development
-- Water Resource Assessment
-
-## Exploration
-
-- Exploration Geochemistry
-- Exploration Geophysics
-- Geological Field Mapping
-- Mineral Evaluation
-
-## Geospatial Technologies
-
-- Geographic Information Systems (GIS)
-- Remote Sensing
-- Photogeology
-- Large Scale Surveying
+- Industrial training
+- Graduate internships
+- Graduate engineering roles
+- Research assistantships
+- Consulting projects
+- GIS projects
+- Hydrogeological investigations
+- Engineering geology projects
+- Professional presentations
+- Conference participation
+- Publications
 
 ---
 
-# Technical Competencies Developed
+# Experience Entry Template
 
-The programme has developed practical knowledge and skills in:
+Each future experience should include:
 
-- Geological field mapping
-- Geological data collection
-- Geological report writing
-- Geological interpretation
-- Core logging
-- Geological sampling
-- Structural interpretation
-- Engineering site investigation
-- Hydrogeological assessment
-- GIS applications
-- Remote sensing
-- Technical presentation
-- Technical communication
-- Engineering problem solving
+## Organisation
 
----
+## Position
 
-# Academic Projects
+## Employment Type
 
-Academic projects undertaken during the programme are documented separately in:
+## Location
 
-```
+## Duration
 
-data/projects.md
+## Responsibilities
 
-```
+## Technologies Used
 
----
+## Skills Applied
 
-# Professional Development
+## Key Achievements
 
-Professional development activities include:
+## Lessons Learned
 
-- Geological field training
-- Laboratory practical sessions
-- Engineering design exercises
-- Industrial attachment
-- Technical presentations
-- Engineering report writing
-- Independent research
-
----
-
-# Professional Memberships
-
-Current memberships include:
-
-- AGA Trust Fund
-- Society of Economic Geologists (SEG) Student Chapter
+## Supporting Documents
 
 ---
 
 # Related Files
 
-This document works together with the following files:
+This document supports:
 
+- education.md
 - coursework.md
 - skills.md
 - software.md
 - projects.md
-- experience.md
 - certificates.md
 - memberships.md
 - references.md
@@ -1274,15 +1731,12 @@ This document works together with the following files:
 
 | Version | Date | Description |
 |----------|------|-------------|
-| 1.0 | July 2026 | Initial education database created. |
+| 1.0 | July 2026 | Initial professional experience database created. |
 
 ---
 
-**End of education.md**
+**End of experience.md**
 
----
-
-## Certifications
 # certificates.md
 
 # Professional Certificates Database
@@ -1494,236 +1948,7 @@ This document supports:
 
 **End of certificates.md**
 
----
-
-## Technical Tools
-# software.md
-
-# Software & Technology Database
-
-This document is the master inventory of software, programming languages, digital tools, engineering applications, and AI technologies used by Anthony Essel Prepeh.
-
-It serves as the primary source for resumes, curriculum vitae (CVs), portfolio website, LinkedIn profile, GitHub profile, and technical documentation.
-
----
-
-# Personal Information
-
-**Name:** Anthony Essel Prepeh
-
-**Programme:** Bachelor of Science (BSc) Geological Engineering
-
-**Institution:** Kwame Nkrumah University of Science and Technology (KNUST)
-
-**Expected Graduation:** November 2026
-
----
-
-# Proficiency Levels
-
-| Level | Description |
-|--------|-------------|
-| Beginner | Basic understanding and limited practical experience |
-| Intermediate | Comfortable performing academic and professional tasks |
-| Advanced | Strong working knowledge with independent problem-solving |
-| Learning | Currently studying and actively improving |
-
----
-
-# Productivity Software
-
-| Software | Proficiency | Primary Use |
-|----------|-------------|-------------|
-| Microsoft Word | Advanced | Technical reports, resumes, assignments |
-| Microsoft Excel | Intermediate | Data analysis, calculations, tables |
-| Microsoft PowerPoint | Advanced | Presentations and academic seminars |
-| Microsoft Outlook | Intermediate | Professional email communication |
-| Adobe Acrobat Reader | Advanced | Viewing and reviewing PDF documents |
-
----
-
-# Programming Languages
-
-| Language | Proficiency | Purpose |
-|----------|-------------|---------|
-| Python | Learning | Automation, data analysis, scripting |
-| Markdown | Intermediate | Documentation and technical writing |
-| HTML | Learning | Portfolio website development |
-| CSS | Learning | Website styling |
-| JavaScript | Learning | Interactive web development |
-
----
-
-# Version Control
-
-| Software | Proficiency | Purpose |
-|----------|-------------|---------|
-| Git | Learning | Version control |
-| GitHub | Learning | Source code management |
-| GitHub Desktop | Intermediate | Repository management |
-
----
-
-# Development Tools
-
-| Software | Proficiency | Purpose |
-|----------|-------------|---------|
-| Visual Studio Code | Intermediate | Code editing and documentation |
-| Pandoc | Learning | Document conversion |
-| Windows Command Line | Learning | Git and automation tasks |
-
----
-
-# Geological & Engineering Software
-
-## Currently Studying
-
-| Software | Status | Purpose |
-|----------|--------|---------|
-| ArcGIS Pro | Planned | GIS analysis |
-| QGIS | Planned | Open-source GIS |
-| Leapfrog Geo | Planned | Geological modelling |
-| RockWorks | Planned | Geological visualization |
-| Surfer | Planned | Surface modelling |
-| AutoCAD | Planned | Engineering drawings |
-| Civil 3D | Planned | Civil engineering design |
-| MODFLOW | Planned | Groundwater modelling |
-
----
-
-# GIS & Remote Sensing
-
-| Software | Status | Purpose |
-|----------|--------|---------|
-| GIS Applications | Academic Training | Spatial analysis |
-| Remote Sensing Tools | Academic Training | Geological interpretation |
-| Photogeology Techniques | Academic Training | Image interpretation |
-
----
-
-# Artificial Intelligence Tools
-
-| Tool | Purpose |
-|------|---------|
-| ChatGPT | Research assistance, technical writing, career development |
-| GitHub Copilot | Code generation and software development |
-| Codex | Repository development and automation planning |
-
----
-
-# Documentation Tools
-
-| Software | Purpose |
-|----------|---------|
-| Markdown | Technical documentation |
-| GitHub README | Project documentation |
-| Microsoft Word | Professional reports |
-| PDF | Document distribution |
-
----
-
-# Online Platforms
-
-| Platform | Purpose |
-|----------|---------|
-| GitHub | Portfolio and version control |
-| LinkedIn | Professional networking |
-| YouTube | Educational portfolio |
-| Google Drive | Cloud storage and collaboration |
-
----
-
-# Software Used in This Career Repository
-
-This project is developed using:
-
-- Git
-- GitHub
-- GitHub Desktop
-- Visual Studio Code
-- Markdown
-- Python
-- Pandoc
-- ChatGPT
-- GitHub Copilot
-- Codex
-
----
-
-# Current Development Roadmap
-
-The following technologies are planned for future development:
-
-## Web Development
-
-- HTML5
-- CSS3
-- JavaScript
-- React
-- Tailwind CSS
-
-## Data Science
-
-- NumPy
-- Pandas
-- Matplotlib
-
-## Geological Engineering
-
-- ArcGIS Pro
-- QGIS
-- Leapfrog Geo
-- RockWorks
-- MODFLOW
-- Surfer
-
-## Professional Productivity
-
-- Microsoft Project
-- Power BI
-
----
-
-# Learning Objectives
-
-Current priorities include:
-
-- Strengthening Python programming
-- Mastering Git and GitHub workflows
-- Building a professional portfolio website
-- Developing automation scripts
-- Learning GIS software
-- Expanding web development skills
-
----
-
-# Related Files
-
-This document supports:
-
-- education.md
-- coursework.md
-- skills.md
-- projects.md
-- experience.md
-- career_summary.md
-
----
-
-# Revision History
-
-| Version | Date | Description |
-|----------|------|-------------|
-| 1.0 | July 2026 | Initial software inventory created. |
-
----
-
-**End of software.md**
-
----
-
-## Additional Information
-- Memberships: # memberships.md
+# memberships.md
 
 # Professional Memberships Database
 
@@ -1971,4 +2196,600 @@ This document supports:
 ---
 
 **End of memberships.md**
-- References: 
+
+# references.md
+
+# Professional References Database
+
+This document is the master record of professional, academic, and character references for Anthony Essel Prepeh.
+
+It serves as the official source for resumes, curriculum vitae (CVs), scholarship applications, graduate school applications, internship applications, and employment opportunities.
+
+---
+
+# Personal Information
+
+**Name:** Anthony Essel Prepeh
+
+**Programme:** Bachelor of Science (BSc) Geological Engineering
+
+**Institution:** Kwame Nkrumah University of Science and Technology (KNUST)
+
+**Expected Graduation:** November 2026
+
+---
+
+# Reference Policy
+
+Professional references are confidential and will only be shared with employers, scholarship committees, graduate schools, or organizations when appropriate.
+
+Unless specifically requested, resumes generated from this repository will include:
+
+> **References available upon request.**
+
+---
+
+# Academic References
+
+## Academic Reference 1
+
+**Name**
+
+To be added
+
+**Position**
+
+To be added
+
+**Institution**
+
+Kwame Nkrumah University of Science and Technology (KNUST)
+
+**Department**
+
+To be added
+
+**Relationship**
+
+Lecturer / Project Supervisor
+
+**Email**
+
+To be added
+
+**Phone**
+
+To be added
+
+**Areas Able to Comment On**
+
+- Academic performance
+- Technical competence
+- Research ability
+- Professional conduct
+
+---
+
+## Academic Reference 2
+
+**Name**
+
+To be added
+
+**Position**
+
+To be added
+
+**Institution**
+
+Kwame Nkrumah University of Science and Technology (KNUST)
+
+**Department**
+
+To be added
+
+**Relationship**
+
+Lecturer
+
+**Email**
+
+To be added
+
+**Phone**
+
+To be added
+
+**Areas Able to Comment On**
+
+- Coursework
+- Laboratory performance
+- Teamwork
+- Communication skills
+
+---
+
+# Professional References
+
+Professional references will be added after industrial training and future employment.
+
+Each professional reference should include:
+
+- Employer
+- Position
+- Supervisor
+- Email
+- Telephone
+- Employment period
+- Relationship
+- Areas of evaluation
+
+---
+
+# Character References
+
+Character references may be used for:
+
+- Scholarships
+- Leadership programmes
+- Volunteer opportunities
+- Community service
+
+Information to include:
+
+- Name
+- Position
+- Organisation
+- Relationship
+- Contact Information
+
+---
+
+# Referee Selection Guide
+
+The following types of referees are recommended.
+
+## Academic
+
+- Final Year Project Supervisor
+- Head of Department
+- Lecturer
+- Academic Advisor
+
+---
+
+## Professional
+
+- Industrial Training Supervisor
+- Engineering Manager
+- Project Engineer
+- Senior Geologist
+
+---
+
+## Leadership
+
+- Student Organisation Advisor
+- Community Leader
+- Mentor
+
+---
+
+# Reference Request Checklist
+
+Before listing a referee:
+
+- [ ] Obtain permission
+- [ ] Confirm contact details
+- [ ] Inform the referee about the application
+- [ ] Share your updated resume
+- [ ] Explain the position being applied for
+
+---
+
+# Reference Storage
+
+Reference letters should be stored in:
+
+```
+assets/
+└── references/
+```
+
+Suggested naming convention:
+
+```
+YYYY_Reference_Letter_Name.pdf
+```
+
+Example:
+
+```
+2026_Project_Supervisor_Reference.pdf
+```
+
+---
+
+# Reference Usage
+
+| Document | Include References |
+|----------|-------------------|
+| ATS Resume | No |
+| Professional Resume | On Request |
+| Executive Resume | On Request |
+| Academic CV | Yes (if requested) |
+| Scholarship Application | Yes |
+| Graduate School Application | Yes |
+
+---
+
+# Related Files
+
+This document supports:
+
+- experience.md
+- projects.md
+- memberships.md
+- career_summary.md
+- portfolio.md
+
+---
+
+# Revision History
+
+| Version | Date | Description |
+|----------|------|-------------|
+| 1.0 | July 2026 | Initial references database created. |
+
+---
+
+**End of references.md**
+
+# portfolio.md
+
+# Professional Portfolio Database
+
+This document is the master content source for Anthony Essel Prepeh's professional portfolio website.
+
+It contains all portfolio content including biographies, career objectives, project summaries, education, technical expertise, achievements, and contact information.
+
+This document serves as the primary source for:
+
+- Personal Portfolio Website
+- GitHub Pages Website
+- LinkedIn About Section
+- Professional Biography
+- Scholarship Applications
+- Professional Profiles
+
+---
+
+# Personal Information
+
+## Full Name
+
+Anthony Essel Prepeh
+
+---
+
+## Professional Title
+
+Geological Engineering Student
+
+Future Geological Engineer
+
+---
+
+## Location
+
+Obuasi, Ashanti Region
+
+Ghana
+
+---
+
+## Email
+
+anthonyesselprepehanthony@gmail.com
+
+---
+
+## Phone
+
++233 24 259 2148
+
+---
+
+## LinkedIn
+
+https://www.linkedin.com/in/anthony-prempeh-548325277
+
+---
+
+## GitHub
+
+https://github.com/SaintNova327
+
+---
+
+## Educational Portfolio
+
+https://youtu.be/LJGe8pRYIMA
+
+---
+
+# Hero Section
+
+## Heading
+
+Anthony Essel Prepeh
+
+## Subheading
+
+BSc Geological Engineering Student
+
+Future Geological Engineer
+
+## Tagline
+
+Exploring the Earth.
+Engineering Sustainable Solutions.
+Building a Professional Future.
+
+---
+
+# About Me
+
+I am a final-year Bachelor of Science (BSc) Geological Engineering student at Kwame Nkrumah University of Science and Technology (KNUST), Ghana.
+
+My academic interests include engineering geology, hydrogeology, geotechnical engineering, mineral exploration, GIS, remote sensing, groundwater development, and environmental geology.
+
+I enjoy applying geological knowledge, engineering principles, and digital technologies to solve real-world problems while continuously developing my technical and professional skills.
+
+I am passionate about lifelong learning, professional growth, and contributing to sustainable engineering solutions.
+
+---
+
+# Career Objective
+
+To build a successful career as a Geological Engineer by applying engineering principles, geological knowledge, geospatial technologies, and continuous learning to support sustainable resource development and infrastructure projects.
+
+---
+
+# Education
+
+## Bachelor of Science (BSc)
+
+Geological Engineering
+
+Kwame Nkrumah University of Science and Technology (KNUST)
+
+Expected Graduation
+
+November 2026
+
+---
+
+# Technical Interests
+
+- Engineering Geology
+- Geotechnical Engineering
+- Hydrogeology
+- Groundwater Development
+- Exploration Geology
+- Exploration Geochemistry
+- Exploration Geophysics
+- GIS
+- Remote Sensing
+- Environmental Geology
+- Geological Mapping
+- Mineral Exploration
+
+---
+
+# Technical Skills
+
+## Geological
+
+- Geological Mapping
+- Structural Geology
+- Mineral Identification
+- Geological Field Investigation
+- Geological Interpretation
+
+---
+
+## Engineering
+
+- Rock Engineering
+- Soil Mechanics
+- Foundation Engineering
+- Engineering Geological Investigation
+
+---
+
+## Digital
+
+- Microsoft Office
+- Git
+- GitHub
+- Markdown
+- Visual Studio Code
+- Python (Learning)
+
+---
+
+# Current Projects
+
+- Professional Career Repository
+- Portfolio Website Development
+- Undergraduate Research Project
+- Resume Automation System
+
+---
+
+# Professional Memberships
+
+- AGA Trust Fund
+- Society of Economic Geologists (SEG) Student Chapter
+
+---
+
+# Core Values
+
+- Integrity
+- Professionalism
+- Continuous Learning
+- Teamwork
+- Leadership
+- Innovation
+- Excellence
+
+---
+
+# Career Goals
+
+## Short-Term
+
+- Successfully complete BSc Geological Engineering.
+- Complete industrial training.
+- Build a professional engineering portfolio.
+- Develop strong GIS and programming skills.
+
+---
+
+## Medium-Term
+
+- Begin a career in Geological Engineering.
+- Gain practical industry experience.
+- Obtain professional certifications.
+- Develop expertise in geotechnical engineering and hydrogeology.
+
+---
+
+## Long-Term
+
+- Become a Chartered Geological Engineer.
+- Pursue postgraduate studies.
+- Lead multidisciplinary engineering projects.
+- Contribute to sustainable engineering and mineral resource development.
+
+---
+
+# Website Pages
+
+The future portfolio website will contain:
+
+- Home
+- About
+- Education
+- Skills
+- Projects
+- Experience
+- Certificates
+- Memberships
+- Resume
+- Contact
+
+---
+
+# Downloads
+
+Visitors will be able to download:
+
+- Professional Resume (PDF)
+- ATS Resume
+- Curriculum Vitae
+- Portfolio
+- Certificates (where appropriate)
+
+---
+
+# Contact Section
+
+## Email
+
+anthonyesselprepehanthony@gmail.com
+
+---
+
+## Phone
+
++233 24 259 2148
+
+---
+
+## Location
+
+Obuasi, Ghana
+
+---
+
+## LinkedIn
+
+https://www.linkedin.com/in/anthony-prempeh-548325277
+
+---
+
+## GitHub
+
+https://github.com/SaintNova327
+
+---
+
+# Portfolio Assets
+
+Portfolio resources should be stored as follows:
+
+website/
+assets/
+images/
+documents/
+downloads/
+
+---
+
+# Future Enhancements
+
+The portfolio will later include:
+
+- Interactive geological maps
+- GIS projects
+- Research publications
+- Field photographs
+- Engineering reports
+- Core logging gallery
+- Geological cross-sections
+- Drone imagery
+- Professional blog
+- Interactive resume
+
+---
+
+# Related Files
+
+This document integrates information from:
+
+- education.md
+- coursework.md
+- skills.md
+- software.md
+- projects.md
+- experience.md
+- certificates.md
+- memberships.md
+- references.md
+- career_summary.md
+
+---
+
+# Revision History
+
+| Version | Date | Description |
+|----------|------|-------------|
+| 1.0 | July 2026 | Initial professional portfolio database created. |
+
+---
+
+**End of portfolio.md**
+

@@ -1,207 +1,201 @@
 """
 Website Builder
-Builds website pages from reusable templates.
+Generates the portfolio website from layouts and career data.
 """
 
 from pathlib import Path
+from functools import lru_cache
+
 import markdown
+import yaml
 
-PAGES = [
-
-    {
-        "output": "index.html",
-        "layout": "home.html",
-        "title": "Anthony Essel Prepeh | Portfolio"
-    },
-
-]
+# ==========================================================
+# Paths
+# ==========================================================
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 
 WEBSITE = PROJECT_ROOT / "website"
 LAYOUTS = WEBSITE / "layouts"
-CONTENT = WEBSITE / "content"
 
-def load_content(filename):
+DATA = PROJECT_ROOT / "data"
 
-    text = (CONTENT / filename).read_text(
-        encoding="utf-8"
-    )
+CONFIG = PROJECT_ROOT / "config"
 
-    return markdown.markdown(text)
+# ==========================================================
+# Pages
+# ==========================================================
 
-def load_data(filename):
-    """
-    Read a markdown file from the data directory.
-    """
+PAGES = [
+    {
+        "output": "index.html",
+        "layout": "home.html",
+        "title": "Anthony Essel Prepeh | Portfolio"
+    }
+]
 
-    data_dir = PROJECT_ROOT / "data"
+# ==========================================================
+# Configuration
+# ==========================================================
 
-    file_path = data_dir / filename
+@lru_cache(maxsize=1)
+def load_site_config():
 
-    if not file_path.exists():
-        return f"## Missing File\n\n{filename} was not found."
+    config_file = CONFIG / "site_config.md"
 
-    return file_path.read_text(encoding="utf-8")
+    with open(config_file, "r", encoding="utf-8") as f:
 
+        return yaml.safe_load(f)
 
-def markdown_to_html(markdown_text):
-    """
-    Convert Markdown text to HTML.
-    """
+# ==========================================================
+# Helpers
+# ==========================================================
 
-    return markdown.markdown(markdown_text)
-    
 def load_layout(filename):
+
     return (LAYOUTS / filename).read_text(
         encoding="utf-8"
     )
 
-def render_template(layout_name, replacements):
+def load_career_database():
+    """
+    Load all Markdown files from the data directory.
+    Returns a dictionary where the filename (without .md)
+    becomes the key.
+    """
+
+    database = {}
+
+    for file in DATA.glob("*.md"):
+
+        key = file.stem
+
+        markdown_text = file.read_text(
+            encoding="utf-8"
+        )
+
+        database[key] = markdown.markdown(
+            markdown_text
+        )
+
+    return database
+
+def load_data(filename):
+
+    file = DATA / filename
+
+    if not file.exists():
+
+        return f"# Missing File\n\n{filename} was not found."
+
+    return file.read_text(
+        encoding="utf-8"
+    )
+
+
+def markdown_to_html(text):
+
+    return markdown.markdown(text)
+
+
+def render_layout(layout_name, replacements):
 
     html = load_layout(layout_name)
 
     for key, value in replacements.items():
 
         html = html.replace(
-            f"{{{{ {key} }}}}",
+            "{{ " + key + " }}",
             value
         )
 
     return html
 
 
-def save_page(filename, content):
-    (WEBSITE / filename).write_text(content, encoding="utf-8")
+def save_page(filename, html):
 
-
-def build_homepage():
-
-    print("Building homepage...")
-
-    base = load_template("base.html")
-    header = load_template("header.html")
-    footer = load_template("footer.html")
-    summary = load_data("career_summary.md")
-
-    summary = markdown_to_html(
-        load_data("career_summary.md")
+    (WEBSITE / filename).write_text(
+        html,
+        encoding="utf-8"
     )
 
-    skills = markdown_to_html(
-        load_data("skills.md")
-    )
-
-    projects = markdown_to_html(
-        load_data("projects.md")
-    )
-    
-    content = render_template(
-        "home.html",
-    {
-        "name": "Anthony Essel Prepeh",
-        "profession": "Geological Engineer",
-        "tagline": "Mining Technology • Artificial Intelligence • Data Analysis",
-        "career_summary": summary,
-        "skills": skills,
-        "projects": projects
-    }
-    )
-
-    page = base
-
-    page = page.replace("{{ title }}",
-                        "Anthony Essel Prepeh | Portfolio")
-
-    page = page.replace("{{ header }}",
-                        header)
-
-    page = page.replace("{{ content }}",
-                        content)
-
-    page = page.replace("{{ footer }}",
-                        footer)
-
-    save_page("index.html", page)
-
-    print("✓ Homepage generated")
-
-
-def main():
-
-    print("=" * 50)
-    print("Website Generator")
-    print("=" * 50)
-
-    for page in PAGES:
-
-    build_page(page)
-
-    print()
-    print("Website generation complete.")
+# ==========================================================
+# Builder
+# ==========================================================
 
 def build_page(page):
 
     print(f"Building {page['output']}...")
 
-    base = load_layout("base.html")
+    config = load_site_config()
+
+    author = config["author"]
+
+    site = config["site"]
+
+    career = load_career_database()
 
     header = load_layout("header.html")
 
     footer = load_layout("footer.html")
 
-    summary = markdown_to_html(
-        load_data("career_summary.md")
-    )
-
-    skills = markdown_to_html(
-        load_data("skills.md")
-    )
-
-    projects = markdown_to_html(
-        load_data("projects.md")
-    )
-
-    content = render_template(
+    body = render_layout(
         page["layout"],
         {
-            "name": "Anthony Essel Prepeh",
-            "profession": "Geological Engineer",
-            "tagline": "Mining Technology • Artificial Intelligence • Data Analysis",
-            "career_summary": summary,
-            "skills": skills,
-            "projects": projects
+            "name": author["name"],
+            "profession": author["profession"],
+            "tagline": site["tagline"],
+            
+            **career
         }
     )
 
-    html = base
+    page_html = load_layout("base.html")
 
-    html = html.replace(
+    page_html = page_html.replace(
         "{{ title }}",
-        page["title"]
+        page["title"],
     )
 
-    html = html.replace(
+    page_html = page_html.replace(
         "{{ header }}",
-        header
+        header,
     )
 
-    html = html.replace(
+    page_html = page_html.replace(
         "{{ content }}",
-        content
+        body,
     )
 
-    html = html.replace(
+    page_html = page_html.replace(
         "{{ footer }}",
-        footer
+        footer,
     )
 
     save_page(
         page["output"],
-        html
+        page_html,
     )
 
     print(f"✓ {page['output']} generated")
+
+# ==========================================================
+# Main
+# ==========================================================
+
+def main():
+
+    print("=" * 60)
+    print("Career Website Generator")
+    print("=" * 60)
+
+    for page in PAGES:
+
+        build_page(page)
+
+    print()
+    print("Website generation complete.")
+
 
 if __name__ == "__main__":
     main()

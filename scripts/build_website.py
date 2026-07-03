@@ -38,6 +38,12 @@ PAGES = [
         "output": "about.html",
         "layout": "about.html",
         "title": "About | Anthony Essel Prepeh"
+    },
+
+    {
+        "output": "projects.html",
+        "layout": "projects.html",
+        "title": "Projects | Anthony Essel Prepeh"
     }
 
 ]

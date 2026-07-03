@@ -1,0 +1,28 @@
+@media(max-width:900px){
+
+    nav{
+
+        flex-direction:column;
+
+        text-align:center;
+    }
+
+    .hero-content{
+
+        flex-direction:column-reverse;
+
+        text-align:center;
+    }
+
+    .hero-image img{
+
+        width:220px;
+
+        height:220px;
+    }
+
+    .hero-text h1{
+
+        font-size:38px;
+    }
+}

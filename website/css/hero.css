@@ -1,0 +1,27 @@
+header{
+    background:var(--primary);
+    color:white;
+    padding:60px 20px;
+    text-align:center;
+}
+
+.hero{
+    text-align:center;
+    padding:90px 20px;
+    background:white;
+}
+
+.hero h1{
+    font-size:48px;
+    color:var(--primary);
+}
+
+.hero h2{
+    margin:15px 0;
+    color:#555;
+}
+
+.hero p{
+    font-size:20px;
+    margin-bottom:35px;
+}

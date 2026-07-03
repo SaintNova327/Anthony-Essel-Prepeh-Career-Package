@@ -1,0 +1,14 @@
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+    margin-top:20px;
+}
+
+.skills span{
+    background:var(--primary);
+    color:white;
+    padding:10px 16px;
+    border-radius:20px;
+    font-size:14px;
+}

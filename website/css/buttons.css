@@ -1,0 +1,23 @@
+.hero-buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.button{
+    padding:14px 28px;
+    border-radius:6px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.primary{
+    background:var(--primary);
+    color:white;
+}
+
+.secondary{
+    border:2px solid var(--primary);
+    color:var(--primary);
+}

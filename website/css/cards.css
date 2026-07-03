@@ -68,3 +68,83 @@
 
     border-radius:10px;
 }
+
+/* ==========================================================
+   Project Cards
+========================================================== */
+
+.project-card{
+
+    background:var(--surface);
+
+    border-radius:16px;
+
+    padding:30px;
+
+    margin-bottom:35px;
+
+    box-shadow:var(--shadow);
+
+    transition:var(--transition);
+
+}
+
+.project-card:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.project-card h3{
+
+    color:var(--primary);
+
+    margin-bottom:15px;
+
+}
+
+.project-card p{
+
+    color:var(--muted);
+
+    margin-bottom:20px;
+
+}
+
+.project-tags{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    margin-bottom:25px;
+
+}
+
+.tag{
+
+    background:var(--primary);
+
+    color:white;
+
+    padding:6px 14px;
+
+    border-radius:30px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+.project-links{
+
+    display:flex;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+}

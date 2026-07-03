@@ -225,39 +225,52 @@ def validate_build():
 # Builder
 # ==========================================================
 
-def build_page(page):
-
-    print(f"Building {page['output']}...")
+def build_context():
+    """
+    Build the shared template context for all website pages.
+    """
 
     config = load_site_config()
 
     author = config["author"]
-
     site = config["site"]
 
     career = load_career_database()
 
-    header = load_layout("header.html")
+    return {
 
-    footer = load_layout("footer.html")
-
-    body = render_layout(
-    page["layout"],
-    {
         "name": author["name"],
         "profession": author["profession"],
         "tagline": site["tagline"],
+
         "career_summary": career["career_summary"],
         "skills": career["skills"],
-        "projects": career["projects"],
+
         "experience": render_experience(),
         "education": render_education(),
         "certificates": render_certificates(),
         "projects": render_projects(),
         "featured_projects": render_featured_projects(),
         "navigation": render_navigation(),
+
     }
-)
+
+def build_page(page):
+
+    print(f"Building {page['output']}...")
+
+    base = load_layout("base.html")
+
+    header = load_layout("header.html")
+
+    footer = load_layout("footer.html")
+
+    context = build_context()
+
+    body = render_layout(
+        page["layout"],
+        context
+    )
 
     page_html = load_layout("base.html")
 

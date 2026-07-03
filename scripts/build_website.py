@@ -5,6 +5,11 @@ Generates the portfolio website from layouts and career data.
 
 from pathlib import Path
 from functools import lru_cache
+from renderers import render_experience
+from renderers import (
+    render_experience,
+    render_education
+)
 
 import markdown
 import yaml
@@ -50,9 +55,20 @@ PAGES = [
         "output": "experience.html",
         "layout": "experience.html",
         "title": "Experience | Anthony Essel Prepeh"
-    }
+    },
+
+    {
+    "output": "education.html",
+    "layout": "education.html",
+    "title": "Education | Anthony Essel Prepeh"
+    },
 
 ]
+
+
+
+
+
 
 # ==========================================================
 # Configuration
@@ -171,15 +187,18 @@ def build_page(page):
     footer = load_layout("footer.html")
 
     body = render_layout(
-        page["layout"],
-        {
-            "name": author["name"],
-            "profession": author["profession"],
-            "tagline": site["tagline"],
-            
-            **career
-        }
-    )
+    page["layout"],
+    {
+        "name": author["name"],
+        "profession": author["profession"],
+        "tagline": site["tagline"],
+        "career_summary": career["career_summary"],
+        "skills": career["skills"],
+        "projects": career["projects"],
+        "experience": render_experience(),
+        "education": render_education(),
+    }
+)
 
     page_html = load_layout("base.html")
 

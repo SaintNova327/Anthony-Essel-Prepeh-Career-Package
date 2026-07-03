@@ -44,6 +44,12 @@ PAGES = [
         "output": "projects.html",
         "layout": "projects.html",
         "title": "Projects | Anthony Essel Prepeh"
+    },
+
+    {
+        "output": "experience.html",
+        "layout": "experience.html",
+        "title": "Experience | Anthony Essel Prepeh"
     }
 
 ]
@@ -81,7 +87,7 @@ def load_component(filename):
     return (components / filename).read_text(
         encoding="utf-8"
     )
-    
+
 def load_career_database():
     """
     Load all Markdown files from the data directory.

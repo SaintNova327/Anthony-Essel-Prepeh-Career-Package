@@ -1,0 +1,77 @@
+/* ==========================================================
+   Timeline
+========================================================== */
+
+.timeline{
+
+    position:relative;
+
+    margin:40px 0;
+
+    padding-left:40px;
+
+    border-left:4px solid var(--primary);
+
+}
+
+.timeline-item{
+
+    position:relative;
+
+    margin-bottom:50px;
+
+}
+
+.timeline-item::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:-52px;
+
+    top:8px;
+
+    width:18px;
+
+    height:18px;
+
+    border-radius:50%;
+
+    background:var(--accent);
+
+    border:4px solid white;
+
+    box-shadow:var(--shadow);
+
+}
+
+.timeline-date{
+
+    font-weight:bold;
+
+    color:var(--secondary);
+
+    margin-bottom:10px;
+
+}
+
+.timeline-title{
+
+    color:var(--primary);
+
+    font-size:22px;
+
+    margin-bottom:8px;
+
+}
+
+.timeline-company{
+
+    color:var(--muted);
+
+    font-style:italic;
+
+    margin-bottom:15px;
+
+}

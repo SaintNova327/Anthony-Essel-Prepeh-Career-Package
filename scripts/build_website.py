@@ -8,7 +8,8 @@ from functools import lru_cache
 from renderers import render_experience
 from renderers import (
     render_experience,
-    render_education
+    render_education,
+    render_certificates
 )
 
 import markdown
@@ -58,10 +59,17 @@ PAGES = [
     },
 
     {
-    "output": "education.html",
-    "layout": "education.html",
-    "title": "Education | Anthony Essel Prepeh"
+        "output": "education.html",
+        "layout": "education.html",
+        "title": "Education | Anthony Essel Prepeh"
     },
+
+    {
+        "output": "certificates.html",
+        "layout": "certificates.html",
+        "title": "Certificates | Anthony Essel Prepeh"
+    },
+
 
 ]
 
@@ -197,6 +205,7 @@ def build_page(page):
         "projects": career["projects"],
         "experience": render_experience(),
         "education": render_education(),
+        "certificates": render_certificates()
     }
 )
 

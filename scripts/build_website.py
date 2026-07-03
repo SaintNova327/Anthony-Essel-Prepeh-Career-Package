@@ -267,12 +267,19 @@ def build_page(page):
 
     context = build_context()
 
+    layout_path = LAYOUTS / page["layout"]
+
+    if not layout_path.exists():
+
+        print(f"✗ Missing layout: {page['layout']}")
+        return
+
     body = render_layout(
         page["layout"],
         context
     )
 
-    page_html = load_layout("base.html")
+    page_html = base
 
     page_html = page_html.replace(
         "{{ title }}",

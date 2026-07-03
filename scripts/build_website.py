@@ -9,7 +9,9 @@ from renderers import render_experience
 from renderers import (
     render_experience,
     render_education,
-    render_certificates
+    render_certificates,
+    render_projects,
+    render_featured_projects
 )
 
 import markdown
@@ -205,7 +207,9 @@ def build_page(page):
         "projects": career["projects"],
         "experience": render_experience(),
         "education": render_education(),
-        "certificates": render_certificates()
+        "certificates": render_certificates(),
+        "projects": render_projects(),
+        "featured_projects": render_featured_projects(),
     }
 )
 

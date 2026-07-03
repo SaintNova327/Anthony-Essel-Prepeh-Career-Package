@@ -1,0 +1,71 @@
+projects:
+
+  - title: Undergraduate Research Project (Project II)
+
+    category: Academic Research
+
+    status: In Progress
+
+    description: >
+      Final-year undergraduate research project conducted as a
+      requirement for the award of the Bachelor of Science (BSc)
+      in Geological Engineering.
+
+    technologies:
+      - Research Methodology
+      - Technical Writing
+      - Data Interpretation
+
+    github: "#"
+
+    demo: "#"
+
+    featured: true
+
+  - title: Educational Portfolio Development
+
+    category: Professional Development
+
+    status: Completed
+
+    description: >
+      Developed a professional educational portfolio showcasing
+      academic achievements, geological engineering background,
+      technical skills, certificates and career objectives.
+
+    technologies:
+      - Presentation Design
+      - Professional Branding
+      - Digital Content Creation
+
+    github: "#"
+
+    demo: "#"
+
+    featured: true
+
+  - title: Professional Career Repository
+
+    category: Software Development
+
+    status: In Progress
+
+    description: >
+      Development of a GitHub-based career management repository
+      containing resumes, portfolio website, automation scripts,
+      documentation and career resources.
+
+    technologies:
+      - Python
+      - Git
+      - GitHub
+      - Markdown
+      - Visual Studio Code
+      - Pandoc
+      - ChatGPT
+
+    github: "https://github.com/SaintNova327/Anthony-Essel-Prepeh-Career-Package"
+
+    demo: "#"
+
+    featured: true

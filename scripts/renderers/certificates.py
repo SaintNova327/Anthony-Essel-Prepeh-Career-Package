@@ -9,16 +9,23 @@ def render_certificates():
 
     data = load_yaml("certificates.yml")
 
-    if not data or "certificates" not in data:
+    certificates = data.get("certificates", [])
+
+    if not certificates:
         return """
 <div class="cards">
-    <p>No certificates available.</p>
+    <h2>Professional Certificates</h2>
+    <p>
+        Certificates will be added here as they are earned.
+        Current focus areas include Python, GIS, Remote Sensing,
+        SQL, and Geological Engineering.
+    </p>
 </div>
 """
 
     html = '<div class="cards">'
 
-    for cert in data["certificates"]:
+    for cert in certificates:
 
         html += f"""
 <div class="card">

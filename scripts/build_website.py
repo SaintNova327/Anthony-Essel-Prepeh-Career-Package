@@ -31,6 +31,15 @@ DATA = PROJECT_ROOT / "data"
 
 CONFIG = PROJECT_ROOT / "config"
 
+REQUIRED_DATA_FILES = [
+    "career_summary.md",
+    "skills.md",
+    "projects.md",
+    "experience.md",
+    "education.md",
+    "certificates.md",
+]
+
 # ==========================================================
 # Pages
 # ==========================================================
@@ -177,6 +186,41 @@ def save_page(filename, html):
         encoding="utf-8"
     )
 
+def validate_build():
+    """
+    Validate that all required data files exist.
+    """
+
+    print("\nChecking project files...")
+
+    data_dir = PROJECT_ROOT / "data"
+
+    missing = []
+
+    for filename in REQUIRED_DATA_FILES:
+
+        path = data_dir / filename
+
+        if path.exists():
+            print(f"  ✓ {filename}")
+        else:
+            print(f"  ✗ {filename}")
+            missing.append(filename)
+
+    if missing:
+
+        print("\nBuild cancelled.")
+        print("Missing required files:")
+
+        for filename in missing:
+            print(f" - {filename}")
+
+        return False
+
+    print("All required files found.\n")
+
+    return True
+
 # ==========================================================
 # Builder
 # ==========================================================
@@ -254,12 +298,15 @@ def main():
     print("Career Website Generator")
     print("=" * 60)
 
-    for page in PAGES:
+    if not validate_build():
+        return
 
+    print("Starting website generation...\n")
+
+    for page in PAGES:
         build_page(page)
 
-    print()
-    print("Website generation complete.")
+    print("\nWebsite generation complete.")
 
 
 if __name__ == "__main__":

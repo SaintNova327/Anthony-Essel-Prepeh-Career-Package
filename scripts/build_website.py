@@ -20,8 +20,43 @@ def load_content(filename):
 
     return markdown.markdown(text)
 
+def load_data(filename):
+    """
+    Read a markdown file from the data directory.
+    """
+
+    data_dir = PROJECT_ROOT / "data"
+
+    file_path = data_dir / filename
+
+    if not file_path.exists():
+        return f"## Missing File\n\n{filename} was not found."
+
+    return file_path.read_text(encoding="utf-8")
+
+
+def markdown_to_html(markdown_text):
+    """
+    Convert Markdown text to HTML.
+    """
+
+    return markdown.markdown(markdown_text)
+    
 def load_template(filename):
     return (TEMPLATES / filename).read_text(encoding="utf-8")
+
+def render_template(template_name, replacements):
+    """
+    Replace placeholders in an HTML template.
+    """
+
+    html = load_template(template_name)
+
+    for key, value in replacements.items():
+
+        html = html.replace(f"{{{{ {key} }}}}", value)
+
+    return html
 
 
 def save_page(filename, content):
@@ -35,7 +70,31 @@ def build_homepage():
     base = load_template("base.html")
     header = load_template("header.html")
     footer = load_template("footer.html")
-    content = load_content("home.md")
+    summary = load_data("career_summary.md")
+
+    summary = markdown_to_html(
+        load_data("career_summary.md")
+    )
+
+    skills = markdown_to_html(
+        load_data("skills.md")
+    )
+
+    projects = markdown_to_html(
+        load_data("projects.md")
+    )
+    
+    content = render_template(
+        "home.html",
+    {
+        "name": "Anthony Essel Prepeh",
+        "profession": "Geological Engineer",
+        "tagline": "Mining Technology • Artificial Intelligence • Data Analysis",
+        "career_summary": summary,
+        "skills": skills,
+        "projects": projects
+    }
+    )
 
     page = base
 

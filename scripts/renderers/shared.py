@@ -32,3 +32,17 @@ def load_component(name):
     )
 
     return path.read_text(encoding="utf-8")
+
+
+def load_config(filename):
+    """
+    Load a YAML configuration file from the config directory.
+    """
+
+    path = PROJECT_ROOT / "config" / filename
+
+    with open(path, "r", encoding="utf-8") as f:
+
+        data = yaml.safe_load(f)
+
+    return data or {}

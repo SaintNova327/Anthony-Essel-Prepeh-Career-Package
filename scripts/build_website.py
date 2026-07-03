@@ -11,7 +11,8 @@ from renderers import (
     render_education,
     render_certificates,
     render_projects,
-    render_featured_projects
+    render_featured_projects,
+    render_navigation,
 )
 
 import markdown
@@ -210,6 +211,7 @@ def build_page(page):
         "certificates": render_certificates(),
         "projects": render_projects(),
         "featured_projects": render_featured_projects(),
+        "navigation": render_navigation(),
     }
 )
 

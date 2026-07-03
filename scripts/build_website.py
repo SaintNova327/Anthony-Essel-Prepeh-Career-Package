@@ -6,10 +6,20 @@ Builds website pages from reusable templates.
 from pathlib import Path
 import markdown
 
+PAGES = [
+
+    {
+        "output": "index.html",
+        "layout": "home.html",
+        "title": "Anthony Essel Prepeh | Portfolio"
+    },
+
+]
+
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 
 WEBSITE = PROJECT_ROOT / "website"
-TEMPLATES = WEBSITE / "templates"
+LAYOUTS = WEBSITE / "layouts"
 CONTENT = WEBSITE / "content"
 
 def load_content(filename):
@@ -42,19 +52,21 @@ def markdown_to_html(markdown_text):
 
     return markdown.markdown(markdown_text)
     
-def load_template(filename):
-    return (TEMPLATES / filename).read_text(encoding="utf-8")
+def load_layout(filename):
+    return (LAYOUTS / filename).read_text(
+        encoding="utf-8"
+    )
 
-def render_template(template_name, replacements):
-    """
-    Replace placeholders in an HTML template.
-    """
+def render_template(layout_name, replacements):
 
-    html = load_template(template_name)
+    html = load_layout(layout_name)
 
     for key, value in replacements.items():
 
-        html = html.replace(f"{{{{ {key} }}}}", value)
+        html = html.replace(
+            f"{{{{ {key} }}}}",
+            value
+        )
 
     return html
 
@@ -121,11 +133,75 @@ def main():
     print("Website Generator")
     print("=" * 50)
 
-    build_homepage()
+    for page in PAGES:
+
+    build_page(page)
 
     print()
     print("Website generation complete.")
 
+def build_page(page):
+
+    print(f"Building {page['output']}...")
+
+    base = load_layout("base.html")
+
+    header = load_layout("header.html")
+
+    footer = load_layout("footer.html")
+
+    summary = markdown_to_html(
+        load_data("career_summary.md")
+    )
+
+    skills = markdown_to_html(
+        load_data("skills.md")
+    )
+
+    projects = markdown_to_html(
+        load_data("projects.md")
+    )
+
+    content = render_template(
+        page["layout"],
+        {
+            "name": "Anthony Essel Prepeh",
+            "profession": "Geological Engineer",
+            "tagline": "Mining Technology • Artificial Intelligence • Data Analysis",
+            "career_summary": summary,
+            "skills": skills,
+            "projects": projects
+        }
+    )
+
+    html = base
+
+    html = html.replace(
+        "{{ title }}",
+        page["title"]
+    )
+
+    html = html.replace(
+        "{{ header }}",
+        header
+    )
+
+    html = html.replace(
+        "{{ content }}",
+        content
+    )
+
+    html = html.replace(
+        "{{ footer }}",
+        footer
+    )
+
+    save_page(
+        page["output"],
+        html
+    )
+
+    print(f"✓ {page['output']} generated")
 
 if __name__ == "__main__":
     main()

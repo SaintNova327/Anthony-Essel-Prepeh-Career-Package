@@ -27,11 +27,19 @@ CONFIG = PROJECT_ROOT / "config"
 # ==========================================================
 
 PAGES = [
+
     {
         "output": "index.html",
         "layout": "home.html",
         "title": "Anthony Essel Prepeh | Portfolio"
+    },
+
+    {
+        "output": "about.html",
+        "layout": "about.html",
+        "title": "About | Anthony Essel Prepeh"
     }
+
 ]
 
 # ==========================================================

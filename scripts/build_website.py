@@ -71,6 +71,17 @@ def load_layout(filename):
         encoding="utf-8"
     )
 
+def load_component(filename):
+    """
+    Load a reusable HTML component.
+    """
+
+    components = WEBSITE / "components"
+
+    return (components / filename).read_text(
+        encoding="utf-8"
+    )
+    
 def load_career_database():
     """
     Load all Markdown files from the data directory.

@@ -247,3 +247,29 @@ Special thanks to:
 ---
 
 *"Building a professional career through continuous learning, technical excellence, and innovation in Geological Engineering."*
+
+# Anthony Essel Prepeh Portfolio
+
+## Overview
+A modular, Python-powered static portfolio website for showcasing my education, projects, skills, and professional experience as a Geological Engineering student.
+
+## Features
+- Static site generator in Python
+- Modular HTML layouts and reusable components
+- Responsive design
+- SEO-ready metadata
+- GitHub Pages compatible
+- YAML configuration
+- Markdown content management
+
+## Tech Stack
+- Python
+- HTML5
+- CSS3
+- Markdown
+- YAML
+- Git
+- GitHub
+
+## Project Structure
+...

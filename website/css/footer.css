@@ -4,3 +4,33 @@ footer{
     text-align:center;
     padding:20px;
 }
+
+.footer-links{
+
+    margin-top:20px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.footer-links a{
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:.25s ease;
+
+}
+
+.footer-links a:hover{
+
+    color:var(--accent);
+
+}

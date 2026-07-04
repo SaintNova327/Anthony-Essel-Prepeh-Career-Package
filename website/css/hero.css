@@ -96,4 +96,56 @@
 
     box-shadow:0 20px 40px rgba(0,0,0,.15);
 
+    border:5px solid white;
+
+    box-shadow:0 18px 40px rgba(0,0,0,.15);
+
+    transition:.35s ease;
+
+}
+
+.hero-image img:hover{
+
+    transform:scale(1.03);
+
+}
+
+/* ==========================================================
+   Hero Statistics
+========================================================== */
+
+.hero-stats{
+
+    display:flex;
+
+    gap:40px;
+
+    margin-top:40px;
+
+    flex-wrap:wrap;
+
+}
+
+.hero-stats div{
+
+    text-align:center;
+
+}
+
+.hero-stats strong{
+
+    display:block;
+
+    font-size:28px;
+
+    color:var(--primary);
+
+}
+
+.hero-stats span{
+
+    color:var(--muted);
+
+    font-size:14px;
+
 }

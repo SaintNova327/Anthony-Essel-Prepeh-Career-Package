@@ -18,6 +18,8 @@
         transform var(--transition),
         box-shadow var(--transition),
         border-color var(--transition);
+
+    border:1px solid rgba(0,0,0,.05);
 }
 
 .card:hover {

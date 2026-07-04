@@ -2,12 +2,16 @@
 Certificate renderer.
 """
 
-from .shared import load_yaml
+
+
+from .shared import load_yaml, load_component
 
 
 def render_certificates():
 
     data = load_yaml("certificates.yml")
+
+    template = load_component("certificate_card.html")
 
     certificates = data.get("certificates", [])
 
@@ -23,23 +27,34 @@ def render_certificates():
 </div>
 """
 
+
     html = '<div class="cards">'
 
     for cert in certificates:
 
-        html += f"""
-<div class="card">
+        card = template
 
-    <h3>{cert['title']}</h3>
+        card = card.replace(
+            "{{ title }}",
+            cert["title"]
+        )
 
-    <p><strong>Issuer:</strong> {cert['issuer']}</p>
+        card = card.replace(
+            "{{ issuer }}",
+            cert["issuer"]
+        )
 
-    <p><strong>Year:</strong> {cert['year']}</p>
+        card = card.replace(
+            "{{ year }}",
+            str(cert["year"])
+        )
 
-    <p>{cert['description']}</p>
-
-</div>
-"""
+        card = card.replace(
+            "{{ description }}",
+            cert["description"]
+        )
+        
+        html += card
 
     html += "</div>"
 

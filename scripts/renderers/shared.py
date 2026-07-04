@@ -46,3 +46,20 @@ def load_config(filename):
         data = yaml.safe_load(f)
 
     return data or {}
+
+
+def render_component(template, replacements):
+    """
+    Replace placeholders in a reusable HTML component.
+    """
+
+    html = template
+
+    for key, value in replacements.items():
+
+        html = html.replace(
+            f"{{{{ {key} }}}}",
+            str(value)
+        )
+
+    return html

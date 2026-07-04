@@ -5,7 +5,6 @@ Generates the portfolio website from layouts and career data.
 
 from pathlib import Path
 from functools import lru_cache
-from renderers import render_experience
 from renderers import (
     render_experience,
     render_education,
@@ -13,6 +12,10 @@ from renderers import (
     render_projects,
     render_featured_projects,
     render_navigation,
+    render_markdown,
+    render_career_summary,
+    render_skills,
+    render_page_header,
 )
 
 import markdown
@@ -49,39 +52,44 @@ PAGES = [
     {
         "output": "index.html",
         "layout": "home.html",
-        "title": "Anthony Essel Prepeh | Portfolio"
+        "title": "Anthony Essel Prepeh | Portfolio",
+        "subtitle": "Geological Engineer • Mining Technology • Artificial Intelligence",
     },
 
     {
         "output": "about.html",
         "layout": "about.html",
-        "title": "About | Anthony Essel Prepeh"
+        "title": "About | Anthony Essel Prepeh",
+        "subtitle": "Learn more about my background and career goals",
     },
 
     {
         "output": "projects.html",
         "layout": "projects.html",
-        "title": "Projects | Anthony Essel Prepeh"
+        "title": "Projects | Anthony Essel Prepeh",
+        "subtitle": "Academic, engineering and software projects",
     },
 
     {
         "output": "experience.html",
         "layout": "experience.html",
-        "title": "Experience | Anthony Essel Prepeh"
+        "title": "Experience | Anthony Essel Prepeh",
+        "subtitle": "Professional and practical experience",
     },
 
     {
         "output": "education.html",
         "layout": "education.html",
-        "title": "Education | Anthony Essel Prepeh"
+        "title": "Education | Anthony Essel Prepeh",
+        "subtitle": "Academic background and qualifications",
     },
 
     {
         "output": "certificates.html",
         "layout": "certificates.html",
-        "title": "Certificates | Anthony Essel Prepeh"
+        "title": "Certificates | Anthony Essel Prepeh",
+        "subtitle": "Professional certifications and continuous learning",
     },
-
 
 ]
 
@@ -243,15 +251,19 @@ def build_context():
         "profession": author["profession"],
         "tagline": site["tagline"],
 
-        "career_summary": career["career_summary"],
-        "skills": career["skills"],
+        "career_summary": render_career_summary(),
+        "skills": render_skills(),
 
         "experience": render_experience(),
         "education": render_education(),
         "certificates": render_certificates(),
         "projects": render_projects(),
         "featured_projects": render_featured_projects(),
-        "navigation": render_navigation(),
+        "navigation": "",
+        "page_header": render_page_header(
+            "Welcome",
+            "Professional Geological Engineering Portfolio",
+        ),
 
     }
 
@@ -259,26 +271,49 @@ def build_page(page):
 
     print(f"Building {page['output']}...")
 
-    base = load_layout("base.html")
-
-    header = load_layout("header.html")
-
-    footer = load_layout("footer.html")
-
+    # Build the page context first
     context = build_context()
 
+    # Create a page-specific header
+    context["page_header"] = render_page_header(
+        page["title"].split("|")[0].strip(),
+        page["subtitle"],
+    )
+
+    context["current_page"] = page["output"]
+    
+    context["navigation"] = render_navigation(
+        page["output"]
+    )
+
+    # Check that the page layout exists
     layout_path = LAYOUTS / page["layout"]
 
     if not layout_path.exists():
-
         print(f"✗ Missing layout: {page['layout']}")
         return
 
-    body = render_layout(
-        page["layout"],
-        context
+    # Load base template
+    base = load_layout("base.html")
+
+    # Render header and footer with context
+    header = render_layout(
+        "header.html",
+        context,
     )
 
+    footer = render_layout(
+        "footer.html",
+        context,
+    )
+
+    # Render page body
+    body = render_layout(
+        page["layout"],
+        context,
+    )
+
+    # Assemble the final HTML
     page_html = base
 
     page_html = page_html.replace(

@@ -1,29 +1,93 @@
-.cards{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-    gap:30px;
-    margin-top:30px;
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: var(--space-6);
+    margin-top: var(--space-6);
 }
 
-.card{
-    background:#fff;
-    border-radius:12px;
-    padding:25px;
-    box-shadow:0 8px 20px rgba(0,0,0,.08);
-    transition:transform .2s ease, box-shadow .2s ease;
+.card {
+    background: var(--surface);
+    border-radius: var(--radius-lg);
+    padding: var(--space-6);
+
+    border: 1px solid var(--border);
+
+    box-shadow: var(--shadow-sm);
+
+    transition:
+        transform var(--transition),
+        box-shadow var(--transition),
+        border-color var(--transition);
 }
 
-.card:hover{
-    transform:translateY(-6px);
-    box-shadow:0 14px 28px rgba(0,0,0,.12);
+.card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: var(--shadow-lg);
+
+    border-color: var(--secondary);
 }
 
-.card h3{
-    color:#003366;
-    margin-bottom:15px;
+.card h3 {
+
+    color: var(--primary);
+
+    margin-bottom: var(--space-4);
+
+    font-size: var(--text-xl);
 }
 
-.card p{
-    margin-bottom:15px;
-    color:#555;
+.card h3::before {
+    content: "📌 ";
+}
+
+.card p {
+
+    color: var(--muted);
+
+    margin-bottom: var(--space-5);
+
+    line-height: 1.7;
+}
+
+/* Technology badges */
+
+.project-tags {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: var(--space-2);
+
+    margin-bottom: var(--space-5);
+}
+
+.tag {
+
+    background: #E8EEF7;
+
+    color: var(--primary);
+
+    padding: 6px 12px;
+
+    border-radius: 999px;
+
+    font-size: var(--text-sm);
+
+    font-weight: var(--font-semi);
+}
+
+/* Project buttons */
+
+.project-links {
+
+    display: flex;
+
+    gap: var(--space-3);
+
+    flex-wrap: wrap;
+
+    margin-top: auto;
 }

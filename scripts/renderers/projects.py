@@ -2,7 +2,11 @@
 Projects renderer.
 """
 
-from .shared import load_yaml, load_component
+from .shared import (
+    load_yaml,
+    load_component,
+    render_component,
+)
 
 
 def render_projects():
@@ -23,33 +27,35 @@ def render_projects():
         for tech in project["technologies"]:
             tags += f'<span class="tag">{tech}</span>'
 
-        card = template
+        github = project.get("github", "#")
+        demo = project.get("demo", "#")
 
-        card = card.replace(
-            "{{ title }}",
-            project["title"]
+        card = render_component(
+            template,
+            {
+                "title": project["title"],
+                "description": project["description"],
+                "technologies": tags,
+                "github": github,
+                "demo": demo,
+            },
         )
 
-        card = card.replace(
-            "{{ description }}",
-            project["description"]
-        )
-
-        card = card.replace(
-            "{{ technologies }}",
-            tags
-        )
-
-        card = card.replace(
-            "{{ github }}",
-            project["github"]
-        )
-
-        card = card.replace(
-            "{{ demo }}",
-            project["demo"]
-        )
+        
+        
+        if github == "#":
+            card = card.replace(
+                'href="#"',
+                'href="#" onclick="return false;"'
+            )
+            
+        if demo == "#":
+            card = card.replace(
+                'href="#" onclick="return false;"',
+                'href="#" onclick="return false;"',
+                1
+            )
 
         html += card
 
-    return html
+    return f'<div class="cards">{html}</div>'

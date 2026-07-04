@@ -2,12 +2,15 @@
 Education renderer.
 """
 
-from .shared import load_yaml
+
+from .shared import load_yaml, load_component
 
 
 def render_education():
 
     data = load_yaml("education.yml")
+
+    template = load_component("timeline_item.html")
 
     if not data or "education" not in data:
         return """
@@ -20,27 +23,32 @@ def render_education():
 
     for item in data["education"]:
 
-        html += f"""
-<div class="timeline-item">
+        card = template
 
-    <div class="timeline-date">
-        {item["period"]}
-    </div>
+        card = card.replace(
+            "{{ date }}",
+            item["period"]
+        )
 
-    <h3 class="timeline-title">
-        {item["degree"]}
-    </h3>
+        card = card.replace(
+            "{{ title }}",
+            item["degree"]
+        )
 
-    <div class="timeline-company">
-        {item["institution"]}
-    </div>
+        card = card.replace(
+            "{{ company }}",
+            item["institution"]
+        )
+        
+        card = card.replace(
+            "{{ description }}",
+            item["description"]
+        )
+        
+        html += card
 
-    <p>
-        {item["description"]}
-    </p>
 
-</div>
-"""
+
 
     html += "</div>"
 

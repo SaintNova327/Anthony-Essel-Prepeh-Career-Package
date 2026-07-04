@@ -1,44 +1,55 @@
+/* ==========================================================
+   Hero
+========================================================== */
+
 .hero{
 
-    padding:80px 20px;
+    padding:90px 0;
 
-    background:white;
 }
 
 .hero-content{
 
     display:flex;
 
-    justify-content:space-between;
-
     align-items:center;
 
-    gap:60px;
+    justify-content:space-between;
+
+    gap:70px;
 
     flex-wrap:wrap;
+
 }
 
 .hero-text{
 
     flex:1;
+
+    min-width:320px;
+
 }
 
 .hero-text h1{
 
-    font-size:54px;
+    font-size:58px;
 
     color:var(--primary);
 
-    margin-bottom:10px;
+    margin-bottom:15px;
+
+    line-height:1.1;
+
 }
 
 .hero-text h2{
 
+    font-size:30px;
+
     color:var(--secondary);
 
-    margin-bottom:20px;
+    margin-bottom:25px;
 
-    border:none;
 }
 
 .hero-text p{
@@ -47,21 +58,35 @@
 
     color:var(--muted);
 
+    line-height:1.8;
+
     margin-bottom:35px;
+
+}
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
 }
 
 .hero-image{
 
-    flex:0 0 320px;
+    flex:0 0 340px;
 
     text-align:center;
+
 }
 
 .hero-image img{
 
-    width:320px;
+    width:340px;
 
-    height:320px;
+    height:340px;
 
     object-fit:cover;
 
@@ -69,5 +94,6 @@
 
     border:8px solid white;
 
-    box-shadow:var(--shadow);
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+
 }

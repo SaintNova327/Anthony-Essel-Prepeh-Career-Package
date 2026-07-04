@@ -2,12 +2,14 @@
 Experience renderer.
 """
 
-from .shared import load_yaml
+from .shared import load_yaml, load_component
 
 
 def render_experience():
 
     data = load_yaml("experience.yml")
+    
+    template = load_component("timeline_item.html")
 
     if not data or "experience" not in data:
         return """
@@ -20,27 +22,29 @@ def render_experience():
 
     for item in data["experience"]:
 
-        html += f"""
-<div class="timeline-item">
-
-    <div class="timeline-date">
-        {item['period']}
-    </div>
-
-    <h3 class="timeline-title">
-        {item['title']}
-    </h3>
-
-    <div class="timeline-company">
-        {item['company']}
-    </div>
-
-    <p>
-        {item['description']}
-    </p>
-
-</div>
-"""
+      card = template
+      
+      card = card.replace(
+        "{{ date }}",
+        item["period"]
+    )
+    
+      card = card.replace(
+        "{{ title }}",
+        item["title"]
+    )
+    
+      card = card.replace(
+        "{{ company }}",
+        item["company"]
+    )
+    
+      card = card.replace(
+        "{{ description }}",
+        item["description"]
+    )
+    
+    html += card
 
     html += "</div>"
 

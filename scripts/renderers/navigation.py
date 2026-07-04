@@ -5,7 +5,7 @@ Navigation renderer.
 from .shared import load_config
 
 
-def render_navigation():
+def render_navigation(current_page="index.html"):
     """
     Generate the navigation menu from site_config.md.
     """
@@ -26,8 +26,13 @@ def render_navigation():
             else f"{page}.html"
         )
 
+        css_class = ""
+
+        if href == current_page:
+            css_class = ' class="active"'
+
         html += (
-            f'<li><a href="{href}">{item}</a></li>'
+            f'<li><a href="{href}"{css_class}>{item}</a></li>'
         )
 
     html += "</ul>"

@@ -91,3 +91,22 @@
 
     margin-top: auto;
 }
+
+
+/* ==========================================================
+   Skills
+========================================================== */
+
+.skill-group{
+
+    margin-bottom:35px;
+
+}
+
+.skill-group h3{
+
+    color:var(--primary);
+
+    margin-bottom:15px;
+
+}

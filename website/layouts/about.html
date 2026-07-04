@@ -1,18 +1,23 @@
 {{ page_header }}
 
-<section class="page-header">
+<section class="about-grid">
 
-    <h1>About Me</h1>
+    <div class="about-photo">
 
-    <p>{{ profession }}</p>
+        <img
+            src="assets/images/profile.jpg"
+            alt="{{ name }}"
+        >
 
-</section>
+    </div>
 
-<section>
+    <div class="about-content">
 
-    <h2>Professional Profile</h2>
+        <h2>Professional Profile</h2>
 
-    {{ career_summary }}
+        {{ career_summary }}
+
+    </div>
 
 </section>
 
@@ -26,7 +31,7 @@
 
 <section>
 
-    <h2>Software & Tools</h2>
+    <h2>Software &amp; Tools</h2>
 
     {{ software }}
 

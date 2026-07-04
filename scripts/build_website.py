@@ -16,6 +16,7 @@ from renderers import (
     render_career_summary,
     render_skills,
     render_page_header,
+    render_software,
 )
 
 import markdown
@@ -41,6 +42,7 @@ REQUIRED_DATA_FILES = [
     "experience.md",
     "education.md",
     "certificates.md",
+    "software.md",
 ]
 
 # ==========================================================
@@ -253,6 +255,7 @@ def build_context():
 
         "career_summary": render_career_summary(),
         "skills": render_skills(),
+        "software": render_software(),
 
         "experience": render_experience(),
         "education": render_education(),
@@ -264,6 +267,7 @@ def build_context():
             "Welcome",
             "Professional Geological Engineering Portfolio",
         ),
+        
 
     }
 
@@ -281,7 +285,7 @@ def build_page(page):
     )
 
     context["current_page"] = page["output"]
-    
+
     context["navigation"] = render_navigation(
         page["output"]
     )

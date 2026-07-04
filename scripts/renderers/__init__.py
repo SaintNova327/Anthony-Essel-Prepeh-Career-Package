@@ -12,3 +12,4 @@ from .markdown import render_markdown
 from .career_summary import render_career_summary
 from .skills import render_skills
 from .page_header import render_page_header
+from .software import render_software

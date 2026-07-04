@@ -7,7 +7,8 @@ from .shared import load_config
 
 def render_navigation(current_page="index.html"):
     """
-    Generate the navigation menu from site_config.md.
+    Generate the navigation menu and highlight
+    the current page.
     """
 
     config = load_config("site_config.md")
@@ -26,13 +27,13 @@ def render_navigation(current_page="index.html"):
             else f"{page}.html"
         )
 
-        css_class = ""
+        css = ""
 
         if href == current_page:
-            css_class = ' class="active"'
+            css = ' class="active"'
 
         html += (
-            f'<li><a href="{href}"{css_class}>{item}</a></li>'
+            f'<li><a{css} href="{href}">{item}</a></li>'
         )
 
     html += "</ul>"

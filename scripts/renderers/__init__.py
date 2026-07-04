@@ -13,3 +13,5 @@ from .career_summary import render_career_summary
 from .skills import render_skills
 from .page_header import render_page_header
 from .software import render_software
+from .featured_experience import render_featured_experience
+from .featured_education import render_featured_education

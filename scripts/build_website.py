@@ -17,6 +17,8 @@ from renderers import (
     render_skills,
     render_page_header,
     render_software,
+    render_featured_experience,
+    render_featured_education,
 )
 
 import markdown
@@ -262,12 +264,13 @@ def build_context():
         "certificates": render_certificates(),
         "projects": render_projects(),
         "featured_projects": render_featured_projects(),
-        "navigation": "",
+    
         "page_header": render_page_header(
             "Welcome",
             "Professional Geological Engineering Portfolio",
         ),
-        
+        "featured_experience": render_featured_experience(),
+        "featured_education": render_featured_education(),
 
     }
 
@@ -277,11 +280,16 @@ def build_page(page):
 
     # Build the page context first
     context = build_context()
+    context["current_page"] = page["output"]
 
     # Create a page-specific header
     context["page_header"] = render_page_header(
         page["title"].split("|")[0].strip(),
         page["subtitle"],
+    )
+
+    context["navigation"] = render_navigation(
+        page["output"]
     )
 
     context["current_page"] = page["output"]

@@ -86,3 +86,27 @@ nav a.active::after{
     border-radius: 999px;
 
 }
+
+nav a.active{
+
+    color: var(--accent);
+
+    font-weight: 700;
+
+    border-bottom: 3px solid var(--accent);
+
+}
+
+/* ==========================================================
+   Active Navigation
+========================================================== */
+
+nav ul li a.active{
+
+    color:var(--accent);
+
+    border-bottom:3px solid var(--accent);
+
+    font-weight:700;
+
+}

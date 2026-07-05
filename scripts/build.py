@@ -6,6 +6,8 @@ This script is the main entry point for generating all career documents.
 """
 
 from pathlib import Path
+import subprocess
+import sys
 
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
@@ -37,6 +39,26 @@ def create_folders():
     for folder in folders:
         folder.mkdir(parents=True, exist_ok=True)
 
+def run_builder(script):
+    """
+    Run a build script and stop if it fails.
+    """
+
+    print("-" * 60)
+    print(f"Running {script}")
+    print("-" * 60)
+
+    result = subprocess.run(
+        [sys.executable, str(PROJECT_ROOT / "scripts" / script)]
+    )
+
+    if result.returncode != 0:
+
+        raise RuntimeError(
+            f"{script} failed."
+        )
+
+    print(f"✓ {script} completed.\n")
 
 def check_project():
     """
@@ -80,28 +102,20 @@ def main():
 
     print()
 
-    print("Next phases will generate:")
+    print("Starting build pipeline...\n")
 
-    print(" • Resume")
+    run_builder("build_website.py")
 
-    print(" • ATS Resume")
+    # Resume builder will be enabled next
+    run_builder("build_resume.py")
 
-    print(" • Executive Resume")
+    print("=" * 60)
 
-    print(" • Academic CV")
+    print("Career Package Complete")
 
-    print(" • Cover Letters")
-
-    print(" • Portfolio Website")
-
-    print(" • PDF")
-
-    print(" • DOCX")
-
-    print()
-
-    print("Build completed successfully.")
+    print("=" * 60)
 
 
 if __name__ == "__main__":
     main()
+

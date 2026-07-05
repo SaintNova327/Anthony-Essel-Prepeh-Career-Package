@@ -23,6 +23,7 @@ from renderers import (
 
 import markdown
 import yaml
+from functools import lru_cache
 
 # ==========================================================
 # Paths
@@ -46,6 +47,19 @@ REQUIRED_DATA_FILES = [
     "certificates.md",
     "software.md",
 ]
+
+@lru_cache(maxsize=1)
+def load_site_config():
+
+    config_file = PROJECT_ROOT / "config" / "site_config.md"
+
+    with open(
+        config_file,
+        "r",
+        encoding="utf-8"
+    ) as f:
+
+        return yaml.safe_load(f)
 
 # ==========================================================
 # Pages
@@ -360,6 +374,10 @@ def build_page(page):
 # ==========================================================
 
 def main():
+
+    config = load_site_config()
+    
+    author = config["author"]
 
     print("=" * 60)
     print("Career Website Generator")

@@ -6,10 +6,12 @@ site:
 author:
   name: "Anthony Essel Prepeh"
   profession: "Geological Engineer"
-  location: "Ghana"
-  email: "your-email@example.com"
+  location: "Obuasi, Ashanti Region, Ghana"
+  email: "anthonyesselprepehanthony@gmail.com"
+  phone: "+233 24 259 2148"
   github: "https://github.com/SaintNova327"
-  linkedin: ""
+  linkedin: "https://www.linkedin.com/in/anthony-prempeh-548325277"
+  portfolio_video: "https://youtu.be/LJGe8pRYIMA"
 
 theme:
   primary_color: "#003366"

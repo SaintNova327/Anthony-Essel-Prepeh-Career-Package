@@ -15,3 +15,4 @@ from .page_header import render_page_header
 from .software import render_software
 from .featured_experience import render_featured_experience
 from .featured_education import render_featured_education
+from .footer import render_footer

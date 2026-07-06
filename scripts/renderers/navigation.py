@@ -21,11 +21,17 @@ def render_navigation(current_page="index.html"):
 
         page = item.lower().replace(" ", "_")
 
-        href = (
-            "index.html"
-            if page == "home"
-            else f"{page}.html"
-        )
+        if page == "home":
+            href = "index.html"
+
+        elif page == "resume":
+            href = "assets/downloads/resume.pdf"
+
+        elif page == "contact":
+            href = "contact.html"
+
+        else:
+            href = f"{page}.html"
 
         css = ""
 

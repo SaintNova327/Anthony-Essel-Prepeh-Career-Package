@@ -19,6 +19,7 @@ from renderers import (
     render_software,
     render_featured_experience,
     render_featured_education,
+    render_footer,
 )
 
 import markdown
@@ -107,6 +108,13 @@ PAGES = [
         "layout": "certificates.html",
         "title": "Certificates | Anthony Essel Prepeh",
         "subtitle": "Professional certifications and continuous learning",
+    },
+    
+    {
+        "output": "contact.html",
+        "layout": "contact.html",
+        "title": "Contact | Anthony Essel Prepeh",
+        "subtitle": "Let's connect",
     },
 
 ]
@@ -269,6 +277,13 @@ def build_context():
         "profession": author["profession"],
         "tagline": site["tagline"],
 
+        "email": author["email"],
+        "phone": author["phone"],
+        "location": author["location"],
+        "github": author["github"],
+        "linkedin": author["linkedin"],
+        "portfolio_video": author["portfolio_video"],
+
         "career_summary": render_career_summary(),
         "skills": render_skills(),
         "software": render_software(),
@@ -285,6 +300,7 @@ def build_context():
         ),
         "featured_experience": render_featured_experience(),
         "featured_education": render_featured_education(),
+        "footer": render_footer(),
 
     }
 

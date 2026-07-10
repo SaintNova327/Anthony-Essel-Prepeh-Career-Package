@@ -48,11 +48,6 @@
 
 }
 
-.button{
-
-    transition:.25s ease;
-
-}
 
 .button:hover{
 
@@ -66,5 +61,15 @@ nav a:focus{
     outline:3px solid var(--accent);
 
     outline-offset:4px;
+
+}
+
+.button.disabled{
+
+    opacity:.55;
+
+    cursor:not-allowed;
+
+    pointer-events:none;
 
 }

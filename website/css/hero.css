@@ -4,7 +4,7 @@
 
 .hero{
 
-    padding:90px 0;
+    padding:55px 0;
 
 }
 
@@ -16,7 +16,7 @@
 
     justify-content:space-between;
 
-    gap:70px;
+    gap:50px;
 
     flex-wrap:wrap;
 
@@ -32,7 +32,7 @@
 
 .hero-text h1{
 
-    font-size:58px;
+    font-size:54px;
 
     color:var(--primary);
 
@@ -54,13 +54,15 @@
 
 .hero-text p{
 
-    font-size:20px;
+    font-size:18px;
 
     color:var(--muted);
 
     line-height:1.8;
 
     margin-bottom:35px;
+
+    max-width:620px;
 
 }
 
@@ -76,7 +78,7 @@
 
 .hero-image{
 
-    flex:0 0 340px;
+    flex:0 0 310px;
 
     text-align:center;
 
@@ -84,9 +86,9 @@
 
 .hero-image img{
 
-    width:340px;
+    width:310px;
 
-    height:340px;
+    height:310px;
 
     object-fit:cover;
 

@@ -1,15 +1,17 @@
 projects:
 
-  - title: Undergraduate Research Project (Project II)
+  - title: Orebody Modelling & Resource Evaluation
 
     category: Academic Research
 
     status: In Progress
 
     description: >
-      Final-year undergraduate research project conducted as a
-      requirement for the award of the Bachelor of Science (BSc)
-      in Geological Engineering.
+       A final-year geological engineering research project focused on
+       orebody modelling and resource evaluation. The project applies
+       geological interpretation, data analysis and modern modelling
+       techniques to support mineral resource assessment and improve
+       understanding of orebody geometry.
 
     technologies:
       - Research Methodology
@@ -22,16 +24,17 @@ projects:
 
     featured: true
 
-  - title: Educational Portfolio Development
+  - title: Professional Engineering Portfolio
 
     category: Professional Development
 
     status: Completed
 
     description: >
-      Developed a professional educational portfolio showcasing
-      academic achievements, geological engineering background,
-      technical skills, certificates and career objectives.
+      Designed and developed a professional engineering portfolio that
+      showcases academic achievements, technical skills, engineering
+      projects, certifications and career development through a clean,
+      modern and recruiter-friendly website.
 
     technologies:
       - Presentation Design
@@ -44,16 +47,17 @@ projects:
 
     featured: true
 
-  - title: Professional Career Repository
+  - title: Career Management System
 
     category: Software Development
 
     status: In Progress
 
     description: >
-      Development of a GitHub-based career management repository
-      containing resumes, portfolio website, automation scripts,
-      documentation and career resources.
+      Developing an automated career management system using Python,
+      GitHub, Markdown and Pandoc to generate resumes, portfolio
+      documents and a professional website from a single source of
+      truth, making future updates efficient and consistent.
 
     technologies:
       - Python

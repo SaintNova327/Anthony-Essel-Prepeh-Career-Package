@@ -53,6 +53,32 @@
     line-height: 1.7;
 }
 
+/* ==========================================================
+   Project Status
+========================================================== */
+
+.project-status{
+
+    display:inline-block;
+
+    margin-bottom:var(--space-4);
+
+    padding:6px 14px;
+
+    border-radius:999px;
+
+    background:var(--accent);
+
+    color:white;
+
+    font-size:var(--text-sm);
+
+    font-weight:var(--font-semi);
+
+    letter-spacing:.3px;
+
+}
+
 /* Technology badges */
 
 .project-tags {

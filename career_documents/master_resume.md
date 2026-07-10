@@ -2,7 +2,7 @@
 
 **Geological Engineering Student**
 
-Geological Engineering | Mining Technology | Artificial Intelligence
+Geological Engineering | Mining Technology | Hydrogeology | Artificial Intelligence
 
 ---
 
@@ -30,15 +30,22 @@ https://www.linkedin.com/in/anthony-prempeh-548325277
 
 ---
 
-## Career Objective
-
-To begin a professional career in Geological Engineering where I can apply my academic knowledge, technical skills, and commitment to continuous learning while contributing to mineral exploration, geotechnical engineering, groundwater development, and sustainable engineering projects.
-
 ## Professional Summary
 
-Final-year Bachelor of Science (BSc) Geological Engineering student at Kwame Nkrumah University of Science and Technology (KNUST) with interests in engineering geology, geotechnical engineering, hydrogeology, mineral exploration, GIS, remote sensing, groundwater development, and mining technology.
+Final-year Bachelor of Science (BSc) Geological Engineering student at
+Kwame Nkrumah University of Science and Technology (KNUST) with a strong
+foundation in engineering geology, hydrogeology, geotechnical engineering,
+mineral exploration and geospatial technologies.
 
-Passionate about combining geological science, engineering principles, digital technologies, and artificial intelligence to develop practical and sustainable engineering solutions.
+Experienced in geological field investigations, engineering data
+interpretation, technical reporting and digital workflows. Passionate
+about integrating GIS, geological modelling, Python and artificial
+intelligence to improve mineral exploration, groundwater investigations
+and modern mining operations.
+
+Committed to continuous learning, professional integrity and applying
+technology to solve practical engineering challenges while contributing
+to sustainable resource development.
 
 ---
 
@@ -58,13 +65,16 @@ Expected Graduation: November 2026
 - Geotechnical Engineering
 - Hydrogeology
 - Mineral Exploration
+- Geological Mapping
+- Resource Evaluation
 - GIS
 - Remote Sensing
-- Geological Mapping
-- Technical Report Writing
 - Engineering Problem Solving
+- Technical Report Writing
 - Data Interpretation
-  
+
+---
+
 ## Technical Skills
 
 ### Geological Engineering
@@ -75,6 +85,7 @@ Expected Graduation: November 2026
 - Mineral Exploration
 - Hydrogeology
 - Geotechnical Engineering
+- Orebody Interpretation
 - Groundwater Development
 
 ### Geospatial
@@ -83,7 +94,7 @@ Expected Graduation: November 2026
 - Remote Sensing
 - Photogeology
 
-### Digital
+### Programming & Digital Technologies
 
 - Python
 - Git
@@ -91,34 +102,60 @@ Expected Graduation: November 2026
 - HTML
 - CSS
 - Markdown
+- YAML
 - Visual Studio Code
+- Pandoc
 
 ---
 
-## Projects
+## Selected Engineering & Technical Projects
 
-### Professional Career Repository
+### Career Operating System *(In Progress)*
 
-Designed and developed a Python-powered career management repository integrating Markdown, YAML, HTML, CSS, automation scripts, and GitHub for maintaining resumes, portfolio website, and professional documentation.
+Designed and developed an automated career management platform using
+Python, Markdown, YAML, HTML, CSS and Pandoc to generate a professional
+portfolio website, résumé, PDF documents and career resources from a
+single source of truth.
 
-### Educational Portfolio Website
+**Technologies**
 
-Developed a responsive personal portfolio website generated from Markdown and YAML using Python automation with reusable layouts and modular components.
+Python • Git • GitHub • Markdown • YAML • HTML • CSS • Pandoc
 
-### Undergraduate Research Project
+---
 
-Conducting final-year Geological Engineering research involving technical investigation, literature review, data interpretation, and scientific reporting.
+### Professional Engineering Portfolio *(Completed)*
+
+Designed and developed a responsive engineering portfolio that presents
+technical skills, engineering projects, certifications and professional
+development using reusable templates and automated content generation.
+
+**Technologies**
+
+Python • HTML • CSS • Markdown • GitHub
+
+---
+
+### Orebody Modelling & Resource Evaluation *(In Progress)*
+
+Final-year Geological Engineering research project focused on orebody
+modelling, geological interpretation and mineral resource evaluation.
+The project applies engineering principles and geological analysis to
+support resource estimation and improve understanding of orebody
+geometry.
+
+**Technologies**
+
+Technical Reporting • Geological Interpretation • Data Analysis
 
 ---
 
 ## Software & Technologies
 
-### Productivity
+### Geological & Geospatial
 
-- Microsoft Word
-- Microsoft Excel
-- Microsoft PowerPoint
-- Outlook
+- ArcGIS Pro *(Learning)*
+- Leapfrog Geo *(Learning)*
+- QGIS *(Learning)*
 
 ### Development
 
@@ -129,18 +166,26 @@ Conducting final-year Geological Engineering research involving technical invest
 - Markdown
 - Pandoc
 
+### Microsoft Office
+
+- Word
+- Excel
+- PowerPoint
+- Outlook
+
 ### Artificial Intelligence
 
 - ChatGPT
 - GitHub Copilot
 - Codex
 
-### Currently Learning
+---
 
-- ArcGIS Pro
-- Leapfrog Geo
-- QGIS
-- AutoCAD
+## Professional Certifications
+
+Professional development through Coursera, Great Learning, Alison and
+other recognised online learning platforms in engineering, technology,
+data analysis and artificial intelligence.
 
 ---
 
@@ -153,8 +198,8 @@ Conducting final-year Geological Engineering research involving technical invest
 
 ## Languages
 
-- English (Professional)
-- French (Basic)
+- English — Professional Proficiency
+- French — Basic Proficiency
 
 ---
 

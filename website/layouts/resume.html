@@ -4,25 +4,43 @@
 
 <head>
 
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
 
-<title>{{ name }} Resume</title>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-<link rel="stylesheet" href="css/resume.css">
+    <title>{{ name }} | Resume</title>
+
+    <link
+        rel="stylesheet"
+        href="css/resume.css"
+    >
 
 </head>
 
 <body>
 
-<div class="resume">
+    <div class="resume">
 
-<h1>{{ name }}</h1>
+        <header class="resume-header">
 
-<h2>{{ profession }}</h2>
+            <h1>{{ name }}</h1>
 
-{{ resume }}
+            <h2>{{ profession }}</h2>
 
-</div>
+            <hr>
+
+        </header>
+
+        <main class="resume-content">
+
+            {{ resume }}
+
+        </main>
+
+    </div>
 
 </body>
 

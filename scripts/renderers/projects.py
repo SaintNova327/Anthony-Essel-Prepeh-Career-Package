@@ -33,11 +33,12 @@ def render_projects():
         card = render_component(
             template,
             {
-                "title": project["title"],
-                "description": project["description"],
-                "technologies": tags,
-                "github": github,
-                "demo": demo,
+                 "title": project["title"],
+                 "status": project.get("status", "Active"),
+                 "description": project["description"],
+                 "technologies": tags,
+                 "github": github,
+                 "demo": demo,
             },
         )
 
@@ -45,16 +46,27 @@ def render_projects():
         
         if github == "#":
             card = card.replace(
+                ">View on GitHub<",
+                ">Repository Coming Soon<"
+            )
+
+            card = card.replace(
                 'href="#"',
-                'href="#" onclick="return false;"'
+                'href="#" class="button primary disabled" aria-disabled="true"'
+
             )
             
         if demo == "#":
             card = card.replace(
-                'href="#" onclick="return false;"',
-                'href="#" onclick="return false;"',
-                1
+                ">Project Details<",
+                ">Coming Soon<"
             )
+
+            card = card.replace(
+                'href="#"',
+                'href="#" class="button secondary disabled" aria-disabled="true"',
+                1
+            )     
 
         html += card
 

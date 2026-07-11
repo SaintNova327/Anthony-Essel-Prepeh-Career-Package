@@ -1,18 +1,62 @@
 <article class="card">
 
+    <img
+        class="project-image"
+        src="{{ image }}"
+        alt="{{ title }}"
+        loading="lazy"
+        decoding="async"
+    >
+
     <h3>{{ title }}</h3>
 
-    <span class="project-status">
-    
-        {{ status }}
-    
-    </span>
+    <p>
 
-    <p>{{ description }}</p>
+        <strong>Category:</strong>
+
+        {{ category }}
+
+    </p>
+
+    <p>
+
+        <strong>Status:</strong>
+
+        <span class="project-status">
+
+            {{ status }}
+
+        </span>
+
+    </p>
+
+    <p>
+
+        {{ description }}
+
+    </p>
+
+    <h4>Project Objective</h4>
+
+    <p>
+
+        {{ objective }}
+
+    </p>
+
+    <h4>Technologies</h4>
 
     <div class="project-tags">
 
         {{ technologies }}
+
+    </div>
+
+    <h4>Skills Demonstrated</h4>
+
+    <div class="project-tags">
+
+        {{ skills }}
 
     </div>
 
@@ -31,7 +75,8 @@
         <a
             class="button secondary"
             href="{{ demo }}"
-            target="_blank">
+            target="_blank"
+            rel="noopener noreferrer">
 
             Project Details
 

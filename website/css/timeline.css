@@ -135,3 +135,31 @@
     font-weight: var(--font-semi);
 
 }
+
+.timeline-item h4{
+
+    margin-top:20px;
+
+    margin-bottom:10px;
+
+    color:var(--primary);
+
+    font-size:16px;
+
+}
+
+.timeline-item ul{
+
+    margin-left:20px;
+
+    margin-bottom:20px;
+
+}
+
+.timeline-item li{
+
+    margin-bottom:8px;
+
+    line-height:1.6;
+
+}

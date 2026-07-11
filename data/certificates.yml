@@ -1,1 +1,59 @@
-certificates: []
+certificates:
+
+  - title: Google Project Management Specialization
+
+    provider: Coursera
+
+    issuer: Google
+
+    status: Completed
+
+    year: 2023
+
+    date_completed: October 5, 2023
+
+    category: Project Management
+
+    credential: "https://coursera.org/share/3a05d3f4fe12ec4ff26d9bfc6761d829"
+
+    duration: "Approximately 6 months (10 hours/week)"
+
+    skills:
+      - Project Management
+      - Agile Project Management
+      - Project Planning
+      - Project Execution
+      - Project Initiation
+      - Stakeholder Communication
+
+    featured: true
+
+
+  - title: Statistical Methods for Decision Making
+
+    provider: Great Learning
+
+    status: Completed
+
+    year: 2023
+
+    date_completed: May 2023
+
+    category: Data Analysis
+
+    credential: "https://www.mygreatlearning.com/certificate/TTYKDSCM?referrer_code=GLSR62CMZ4OFK"
+
+    duration: "2.0 Hours"
+
+    rating: "4.43/5"
+
+    learners: "65K+"
+
+    skills:
+      - Probability Theory
+      - Hypothesis Testing
+      - Regression Analysis
+      - Descriptive Statistics
+      - Decision Making Methods
+
+    featured: true

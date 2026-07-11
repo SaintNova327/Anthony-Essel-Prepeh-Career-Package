@@ -1,5 +1,5 @@
 """
-Projects renderer.
+Project renderer.
 """
 
 from .shared import (
@@ -22,51 +22,56 @@ def render_projects():
 
     for project in data["projects"]:
 
-        tags = ""
+        technologies = ""
 
         for tech in project["technologies"]:
-            tags += f'<span class="tag">{tech}</span>'
+            technologies += f'<span class="tag">{tech}</span>'
+
+        skills = ""
+
+        for skill in project["skills"]:
+            skills += f'<span class="tag">{skill}</span>'
 
         github = project.get("github", "#")
         demo = project.get("demo", "#")
 
         card = render_component(
+
             template,
+
             {
-                 "title": project["title"],
-                 "status": project.get("status", "Active"),
-                 "description": project["description"],
-                 "technologies": tags,
-                 "github": github,
-                 "demo": demo,
+                "title": project["title"],
+                "category": project["category"],
+                "status": project["status"],
+                "description": project["description"],
+                "objective": project["objective"],
+                "technologies": technologies,
+                "skills": skills,
+                "github": github,
+                "demo": demo,
+                "image": project.get(
+                    "image",
+                    "assets/images/projects/placeholder.jpg",
+                ),
             },
+
         )
 
-        
-        
         if github == "#":
-            card = card.replace(
-                ">View on GitHub<",
-                ">Repository Coming Soon<"
-            )
 
             card = card.replace(
                 'href="#"',
-                'href="#" class="button primary disabled" aria-disabled="true"'
-
+                'href="#" class="button primary disabled" onclick="return false;"',
+                1,
             )
-            
+
         if demo == "#":
-            card = card.replace(
-                ">Project Details<",
-                ">Coming Soon<"
-            )
 
             card = card.replace(
                 'href="#"',
-                'href="#" class="button secondary disabled" aria-disabled="true"',
-                1
-            )     
+                'href="#" class="button secondary disabled" onclick="return false;"',
+                1,
+            )
 
         html += card
 

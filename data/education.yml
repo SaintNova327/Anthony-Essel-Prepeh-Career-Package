@@ -10,6 +10,10 @@ education:
 
     status: Final Year Student
 
+    level: Undergraduate
+
+    gpa: ""
+
     description: >
       Undergraduate programme in Geological Engineering combining
       geology and engineering principles with specialization in
@@ -34,12 +38,22 @@ education:
       - Engineering Management
 
     projects:
+
       - Geological Field Mapping
       - Engineering Design Exercises
       - Laboratory Practical Sessions
       - Technical Presentations
       - Independent Research
 
+    software:
+
+      - ArcGIS Pro
+      - QGIS
+      - Leapfrog Geo
+      - Microsoft Excel
+      - Python
+
     memberships:
+
       - AGA Trust Fund
       - Society of Economic Geologists (SEG) Student Chapter

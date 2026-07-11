@@ -2,60 +2,47 @@
 Certificate renderer.
 """
 
-
-
-from .shared import load_yaml, load_component
+from .shared import (
+    load_yaml,
+    load_component,
+    render_component,
+)
 
 
 def render_certificates():
 
     data = load_yaml("certificates.yml")
 
-    template = load_component("certificate_card.html")
-
     certificates = data.get("certificates", [])
 
     if not certificates:
+
         return """
 <div class="cards">
-    <h2>Professional Certificates</h2>
-    <p>
-        Certificates will be added here as they are earned.
-        Current focus areas include Python, GIS, Remote Sensing,
-        SQL, and Geological Engineering.
-    </p>
+    <p>No certificates available.</p>
 </div>
 """
 
+    template = load_component(
+        "certificate_card.html"
+    )
 
-    html = '<div class="cards">'
+    html = ""
 
     for cert in certificates:
 
-        card = template
-
-        card = card.replace(
-            "{{ title }}",
-            cert["title"]
+        card = render_component(
+            template,
+            {
+                "title": cert["title"],
+                "provider": cert["provider"],
+                "year": str(cert["year"]),
+                "category": cert["category"],
+                "status": cert["status"],
+                "credential": cert["credential"],
+            },
         )
 
-        card = card.replace(
-            "{{ issuer }}",
-            cert["issuer"]
-        )
-
-        card = card.replace(
-            "{{ year }}",
-            str(cert["year"])
-        )
-
-        card = card.replace(
-            "{{ description }}",
-            cert["description"]
-        )
-        
         html += card
 
-    html += "</div>"
-
-    return html
+    return f'<div class="cards">{html}</div>'

@@ -9,6 +9,9 @@
     background: var(--surface);
     border-radius: var(--radius-lg);
     padding: var(--space-6);
+    display:flex;
+    flex-direction:column;
+    height:100%;
 
     border: 1px solid var(--border);
 
@@ -21,6 +24,24 @@
 
     border:1px solid rgba(0,0,0,.05);
 }
+
+
+.project-image{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+    border-radius:12px;
+
+    margin-bottom:20px;
+
+    display:block;
+
+}
+
 
 .card:hover {
 
@@ -53,6 +74,21 @@
     line-height: 1.7;
 }
 
+.card h4{
+
+    margin-top:20px;
+
+    margin-bottom:10px;
+
+    color:var(--primary);
+
+    font-size:16px;
+
+    font-weight:600;
+
+}
+
+
 /* ==========================================================
    Project Status
 ========================================================== */
@@ -61,21 +97,17 @@
 
     display:inline-block;
 
-    margin-bottom:var(--space-4);
-
-    padding:6px 14px;
+    padding:6px 12px;
 
     border-radius:999px;
 
-    background:var(--accent);
+    background:#E3F2FD;
 
-    color:white;
+    color:#1565C0;
 
-    font-size:var(--text-sm);
+    font-size:13px;
 
-    font-weight:var(--font-semi);
-
-    letter-spacing:.3px;
+    font-weight:600;
 
 }
 

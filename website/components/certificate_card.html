@@ -3,19 +3,49 @@
     <h3>{{ title }}</h3>
 
     <p>
-        <strong>Issuer:</strong>
-        {{ issuer }}
+
+        <strong>Provider:</strong>
+
+        {{ provider }}
+
     </p>
 
     <p>
+
+        <strong>Category:</strong>
+
+        {{ category }}
+
+    </p>
+
+    <p>
+
         <strong>Year:</strong>
+
         {{ year }}
+
     </p>
 
     <p>
 
-        {{ description }}
+        <strong>Status:</strong>
+
+        {{ status }}
 
     </p>
+
+    <div class="project-links">
+
+        <a
+            class="button primary"
+            href="{{ credential }}"
+            target="_blank"
+            rel="noopener noreferrer">
+
+            Verify Certificate
+
+        </a>
+
+    </div>
 
 </article>

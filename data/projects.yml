@@ -1,75 +1,115 @@
 projects:
 
-  - title: Orebody Modelling & Resource Evaluation
+  - title: Career Operating System
 
-    category: Academic Research
-
-    status: In Progress
-
-    description: >
-       A final-year geological engineering research project focused on
-       orebody modelling and resource evaluation. The project applies
-       geological interpretation, data analysis and modern modelling
-       techniques to support mineral resource assessment and improve
-       understanding of orebody geometry.
-
-    technologies:
-      - Research Methodology
-      - Technical Writing
-      - Data Interpretation
-
-    github: "#"
-
-    demo: "#"
-
-    featured: true
-
-  - title: Professional Engineering Portfolio
-
-    category: Professional Development
-
-    status: Completed
-
-    description: >
-      Designed and developed a professional engineering portfolio that
-      showcases academic achievements, technical skills, engineering
-      projects, certifications and career development through a clean,
-      modern and recruiter-friendly website.
-
-    technologies:
-      - Presentation Design
-      - Professional Branding
-      - Digital Content Creation
-
-    github: "#"
-
-    demo: "#"
-
-    featured: true
-
-  - title: Career Management System
+    image: "assets/images/projects/career-operating-system.jpg"
 
     category: Software Development
 
     status: In Progress
 
+    featured: true
+
     description: >
-      Developing an automated career management system using Python,
-      GitHub, Markdown and Pandoc to generate resumes, portfolio
-      documents and a professional website from a single source of
-      truth, making future updates efficient and consistent.
+      Designed and developed an automated career management platform that
+      generates a professional portfolio website, HTML résumé, PDF résumé
+      and supporting career documents from a single source of truth using
+      Python automation and structured YAML data.
+
+    objective: >
+      To build a maintainable and scalable system that simplifies career
+      document management while demonstrating software engineering,
+      automation and technical communication skills.
 
     technologies:
       - Python
       - Git
       - GitHub
       - Markdown
-      - Visual Studio Code
+      - YAML
+      - HTML
+      - CSS
       - Pandoc
-      - ChatGPT
+      - Visual Studio Code
+
+    skills:
+      - Software Development
+      - Automation
+      - Documentation
+      - Version Control
+      - Technical Writing
 
     github: "https://github.com/SaintNova327/Anthony-Essel-Prepeh-Career-Package"
 
     demo: "#"
 
+
+  - title: Orebody Modelling & Resource Evaluation
+
+    image: "assets/images/projects/orebody-modelling.jpg"
+
+    category: Geological Engineering
+
+    status: In Progress
+
     featured: true
+
+    description: >
+      Final-year Geological Engineering project involving geological
+      interpretation, orebody modelling and resource evaluation to support
+      mineral exploration and mine planning.
+
+    objective: >
+      To interpret geological data and develop an accurate representation
+      of the orebody for engineering analysis and resource estimation.
+
+    technologies:
+      - Leapfrog Geo
+      - GIS
+      - Geological Interpretation
+      - Technical Reporting
+
+    skills:
+      - Orebody Modelling
+      - Resource Evaluation
+      - Geological Mapping
+      - Data Interpretation
+
+    github: "#"
+
+    demo: "#"
+
+
+  - title: Groundwater Analysis of Heavy Metals
+
+    image: "assets/images/projects/groundwater-analysis.jpg"
+
+    category: Hydrogeology
+
+    status: In Progress
+
+    featured: true
+
+    description: >
+      Hydrogeological investigation assessing groundwater quality through
+      heavy metal analysis and interpretation of environmental data.
+
+    objective: >
+      To evaluate groundwater quality and identify potential environmental
+      and public health implications of heavy metal contamination.
+
+    technologies:
+      - Hydrogeology
+      - GIS
+      - Data Analysis
+      - Laboratory Investigation
+
+    skills:
+      - Water Quality Assessment
+      - Hydrogeology
+      - Environmental Analysis
+      - Technical Reporting
+
+    github: "#"
+
+    demo: "#"

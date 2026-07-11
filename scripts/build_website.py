@@ -25,6 +25,7 @@ from renderers import (
 import markdown
 import yaml
 from functools import lru_cache
+from renderers.hero import render_hero
 
 # ==========================================================
 # Paths
@@ -301,6 +302,7 @@ def build_context():
         "featured_experience": render_featured_experience(),
         "featured_education": render_featured_education(),
         "footer": render_footer(),
+        "hero": render_hero(),
 
     }
 

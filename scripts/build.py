@@ -1,55 +1,104 @@
 """
 Career Package Build System
-Anthony Essel Prepeh Career Package
 
-This script is the main entry point for generating all career documents.
+Builds the complete career package:
+
+1. Portfolio Website
+2. DOCX Documents
+3. PDF Documents
 """
 
 from pathlib import Path
 import subprocess
 import sys
 
+# ==========================================================
+# Project Paths
+# ==========================================================
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
+SCRIPTS = PROJECT_ROOT / "scripts"
 
-DATA_DIR = PROJECT_ROOT / "data"
-
-TEMPLATE_DIR = PROJECT_ROOT / "templates"
-
-DOCS_DIR = PROJECT_ROOT / "docs"
-
-EXPORTS_DIR = PROJECT_ROOT / "exports"
-
-WEBSITE_DIR = PROJECT_ROOT / "website"
+BUILDERS = [
+    "build_website.py",
+    "build_docx.py",
+    "build_pdf.py",
+]
 
 
-def create_folders():
-    """
-    Create required folders if they don't exist.
-    """
+# ==========================================================
+# Helpers
+# ==========================================================
 
-    folders = [
-        EXPORTS_DIR,
-        EXPORTS_DIR / "pdf",
-        EXPORTS_DIR / "docx",
-        EXPORTS_DIR / "html",
-        WEBSITE_DIR,
+def print_banner():
+
+    print("=" * 60)
+    print("Anthony Essel Prepeh Career Package")
+    print("Career Build System")
+    print("=" * 60)
+
+
+def verify_project():
+
+    required = [
+        PROJECT_ROOT / "career_documents",
+        PROJECT_ROOT / "website",
+        PROJECT_ROOT / "scripts",
+        PROJECT_ROOT / "exports",
     ]
 
-    for folder in folders:
-        folder.mkdir(parents=True, exist_ok=True)
+    print("\nChecking project structure...\n")
+
+    missing = []
+
+    for path in required:
+
+        if path.exists():
+            print(f"✓ {path.name}")
+        else:
+            print(f"✗ {path.name}")
+            missing.append(path.name)
+
+    if missing:
+
+        print("\nMissing required directories:")
+
+        for item in missing:
+            print(f"  - {item}")
+
+        return False
+
+    return True
+
+
+def ensure_output_directories():
+
+    directories = [
+        PROJECT_ROOT / "exports",
+        PROJECT_ROOT / "exports" / "docx",
+        PROJECT_ROOT / "exports" / "pdf",
+    ]
+
+    for directory in directories:
+
+        directory.mkdir(
+            parents=True,
+            exist_ok=True,
+        )
+
+    print("\n✓ Export directories ready.")
+
 
 def run_builder(script):
-    """
-    Run a build script and stop if it fails.
-    """
 
-    print("-" * 60)
+    script_path = SCRIPTS / script
+
+    print("\n" + "-" * 60)
     print(f"Running {script}")
-    print("-" * 60)
+    print("-" * 60 + "\n")
 
     result = subprocess.run(
-        [sys.executable, str(PROJECT_ROOT / "scripts" / script)]
+        [sys.executable, str(script_path)]
     )
 
     if result.returncode != 0:
@@ -58,64 +107,59 @@ def run_builder(script):
             f"{script} failed."
         )
 
-    print(f"✓ {script} completed.\n")
+    print(f"\n✓ {script} completed successfully.")
 
-def check_project():
-    """
-    Verify that the project structure exists.
-    """
 
-    required = [
-        DATA_DIR,
-        TEMPLATE_DIR,
-        DOCS_DIR,
-    ]
-
-    for folder in required:
-
-        if not folder.exists():
-
-            raise FileNotFoundError(
-                f"Missing required folder:\n{folder}"
-            )
-
+# ==========================================================
+# Main
+# ==========================================================
 
 def main():
 
+    print_banner()
+
+    if not verify_project():
+
+        print("\nBuild cancelled.")
+
+        return
+
+    ensure_output_directories()
+
+    print("\nStarting build pipeline...")
+
+    try:
+
+        for builder in BUILDERS:
+
+            run_builder(builder)
+
+    except Exception as error:
+
+        print("\n" + "=" * 60)
+        print("BUILD FAILED")
+        print("=" * 60)
+        print(error)
+
+        sys.exit(1)
+
+    print("\n" + "=" * 60)
+    print("Career Package Build Completed Successfully")
     print("=" * 60)
 
-    print("Anthony Essel Prepeh Career Package")
+    print("\nGenerated outputs:")
 
-    print("Career Build System")
+    print("\nWebsite")
+    print("  website/")
 
-    print("=" * 60)
+    print("\nDOCX")
+    print("  exports/docx/")
 
-    check_project()
+    print("\nPDF")
+    print("  exports/pdf/")
 
-    create_folders()
-
-    print()
-
-    print("✓ Project structure verified.")
-
-    print("✓ Export folders ready.")
-
-    print()
-
-    print("Starting build pipeline...\n")
-
-    run_builder("build_website.py")
-
-    # Resume builder will be enabled next
-    run_builder("build_resume.py")
-
-    print("=" * 60)
-
-    print("Career Package Complete")
-
-    print("=" * 60)
+    print("\nReady for applications.\n")
 
 
 if __name__ == "__main__":
     main()
-

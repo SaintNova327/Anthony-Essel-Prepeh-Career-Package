@@ -1,78 +1,4 @@
-<section class="hero">
-
-    <div class="hero-content">
-
-        <div class="hero-text">
-
-            <h1>{{ name }}</h1>
-
-            <h2>{{ profession }}</h2>
-
-            <p>{{ tagline }}</p>
-
-            <div class="hero-buttons">
-
-                <a 
-                   class="button primary"
-                   href="assets/downloads/resume.pdf"
-                   download>
-                   
-                   Download Resume
-
-                </a>
-
-                <a class="button secondary"
-                   href="projects.html">
-
-                    View Projects
-
-                </a>
-
-            </div>
-
-            <div class="hero-stats">
-
-    <div>
-
-        <strong>2026</strong>
-
-        <span>BSc Graduation</span>
-
-    </div>
-
-    <div>
-
-        <strong>20+</strong>
-
-        <span>Technical Skills</span>
-
-    </div>
-
-    <div>
-
-        <strong>5+</strong>
-
-        <span>Engineering Projects</span>
-
-    </div>
-
-</div>
-
-        </div>
-
-        <div class="hero-image">
-            
-            <img
-                src="assets/images/profile.jpg"
-                alt="{{ name }}"
-                decoding="async"
-            >
-
-        </div>
-
-    </div>
-
-</section>
+{{ hero }}
 
 <section>
 
@@ -87,14 +13,6 @@
     <h2>Core Skills</h2>
 
     {{ skills }}
-
-</section>
-
-<section>
-
-    <h2>Projects</h2>
-
-    {{ projects }}
 
 </section>
 
@@ -122,28 +40,60 @@
 
 </section>
 
+<section>
+
+    <h2>Software & Technical Tools</h2>
+
+    {{ software }}
+
+</section>
+
+<section>
+
+    <h2>Professional Certifications</h2>
+
+    {{ certificates }}
+
+</section>
+
 <section class="cta">
 
     <h2>Let's Connect</h2>
 
     <p>
 
-        I'm passionate about Geological Engineering,
-        Mining Technology, GIS, Hydrogeology and
-        Artificial Intelligence.
+        I am a final-year Geological Engineering student at
+        Kwame Nkrumah University of Science and Technology (KNUST),
+        passionate about mineral exploration, orebody modelling,
+        hydrogeology, GIS, mining technology, Python automation,
+        and artificial intelligence.
 
-        I'm always interested in opportunities to
-        learn, collaborate and contribute to meaningful
-        engineering projects.
+        I welcome opportunities for National Service,
+        graduate engineering positions,
+        research collaborations,
+        and innovative mining projects.
 
     </p>
 
-    <a
-        class="button primary"
-        href="contact.html">
+    <div class="hero-buttons">
 
-        Contact Me
+        <a
+            class="button primary"
+            href="contact.html">
 
-    </a>
+            Contact Me
+
+        </a>
+
+        <a
+            class="button secondary"
+            href="assets/downloads/resume.pdf"
+            download>
+
+            Download Resume
+
+        </a>
+
+    </div>
 
 </section>

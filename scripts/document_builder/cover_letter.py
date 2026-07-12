@@ -15,9 +15,8 @@ from .parser import (
     render_markdown,
 )
 
-
 # ==========================================================
-# Cover Letter Builder
+# Configuration
 # ==========================================================
 
 TITLE = (
@@ -25,10 +24,14 @@ TITLE = (
     "Professional Cover Letter"
 )
 
-SOURCE = "cover_letter.md"
+# Change this when applying to another company
+SOURCE = "cover_letters/anglogold_ashanti.md"
 
 OUTPUT = "Anthony_Essel_Prepeh_Cover_Letter.docx"
 
+# ==========================================================
+# Builder
+# ==========================================================
 
 def build():
     """

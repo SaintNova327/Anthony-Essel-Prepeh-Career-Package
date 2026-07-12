@@ -1,275 +1,222 @@
-# Anthony Essel Prepeh Career Package
+# Anthony Essel Prepeh Career Operating System
 
-> A professional career repository for **Anthony Essel Prepeh**, BSc Geological Engineering student, containing resumes, portfolio materials, website source code, career documentation, and automation tools.
-
----
-
-# About
-
-This repository serves as the central source for all professional career assets belonging to **Anthony Essel Prepeh**.
-
-Rather than maintaining multiple independent documents, this repository follows a **single source of truth** approach, ensuring that every resume, portfolio page, cover letter, and website is generated from one verified set of information.
-
-The project is designed to grow throughout my professional career.
+> A professional automation system that generates a complete career package and portfolio website from a single source of truth.
 
 ---
 
-# About Me
+## Overview
 
-**Anthony Essel Prepeh**
+The **Career Operating System** is a Python-based automation project that manages and generates professional career documents and a portfolio website from centralized Markdown and YAML data.
 
-Bachelor of Science (BSc) Geological Engineering
+Rather than maintaining multiple versions of the same information, this system stores career data once and automatically generates consistent, professional outputs.
 
-Kwame Nkrumah University of Science and Technology (KNUST)
-
-Expected Graduation:
-
-**November 2026**
-
-Location:
-
-Obuasi, Ashanti Region, Ghana
+The project was developed as part of my continuous learning in software development, automation, and professional engineering documentation while pursuing a Bachelor of Science in Geological Engineering.
 
 ---
 
-# Career Interests
+## Features
 
-- Engineering Geology
-- Hydrogeology
-- Groundwater Development
-- Geotechnical Engineering
-- Mineral Exploration
-- Exploration Geochemistry
-- Exploration Geophysics
-- GIS
-- Remote Sensing
-- Geological Mapping
-- Engineering Geological Investigations
+### Professional Website
+
+- Responsive portfolio website
+- Professional homepage
+- About page
+- Projects page
+- Education page
+- Experience page
+- Certificates page
+- Contact page
+- Downloadable career documents
 
 ---
 
-# Repository Structure
+### Career Documents
 
-```text
+Automatically generates:
+
+- Professional Resume
+- Academic Curriculum Vitae (CV)
+- Professional Cover Page
+- Professional Cover Letter
+- Professional References
+- Project Portfolio
+
+---
+
+### Automation
+
+- Single source of truth
+- Markdown-driven content
+- YAML databases
+- Automatic HTML generation
+- Automatic DOCX generation
+- Automatic PDF generation
+- Shared rendering system
+- Modular document builder
+
+---
+
+## Project Structure
+
+```
 Anthony-Essel-Prepeh-Career-Package/
 
-├── assets/
+├── career_documents/
+├── config/
 ├── data/
-├── docs/
-├── exports/
-├── prompts/
-├── references/
+├── output/
 ├── scripts/
-├── templates/
+│   ├── build.py
+│   ├── build_docx.py
+│   ├── build_website.py
+│   ├── document_builder/
+│   └── renderers/
 ├── website/
-
-├── PROJECT_SPEC.md
-├── CAREER_DATA.md
-├── AI_INSTRUCTIONS.md
-├── CHANGELOG.md
-├── TODO.md
-├── README.md
-├── LICENSE
-└── .gitignore
+│   ├── components/
+│   ├── css/
+│   ├── js/
+│   └── layouts/
+└── README.md
 ```
 
 ---
 
-# Repository Contents
+## Technology Stack
 
-This repository includes:
+### Programming
 
+- Python
+
+### Markup
+
+- Markdown
+- HTML5
+- CSS3
+
+### Data
+
+- YAML
+
+### Libraries
+
+- python-docx
+- Markdown
+- PyYAML
+
+### Development Tools
+
+- Visual Studio Code
+- Git
+- GitHub
+
+---
+
+## Generated Outputs
+
+The system generates:
+
+- Portfolio Website
 - Professional Resume
+- Curriculum Vitae
+- Cover Page
+- Cover Letter
+- References
+- Project Portfolio
+- PDF versions of career documents
+
+---
+
+## How to Build
+
+Generate the website
+
+```bash
+python scripts/build.py
+```
+
+Generate the DOCX documents
+
+```bash
+python scripts/build_docx.py
+```
+
+Generate PDFs
+
+```bash
+python scripts/build_pdf.py
+```
+
+---
+
+## Design Philosophy
+
+The project follows a modular architecture.
+
+- Single source of truth
+- Reusable renderers
+- Shared styling
+- Maintainable codebase
+- Automated generation
+- Consistent branding
+
+This minimizes duplicated content while making updates simple and reliable.
+
+---
+
+## Current Status
+
+**Version:** 1.0.0
+
+Current release includes:
+
+- Professional website
+- Complete document generation
+- Automated build system
+- Professional styling
+- Responsive layouts
+
+---
+
+## Roadmap
+
+### Version 1.1
+
 - ATS Resume
 - Executive Resume
-- Academic CV
-- Cover Letter Library
-- Engineering Portfolio
-- Portfolio Website
-- Certificate Archive
-- Project Documentation
-- Presentation Materials
-- Professional Branding
-- Automation Scripts
+- Resume selection page
+- Company-specific cover letters
+
+### Version 2.0
+
+- Interactive dashboard
+- Theme support
+- Multiple resume templates
+- AI-assisted customization
+- Advanced certificate management
+- Analytics dashboard
 
 ---
 
-# Skills
-
-## Geological Engineering
-
-- Geological Mapping
-- Core Logging
-- Borehole Logging
-- Structural Geology
-- Engineering Geological Investigations
-- Geological Report Writing
-
-## Hydrogeology
-
-- Groundwater Development
-- Hydrogeological Assessment
-- Water Quality Interpretation
-
-## GIS & Digital Skills
-
-- GIS
-- Remote Sensing
-- Microsoft Office
-- Git
-- GitHub
-- Visual Studio Code
-- Python
-- Markdown
-
----
-
-# Current Project Status
-
-Project Phase:
-
-**Foundation Development**
-
-Current Progress:
-
-- Development environment configured
-- Repository created
-- Documentation in progress
-- Career database under development
-
----
-
-# Professional Links
-
-## GitHub
-
-https://github.com/SaintNova327
-
-## LinkedIn
-
-https://www.linkedin.com/in/anthony-prempeh-548325277
-
-## YouTube Educational Portfolio
-
-https://youtu.be/LJGe8pRYIMA
-
----
-
-# Professional Memberships
-
-- AGA Trust Fund
-- Society of Economic Geologists (SEG) Student Chapter
-
----
-
-# Repository Goals
-
-The long-term objectives of this repository are to:
-
-- Maintain a professional engineering portfolio.
-- Generate ATS-compliant resumes.
-- Maintain a modern portfolio website.
-- Organise professional documents.
-- Showcase geological engineering projects.
-- Support graduate employment applications.
-- Demonstrate continuous professional development.
-
----
-
-# Technologies
-
-This project uses:
-
-- Git
-- GitHub
-- Visual Studio Code
-- Markdown
-- Python
-- Node.js
-- Pandoc
-
-Future technologies:
-
-- HTML
-- CSS
-- JavaScript
-- React
-- Tailwind CSS
-
----
-
-# Future Development
-
-Planned additions include:
-
-- Portfolio website
-- Interactive project gallery
-- Research portfolio
-- Technical blog
-- Download centre
-- Professional photo gallery
-- QR code integration
-- Automated PDF generation
-
----
-
-# Contact
+## About Me
 
 **Anthony Essel Prepeh**
 
-Email:
+Final-year BSc Geological Engineering Student
 
-anthonyesselprepehanthony@gmail.com
+Kwame Nkrumah University of Science and Technology (KNUST)
 
-Location:
+Interested in:
 
-Obuasi, Ghana
-
----
-
-# License
-
-This repository is licensed under the MIT License.
-
-See the `LICENSE` file for details.
-
----
-
-# Acknowledgements
-
-Special thanks to:
-
-- Kwame Nkrumah University of Science and Technology
-- AGA Trust Fund
-- Society of Economic Geologists (SEG)
-- Open-source software communities
-
----
-
-*"Building a professional career through continuous learning, technical excellence, and innovation in Geological Engineering."*
-
-# Anthony Essel Prepeh Portfolio
-
-## Overview
-A modular, Python-powered static portfolio website for showcasing my education, projects, skills, and professional experience as a Geological Engineering student.
-
-## Features
-- Static site generator in Python
-- Modular HTML layouts and reusable components
-- Responsive design
-- SEO-ready metadata
-- GitHub Pages compatible
-- YAML configuration
-- Markdown content management
-
-## Tech Stack
+- Geological Engineering
+- Mining Technology
+- Hydrogeology
+- GIS
+- Remote Sensing
 - Python
-- HTML5
-- CSS3
-- Markdown
-- YAML
-- Git
-- GitHub
+- Artificial Intelligence
 
-## Project Structure
-...
+---
+
+## License
+
+This project is released under the MIT License.

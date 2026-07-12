@@ -5,7 +5,22 @@ Featured education renderer.
 from .shared import load_yaml, load_component, render_component
 
 
+"""
+Featured education renderer.
+"""
+
+from .shared import (
+    load_yaml,
+    load_component,
+    render_component,
+)
+
+
 def render_featured_education():
+    """
+    Render the featured education section
+    for the homepage.
+    """
 
     data = load_yaml("education.yml")
 
@@ -23,10 +38,15 @@ def render_featured_education():
         html += render_component(
             template,
             {
-                "date": item["period"],
-                "title": item["degree"],
-                "company": item["institution"],
-                "description": item["description"],
+                "period": item.get("period", ""),
+                "title": item.get("degree", ""),
+                "organization": item.get("institution", ""),
+                "location": item.get("location", ""),
+                "type": "Education",
+                "status": item.get("status", ""),
+                "summary": item.get("description", ""),
+                "responsibilities": "",
+                "technologies": "",
             },
         )
 

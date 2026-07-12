@@ -1,7 +1,14 @@
+"""
+Featured projects renderer.
+"""
+
 from .shared import load_yaml
 
 
 def render_featured_projects():
+    """
+    Render featured projects for the homepage.
+    """
 
     data = load_yaml("projects.yml")
 
@@ -16,19 +23,22 @@ def render_featured_projects():
 
     for project in featured:
 
-        tech = ""
+        technologies = ""
 
-        for t in project.get("technologies", []):
-            tech += f'<span class="tag">{t}</span>'
+        # Limit homepage to first 5 technologies
+        for tech in project.get("technologies", [])[:5]:
+            technologies += f'<span class="tag">{tech}</span>'
 
         html += f"""
 <div class="card">
 
-    <h3>{project['title']}</h3>
+    <h3>📌 {project['title']}</h3>
 
     <p>{project['description']}</p>
 
-    <div>{tech}</div>
+    <div class="project-tags">
+        {technologies}
+    </div>
 
 </div>
 """

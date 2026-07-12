@@ -1,91 +1,38 @@
-# PROFESSIONAL REFERENCES
+# Professional References
 
-The following references are available upon request and may be contacted with prior notice.
+Professional references are available upon request.
+
+The following individuals may be contacted with prior notification.
 
 ---
 
 ## Academic Reference
 
-**Name**
+**Prof. [Name]**
 
-[Supervisor's Name]
-
-**Position**
-
-Lecturer, Department of Geological Engineering
+Department of Geological Engineering
 
 Kwame Nkrumah University of Science and Technology (KNUST)
 
-**Relationship**
+Kumasi, Ghana
 
+Email: [Email Address]
+
+Telephone: [Phone Number]
+
+Relationship:
 Academic Supervisor / Lecturer
-
-**Email**
-
-_________________________
-
-**Telephone**
-
-_________________________
 
 ---
 
 ## Professional Reference
 
-**Name**
+**To be provided upon employment request**
 
-[Professional Reference]
-
-**Position**
-
-[Job Title]
-
-**Organisation**
-
-[Company]
-
-**Relationship**
-
-Professional Mentor / Industrial Supervisor
-
-**Email**
-
-_________________________
-
-**Telephone**
-
-_________________________
+Professional references will be supplied when requested by the recruiting organisation.
 
 ---
 
 ## Character Reference
 
-**Name**
-
-[Reference Name]
-
-**Position**
-
-[Position]
-
-**Organisation**
-
-[Organisation]
-
-**Relationship**
-
-Professional Character Reference
-
-**Email**
-
-_________________________
-
-**Telephone**
-
-_________________________
-
----
-
-## Reference Availability
-
-Professional references will be provided upon request and with the prior consent of each referee.
+Available upon request.

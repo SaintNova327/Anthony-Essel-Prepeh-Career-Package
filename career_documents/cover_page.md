@@ -1,63 +1,37 @@
-# ANTHONY ESSEL PREPEH
+# Anthony Essel Prepeh
 
-## Geological Engineering Graduate Candidate
+## Career Portfolio
 
-### Mining Technology • Engineering Geology • Hydrogeology • Artificial Intelligence
-
----
-
-# PROFESSIONAL CAREER PORTFOLIO
+### Geological Engineer
 
 ---
 
-### Prepared For
-
-Graduate Employment Opportunities
-
-National Service Scheme (NSS)
-
-Graduate Trainee Programmes
-
-Mining & Mineral Exploration Companies
-
-Engineering Consulting Firms
-
-Government Agencies
+### Mining Technology
+### Engineering Geology
+### Hydrogeology
+### Mineral Exploration
+### GIS & Remote Sensing
+### Artificial Intelligence
 
 ---
-
-### Institution
 
 Kwame Nkrumah University of Science and Technology (KNUST)
 
-Bachelor of Science (BSc) Geological Engineering
-
-Expected Graduation: November 2026
+Kumasi, Ghana
 
 ---
 
-### Contact
+Email: anthonyesselprepeh@gmail.com
 
-**Email**
+LinkedIn: linkedin.com/in/anthony-essel-prepeh
 
-anthonyesselprepehanthony@gmail.com
+GitHub: github.com/SaintNova327
 
-**Phone**
-
-+233 24 259 2148
-
-**GitHub**
-
-github.com/SaintNova327
-
-**LinkedIn**
-
-linkedin.com/in/anthony-prempeh-548325277
+Portfolio:
+https://saintnova327.github.io/Anthony-Essel-Prepeh-Career-Package/
 
 ---
 
-*"Applying engineering principles and digital technologies to solve geological and environmental challenges."*
+**Version 1.0**
 
----
-
-July 2026
+2026

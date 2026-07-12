@@ -67,13 +67,12 @@
 }
 
 .hero-buttons{
-
     display:flex;
-
-    gap:20px;
-
+    justify-content:center;
+    align-items:center;
+    gap:16px;
     flex-wrap:wrap;
-
+    margin-top:25px;
 }
 
 .hero-image{

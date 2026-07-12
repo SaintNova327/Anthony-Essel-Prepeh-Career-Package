@@ -5,23 +5,14 @@ Builds all professional Word documents.
 """
 
 from document_builder.resume import build as build_resume
-
-from document_builder.curriculum_vitae import (
-    build as build_curriculum_vitae,
+from document_builder.curriculum_vitae import build as build_curriculum_vitae
+from document_builder.cover_letter import build as build_cover_letter
+from document_builder.portfolio import build as build_portfolio
+from document_builder.cover_page import build as build_cover_page
+from document_builder.references import (
+    build as build_references,
 )
 
-from document_builder.cover_letter import (
-    build as build_cover_letter,
-)
-
-from document_builder.portfolio import (
-    build as build_portfolio,
-)
-
-
-# ==========================================================
-# Main
-# ==========================================================
 
 def main():
     """
@@ -35,26 +26,24 @@ def main():
     print()
 
     builders = [
-        ("Resume", build_resume),
+        ("Professional Resume", build_resume),
         ("Curriculum Vitae", build_curriculum_vitae),
+        ("Cover Page", build_cover_page),
         ("Cover Letter", build_cover_letter),
+        ("Professional References", build_references),
         ("Project Portfolio", build_portfolio),
     ]
 
     for name, builder in builders:
-
         print(f"Building {name}...")
 
         try:
-
             builder()
-
             print(f"✓ {name} completed.\n")
 
         except Exception as error:
-
             print(f"✗ {name} failed.")
-            raise error
+            raise
 
     print("=" * 60)
     print("All DOCX documents generated successfully.")

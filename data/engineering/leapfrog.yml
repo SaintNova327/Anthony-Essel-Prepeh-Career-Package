@@ -1,0 +1,60 @@
+project:
+  title: "Orebody Modelling using Leapfrog Geo"
+
+  subtitle: "Geological Modelling, Core Logging and Drill Core Photography"
+
+  featured: true
+
+  status: "Completed"
+
+  category: "Engineering Experience"
+
+  location: "KNUST Geological Engineering Laboratory"
+
+  duration: ""
+
+  software:
+    - Leapfrog Geo
+    - QGIS
+    - Microsoft Excel
+
+  skills:
+    - Core Logging
+    - Drill Core Photography
+    - Photogeology
+    - Geological Interpretation
+    - Orebody Modelling
+    - Data Validation
+
+  overview: >
+    This project involved drill core logging, drill core photography,
+    geological interpretation, and the development of a three-dimensional
+    geological model using Leapfrog Geo.
+
+  objectives:
+    - Log drill cores.
+    - Capture high-quality drill core photographs.
+    - Interpret geological units.
+    - Prepare data for Leapfrog Geo.
+    - Build a 3D geological model.
+
+  methodology:
+    - Drill core logging
+    - Geological interpretation
+    - Drill core photography
+    - Data preparation
+    - Leapfrog Geo modelling
+
+  results:
+    - Completed geological interpretation.
+    - Generated a 3D geological model.
+    - Produced high-quality core photographs.
+    - Validated drillhole data.
+
+  report: ""
+
+  hero_image: ""
+
+  gallery: []
+
+  videos: []

@@ -22,6 +22,10 @@ from renderers import (
     render_footer,
 )
 
+from renderers.featured_engineering import (
+    render_featured_engineering,
+)
+
 import markdown
 import yaml
 from functools import lru_cache
@@ -294,6 +298,7 @@ def build_context():
         "certificates": render_certificates(),
         "projects": render_projects(),
         "featured_projects": render_featured_projects(),
+        "engineering_projects": render_featured_engineering(),
     
         "page_header": render_page_header(
             "Welcome",

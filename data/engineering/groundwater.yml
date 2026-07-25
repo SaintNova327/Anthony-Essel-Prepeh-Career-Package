@@ -1,0 +1,297 @@
+project:
+
+  title: "Groundwater Quality Assessment Using Heavy Metal Pollution Indices and Multivariate Statistical Analysis"
+
+  subtitle: "Assessment of Heavy Metal Contamination in Groundwater Using Python, GIS and Statistical Analysis"
+
+  category: "Hydrogeology"
+
+  featured: true
+
+  status: "Completed"
+
+  hero_image: "media/engineering/groundwater/images/site.jpg"
+
+  project_type: "Groundwater Quality Assessment"
+
+  institution: "Kwame Nkrumah University of Science and Technology"
+
+  location: "Obuasi, Ghana"
+
+  laboratory: "Geological Engineering Laboratory"
+
+  duration: "Final Year Project"
+
+  client: "Academic Research"
+
+  supervisor: "Department of Geological Engineering"
+
+  software:
+
+    - Python
+
+    - QGIS
+
+    - Microsoft Excel
+
+    - ArcGIS
+
+  skills:
+
+    - Hydrogeology
+
+    - Water Quality Assessment
+
+    - Heavy Metal Analysis
+
+    - Statistical Analysis
+
+    - GIS Mapping
+
+    - Spatial Analysis
+
+    - Data Visualization
+
+    - Scientific Programming
+
+  metrics:
+
+    duration: "4 Months"
+
+    software: "4"
+
+    workflow_steps: "9"
+
+    deliverables: "Research Report"
+
+overview: >
+
+  This project evaluates groundwater quality using heavy metal pollution
+  indices, multivariate statistical techniques and spatial analysis.
+  Python was used to automate statistical analysis while GIS was used
+  to visualize the spatial distribution of contaminants and identify
+  areas of elevated groundwater pollution.
+
+objectives:
+
+  - Determine the concentration of selected heavy metals in groundwater.
+
+  - Evaluate groundwater quality using HPI, HEI and Metal Index.
+
+  - Identify relationships among heavy metals using correlation analysis.
+
+  - Apply Principal Component Analysis and Cluster Analysis.
+
+  - Produce spatial distribution maps using GIS.
+
+study_area: >
+
+  Groundwater samples were collected from selected boreholes within the
+  study area in Obuasi, Ghana. Geographic coordinates were recorded for
+  each sampling location to enable spatial interpolation and mapping.
+
+methodology:
+
+  - Groundwater sampling
+
+  - Laboratory analysis
+
+  - Data validation
+
+  - Descriptive statistics
+
+  - Data normalization
+
+  - Correlation analysis
+
+  - Pollution index calculation
+
+  - Principal Component Analysis
+
+  - Hierarchical Cluster Analysis
+
+  - Spatial interpolation using GIS
+
+workflow:
+
+  - Field reconnaissance
+
+  - Groundwater sampling
+
+  - Laboratory testing
+
+  - Data cleaning
+
+  - Statistical analysis
+
+  - Pollution index calculation
+
+  - Spatial analysis
+
+  - Interpretation
+
+  - Final report preparation
+
+results:
+
+  - Heavy metal concentrations were successfully quantified.
+
+  - Pollution indices identified areas of concern.
+
+  - Correlation analysis revealed relationships among several metals.
+
+  - PCA identified the dominant controlling factors.
+
+  - Cluster analysis grouped similar groundwater samples.
+
+  - GIS maps highlighted the spatial distribution of contamination.
+
+lessons:
+
+  - Python greatly reduced repetitive statistical calculations.
+
+  - GIS improved visualization of groundwater contamination.
+
+  - Multivariate statistics provided deeper interpretation than descriptive statistics alone.
+
+  - Combining Python and GIS creates a powerful groundwater assessment workflow.
+
+downloads:
+
+  - title: Final Project Report
+    description: Heavy metal groundwater assessment.
+    file: media/engineering/groundwater/reports/Groundwater_Report.pdf
+
+  - title: Dataset
+    description: Groundwater laboratory dataset.
+    file: media/engineering/groundwater/data/groundwater_data.xlsx
+
+
+      
+project:
+  hero_image: media/engineering/groundwater/images/site.jpg
+
+gallery:
+
+  - step: 1
+    title: Study Area
+    image: site.jpg
+    caption: Study area showing the groundwater sampling environment.
+
+  - step: 2
+    title: Drone Survey
+    image: drone_survey.jpg
+    caption: Drone imagery used to provide spatial context for the study area.
+
+
+statistical_figures:
+
+  #- title: Descriptive Statistics
+  #  image: descriptive_statistics.jpg
+   # caption: Summary statistics describing groundwater quality parameters.
+
+  - title: Box Plot
+    image: boxplot.jpg
+    caption: Distribution of heavy metal concentrations across sampling locations.
+
+  - title: Cadmium Histogram
+    image: histogram_cd.jpg
+    caption: Frequency distribution of cadmium concentrations.
+
+  - title: Iron Histogram
+    image: histogram_fe.jpg
+    caption: Frequency distribution of iron concentrations.
+
+  - title: Pearson Correlation
+    image: pearson_heatmap.jpg
+    caption: Pearson correlation matrix of heavy metals.
+
+  - title: Spearman Correlation
+    image: spearman_heatmap.jpg
+    caption: Spearman rank correlation matrix.
+
+  - title: Correlation Heatmap
+    image: correlation_heatmap.jpg
+    caption: Overall correlation structure of groundwater variables.
+
+  - title: Principal Component Analysis
+    image: pca.jpg
+    caption: PCA illustrating dominant factors controlling groundwater chemistry.
+
+  - title: Cluster Analysis
+    image: cluster.jpg
+    caption: Hierarchical clustering of groundwater samples.
+
+  - title: QQ Plot
+    image: qqplot.jpg
+    caption: Assessment of data normality.
+
+
+references:
+
+  - WHO (2017). Guidelines for Drinking-water Quality.
+
+  - Canadian Council of Ministers of the Environment (CCME).
+
+  - APHA (2017). Standard Methods for the Examination of Water and Wastewater.
+
+  - Reza, R. & Singh, G. (2010). Heavy Metal Pollution Index.
+
+  - Backman, B. et al. (1998). Heavy Metal Evaluation Index.
+
+
+spatial_maps:
+
+  - title: Cadmium Distribution
+    image: cadmium_map.jpg
+    caption: Spatial distribution of cadmium concentrations.
+
+  - title: Iron Distribution
+    image: iron_map.jpg
+    caption: Spatial distribution of iron concentrations.
+
+  - title: Arsenic Distribution
+    image: arsenic_map.jpg
+    caption: Spatial distribution of arsenic concentrations.
+
+  - title: Nickel Distribution
+    image: nickel_map.jpg
+    caption: Spatial distribution of nickel concentrations.
+
+  - title: Lead Distribution
+    image: lead_map.jpg
+    caption: Spatial distribution of lead concentrations.
+
+  - title: Zinc Distribution
+    image: zinc_map.jpg
+    caption: Spatial distribution of zinc concentrations.
+
+  - title: Mercury Distribution
+    image: mercury_map.jpg
+    caption: Spatial distribution of mercury concentrations.
+
+  - title: Heavy Metal Pollution Index
+    image: hpi_map.jpg
+    caption: Heavy Metal Pollution Index (HPI) map.
+
+  - title: Heavy Metal Evaluation Index
+    image: hei_map.jpg
+    caption: Heavy Metal Evaluation Index (HEI) map.
+
+  - title: Metal Index
+    image: mi_map.jpg
+    caption: Metal Index (MI) map.
+
+downloads:
+
+  - title: Groundwater Research Report
+    file: media/engineering/groundwater/reports/Groundwater_Report.pdf
+
+  - title: Groundwater Dataset
+    file: media/engineering/groundwater/data/groundwater_data.xlsx
+
+  - title: Statistical Results
+    file: media/engineering/groundwater/data/analysis_results.xlsx
+
+  - title: Descriptive Statistics
+    file: media/engineering/groundwater/data/descriptive_statistics.xlsx

@@ -41,3 +41,161 @@
     }
 
 }
+
+/* ==========================================================
+   Navigation - Tablet & Mobile
+========================================================== */
+
+@media (max-width: 992px) {
+
+    nav{
+
+        flex-direction: column;
+
+        gap: 18px;
+
+        padding: 20px;
+
+    }
+
+    nav ul{
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 18px;
+
+    }
+
+    nav .button{
+
+        width: 100%;
+
+        max-width: 260px;
+
+        text-align: center;
+
+    }
+
+}
+
+/* ==========================================================
+   Small Phones
+========================================================== */
+
+@media (max-width: 600px){
+
+    .logo{
+
+        text-align:center;
+
+    }
+
+    .logo h2{
+
+        font-size:22px;
+
+    }
+
+    .logo p{
+
+        font-size:13px;
+
+    }
+
+    nav ul{
+
+        flex-direction:column;
+
+        align-items:center;
+
+        gap:12px;
+
+    }
+
+}
+
+/* ==========================================================
+   Hero Responsive
+========================================================== */
+
+@media (max-width:768px){
+
+    .hero{
+
+        padding:40px 0;
+
+    }
+
+    .hero-content{
+
+        flex-direction:column-reverse;
+
+        text-align:center;
+
+        min-height:auto;
+
+        gap:35px;
+
+    }
+
+    .hero-text{
+
+        max-width:100%;
+
+    }
+
+    .hero-text h1{
+
+        font-size:2.3rem;
+
+    }
+
+    .hero-text h2{
+
+        font-size:1.5rem;
+
+    }
+
+    .hero-text p{
+
+        font-size:1rem;
+
+        max-width:100%;
+
+    }
+
+    .hero-buttons{
+
+        justify-content:center;
+
+    }
+
+    .hero-stats{
+
+        justify-content:center;
+
+        gap:24px;
+
+    }
+
+    .hero-image img{
+
+        width:250px;
+
+        height:250px;
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .hero-highlights{
+
+        grid-template-columns:1fr;
+
+    }
+
+}

@@ -1,0 +1,17 @@
+photography:
+
+  - title: Drill Core Photography
+    category: Geological Documentation
+    featured: true
+
+  - title: Geological Field Photography
+    category: Field Mapping
+    featured: true
+
+  - title: Nature Photography
+    category: Landscape Documentation
+    featured: true
+
+  - title: Mining & Engineering Photography
+    category: Industrial Documentation
+    featured: true

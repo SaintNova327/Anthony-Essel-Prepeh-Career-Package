@@ -90,3 +90,440 @@
     }
 
 }
+
+/* ==========================================================
+   Mobile (≤768px)
+========================================================== */
+
+@media (max-width: 768px) {
+
+    .container {
+        width: 92%;
+        margin: 0 auto;
+    }
+
+    section {
+        padding: 3rem 0;
+    }
+
+    h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+}
+
+/* ==========================================================
+   Engineering Lists
+========================================================== */
+
+.engineering-list{
+
+    margin:25px 0;
+
+    padding-left:0;
+
+    list-style:none;
+
+}
+
+.engineering-list li{
+
+    padding:12px 0;
+
+    border-bottom:1px solid var(--border);
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:12px;
+
+}
+
+.engineering-list li::before{
+
+    content:"✔";
+
+    color:var(--accent);
+
+    font-weight:bold;
+
+    margin-top:2px;
+
+}
+
+/* ==========================================================
+   Homepage Statistics
+========================================================== */
+
+.statistics-section{
+
+    padding:80px 0;
+
+    text-align:center;
+
+}
+
+.statistics-section h2{
+
+    font-size:38px;
+
+    color:var(--primary);
+
+    margin-bottom:50px;
+
+}
+
+.statistics-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+
+    gap:35px;
+
+    max-width:1400px;
+
+    margin:0 auto;
+
+}
+
+.stat-card{
+
+    background:white;
+
+    border-radius:15px;
+
+    padding:35px;
+
+    text-align:center;
+
+    transition:.35s;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+.stat-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 25px 45px rgba(0,0,0,.15);
+
+}
+
+.stat-card h3{
+
+    font-size:3rem;
+
+    color:#0a7d33;
+
+    margin-bottom:10px;
+
+}
+
+.stat-card p{
+
+    color:#666;
+
+}
+
+.stat-icon{
+
+    font-size:50px;
+
+    margin-bottom:15px;
+
+}
+
+.stat-card:hover{
+
+    transform:translateY(-12px) scale(1.03);
+
+    box-shadow:0 30px 60px rgba(0,0,0,.18);
+
+}
+
+.stat-icon{
+
+    font-size:42px;
+
+    margin-bottom:18px;
+
+}
+
+.stat-card h3{
+
+    font-size:64px;
+
+    font-weight:800;
+
+    color:var(--primary);
+
+    margin-bottom:18px;
+
+}
+
+.stat-card p{
+
+    color:var(--muted);
+
+    font-size:20px;
+
+    line-height:1.7;
+
+    font-weight:500;
+
+}
+
+/* ==========================================================
+   Featured Engineering Projects
+========================================================== */
+
+.featured-projects{
+
+    padding:90px 0;
+
+}
+
+.featured-projects h2{
+
+    text-align:center;
+
+    font-size:42px;
+
+    color:var(--primary);
+
+    margin-bottom:60px;
+
+}
+
+.featured-project-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(420px,1fr));
+
+    gap:40px;
+
+}
+
+.featured-project-card{
+
+    background:var(--surface);
+
+    border-radius:22px;
+
+    overflow:hidden;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.12);
+
+    transition:.35s ease;
+
+}
+
+.featured-project-card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:0 28px 60px rgba(0,0,0,.18);
+
+}
+
+.featured-project-card img{
+
+    width:100%;
+
+    height:260px;
+
+    object-fit:cover;
+
+    display:block;
+
+}
+
+.featured-project-content{
+
+    padding:35px;
+
+}
+
+.featured-project-content h3{
+
+    font-size:28px;
+
+    color:var(--primary);
+
+    margin:18px 0;
+
+}
+
+.featured-project-content p{
+
+    line-height:1.8;
+
+    color:var(--muted);
+
+    margin-bottom:25px;
+
+}
+
+.featured-project-content .button{
+
+    margin-top:25px;
+
+}
+
+/* =====================================
+   Lightbox
+===================================== */
+
+#lightbox-overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.9);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.3s;
+
+    z-index:99999;
+
+}
+
+#lightbox-overlay.show{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+#lightbox-image{
+
+    max-width:90%;
+
+    max-height:90%;
+
+    border-radius:12px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.4);
+
+}
+
+#lightbox-close{
+
+    position:absolute;
+
+    top:30px;
+
+    right:40px;
+
+    font-size:45px;
+
+    color:white;
+
+    cursor:pointer;
+
+}
+
+#lightbox-prev,
+#lightbox-next{
+
+    position:absolute;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    background:rgba(255,255,255,.15);
+
+    border:none;
+
+    color:white;
+
+    font-size:42px;
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:50%;
+
+    cursor:pointer;
+
+}
+
+#lightbox-prev{
+
+    left:30px;
+
+}
+
+#lightbox-next{
+
+    right:30px;
+
+}
+
+#lightbox-counter{
+
+    position:absolute;
+
+    bottom:30px;
+
+    color:white;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+    letter-spacing:2px;
+
+}
+
+/*=========================================
+Scroll Animations
+=========================================*/
+
+.hidden{
+
+    opacity:0;
+
+    transform:translateY(50px);
+
+    transition:.8s ease;
+
+}
+
+.visible{
+
+    opacity:1;
+
+    transform:none;
+
+}

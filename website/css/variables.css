@@ -51,3 +51,46 @@
     --transition: 0.25s ease;
 
 }
+
+/* ==========================================================
+   Dark Theme
+========================================================== */
+
+body.dark-theme{
+
+    --background:#0f172a;
+
+    --surface:#1e293b;
+
+    --surface-light:#334155;
+
+    --text:#f8fafc;
+
+    --muted:#cbd5e1;
+
+    --primary:#60a5fa;
+
+    --secondary:#38bdf8;
+
+    --accent:#fbbf24;
+
+    --border:#475569;
+
+}
+
+body,
+header,
+section,
+.card,
+.button,
+nav,
+footer,
+img{
+
+    transition:
+        background-color .35s ease,
+        color .35s ease,
+        border-color .35s ease,
+        box-shadow .35s ease;
+
+}

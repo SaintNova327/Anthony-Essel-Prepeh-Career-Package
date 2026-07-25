@@ -1,25 +1,432 @@
-{% extends "base.html" %}
+<!DOCTYPE html>
 
-{% block title %}Engineering Experience{% endblock %}
+<html lang="en">
 
-{% block content %}
+<head>
 
-<section class="page-header">
+<meta charset="UTF-8">
 
-    <h1>Engineering Experience</h1>
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<meta
+    name="description"
+    content="Professional portfolio of Anthony Essel Prepeh, Geological Engineering student specializing in Mining Technology, GIS, Hydrogeology and Artificial Intelligence."
+>
+
+<meta
+    name="keywords"
+    content="Geological Engineering, Mining, GIS, Hydrogeology, Remote Sensing, Python, Artificial Intelligence, Ghana"
+>
+
+<meta
+    name="author"
+    content="Anthony Essel Prepeh"
+>
+<meta property="og:title" content="Engineering | Anthony Essel Prepeh">
+
+<meta
+    property="og:description"
+    content="Professional Geological Engineering Portfolio"
+>
+
+<meta property="og:type" content="website">
+
+<meta
+    property="og:image"
+    content="assets/images/profile.jpg"
+>
+<meta
+    name="twitter:card"
+    content="summary_large_image"
+>
+
+<meta
+    name="twitter:title"
+    content="Engineering | Anthony Essel Prepeh"
+>
+
+<meta
+    name="twitter:description"
+    content="Professional Geological Engineering Portfolio"
+>
+<meta
+    name="theme-color"
+    content="#003366"
+>
+<link
+    rel="icon"
+    href="assets/images/favicon.png"
+>
+
+<title>Engineering | Anthony Essel Prepeh</title>
+
+<link rel="stylesheet" href="css/main.css">
+
+<link rel="stylesheet" href="css/engineering.css">
+
+<link rel="stylesheet" href="css/responsive.css">
+
+<link rel="stylesheet" href="css/main.css">
+
+
+</head>
+
+
+<body>
+
+<header>
+
+    <nav>
+
+        <div class="logo">
+            
+            <h2>Anthony Essel Prepeh</h2>
+            
+            <p>Geological Engineer</p>
+        
+        </div>
+
+        <ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a class="active" href="engineering.html">Engineering</a></li><li><a href="projects.html">Projects</a></li><li><a href="assets/downloads/resume.pdf">Resume</a></li><li><a href="education.html">Education</a></li><li><a href="experience.html">Experience</a></li><li><a href="certificates.html">Certificates</a></li><li><a href="contact.html">Contact</a></li></ul>
+
+        <button
+            id="theme-toggle"
+            class="button secondary"
+            type="button">
+            🌙
+
+        </button>
+
+        <a 
+           class="button primary"
+           href="assets/downloads/resume.pdf"
+           download>
+           
+           Download Resume
+
+        </a>
+
+    </nav>
+
+</header>
+
+<main>
+
+<div class="page-header">
+
+    <h1>Engineering</h1>
+
+    <p>Geological Engineering Portfolio</p>
+
+</div>
+
+<section>
+
+    <h2>Engineering Portfolio</h2>
 
     <p>
-        A collection of engineering projects, industrial experience,
-        geological investigations, and technical case studies completed
-        throughout my academic and professional journey.
+
+        Applied Geological Engineering projects demonstrating
+        orebody modelling, hydrogeology, geological fieldwork,
+        GIS, technical photography and engineering analysis.
+
     </p>
 
 </section>
 
-<section id="engineering-projects">
+<section>
 
-    {{ engineering_projects }}
+    <h2>Featured Engineering Projects</h2>
+
+    <div class="cards">
+<div class="card engineering-card">
+
+    <img
+        class="engineering-image"
+        src="media/engineering/leapfrog/images/10_final_model.jpg"
+        alt="Orebody Modelling using Leapfrog Geo">
+
+    <div class="engineering-content">
+
+        <span class="project-status">
+            Completed
+        </span>
+
+        <div class="project-status">
+
+            Completed
+
+        </div>
+
+        <h3>Orebody Modelling using Leapfrog Geo</h3>
+
+        <p>
+        This project involved the preparation and development of a three-dimensional geological model using Leapfrog Geo from drillhole data. The work included systematic drill c...
+        </p>
+
+        <div class="project-tags">
+
+            <span class="tag">
+            Engineering Experience
+            </span>
+
+            <span class="tag">
+            Orebody Modelling
+            </span>
+
+            </div>
+
+        </div>
+
+        <a
+            class="button primary"
+            href="leapfrog.html">
+
+            View Case Study →
+
+        </a>
+
+    </div>
+
+</div>
+
+<div class="card engineering-card">
+
+    <img
+        class="engineering-image"
+        src="media/engineering/internship/images/hero.jpg"
+        alt="Engineering Project">
+
+    <div class="engineering-content">
+
+        <span class="project-status">
+            Completed
+        </span>
+
+        <div class="project-status">
+
+            Completed
+
+        </div>
+
+        <h3>Untitled Project</h3>
+
+        <p>
+        Project description coming soon....
+        </p>
+
+        <div class="project-tags">
+
+            <span class="tag">
+            Engineering
+            </span>
+
+            <span class="tag">
+            Engineering
+            </span>
+
+            </div>
+
+        </div>
+
+        <a
+            class="button primary"
+            href="internship.html">
+
+            View Case Study →
+
+        </a>
+
+    </div>
+
+</div>
+
+<div class="card engineering-card">
+
+    <img
+        class="engineering-image"
+        src="media/engineering/groundwater/images/site.jpg"
+        alt="Engineering Project">
+
+    <div class="engineering-content">
+
+        <span class="project-status">
+            Completed
+        </span>
+
+        <div class="project-status">
+
+            Completed
+
+        </div>
+
+        <h3>Untitled Project</h3>
+
+        <p>
+        Project description coming soon....
+        </p>
+
+        <div class="project-tags">
+
+            <span class="tag">
+            Engineering
+            </span>
+
+            <span class="tag">
+            Engineering
+            </span>
+
+            </div>
+
+        </div>
+
+        <a
+            class="button primary"
+            href="groundwater.html">
+
+            View Case Study →
+
+        </a>
+
+    </div>
+
+</div>
+
+<div class="card engineering-card">
+
+    <img
+        class="engineering-image"
+        src="media/engineering/field_mapping/images/outcrop1.jpg"
+        alt="Engineering Project">
+
+    <div class="engineering-content">
+
+        <span class="project-status">
+            Completed
+        </span>
+
+        <div class="project-status">
+
+            Completed
+
+        </div>
+
+        <h3>Untitled Project</h3>
+
+        <p>
+        Project description coming soon....
+        </p>
+
+        <div class="project-tags">
+
+            <span class="tag">
+            Engineering
+            </span>
+
+            <span class="tag">
+            Engineering
+            </span>
+
+            </div>
+
+        </div>
+
+        <a
+            class="button primary"
+            href="field_mapping.html">
+
+            View Case Study →
+
+        </a>
+
+    </div>
+
+</div>
+</div>
 
 </section>
 
-{% endblock %}
+<section>
+
+    <h2>Engineering Highlights</h2>
+
+    <div class="hero-highlights">
+
+        <div class="highlight">
+            <strong>4</strong>
+            <span>Engineering Case Studies</span>
+        </div>
+
+        <div class="highlight">
+            <strong>5+</strong>
+            <span>Geological Software Platforms</span>
+        </div>
+
+        <div class="highlight">
+            <strong>100+</strong>
+            <span>Drill Core Photographs</span>
+        </div>
+
+        <div class="highlight">
+            <strong>3D</strong>
+            <span>Orebody Modelling Workflow</span>
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+<footer>
+
+    <p>
+
+        © 2026 Anthony Essel Prepeh
+
+    </p>
+
+    <p>
+
+        Geological Engineer • Mining Technology • Artificial Intelligence
+
+    </p>
+
+    <div class="footer-links">
+
+        <a href="index.html">Home</a>
+
+        <a href="about.html">About</a>
+
+        <a href="projects.html">Projects</a>
+
+        <a href="experience.html">Experience</a>
+
+        <a href="education.html">Education</a>
+
+        <a href="certificates.html">Certificates</a>
+
+    </div>
+
+</footer>
+
+<button id="topButton" class="button secondary">
+
+    ↑ Top
+
+</button>
+
+<script src="js/main.js"></script>
+
+<script src="js/theme.js"></script>
+
+<script src="js/lightbox.js"></script>
+
+<script src="js/animations.js"></script>
+
+<script src="js/compare.js"></script>
+
+</body>
+
+</html>
+

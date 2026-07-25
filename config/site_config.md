@@ -23,8 +23,9 @@ theme:
 navigation:
   - Home
   - About
-  - Resume
+  - Engineering
   - Projects
+  - Resume
   - Education
   - Experience
   - Certificates

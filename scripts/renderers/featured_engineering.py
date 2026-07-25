@@ -15,29 +15,74 @@ PROJECTS = [
 
 def render_featured_engineering():
     """
-    Render engineering project cards.
+    Render featured engineering project cards.
     """
 
     html = '<div class="cards">'
 
     for project in PROJECTS:
 
-        data = load_yaml(f"engineering/{project}.yml")
+        try:
+            data = load_yaml(f"engineering/{project}.yml")
+        except FileNotFoundError:
+            continue
 
         item = data.get("project", {})
 
+        image = item.get(
+            "hero_image",
+            f"media/engineering/{project}/images/hero.jpg"
+        )
+
         html += f"""
-<div class="card">
+<div class="card engineering-card">
 
-    <h3>{item.get('title', '')}</h3>
+    <img
+        class="engineering-image"
+        src="{image}"
+        alt="{item.get('title', 'Engineering Project')}">
 
-    <p>{item.get('overview', '')}</p>
+    <div class="engineering-content">
 
-    <a class="button primary" href="{project}.html">
+        <span class="project-status">
+            {item.get('status', 'Completed')}
+        </span>
 
-        View Case Study
+        <div class="project-status">
 
-    </a>
+            {item.get("status","Completed")}
+
+        </div>
+
+        <h3>{item.get('title', 'Untitled Project')}</h3>
+
+        <p>
+        {item.get('overview', 'Project description coming soon.')[:170]}...
+        </p>
+
+        <div class="project-tags">
+
+            <span class="tag">
+            {item.get('category','Engineering')}
+            </span>
+
+            <span class="tag">
+            {item.get('project_type','Engineering')}
+            </span>
+
+            </div>
+
+        </div>
+
+        <a
+            class="button primary"
+            href="{project}.html">
+
+            View Case Study →
+
+        </a>
+
+    </div>
 
 </div>
 """

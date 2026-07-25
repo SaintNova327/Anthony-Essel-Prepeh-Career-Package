@@ -1,0 +1,272 @@
+project:
+
+  title: "Geological Field Mapping and Structural Interpretation"
+
+  subtitle: "Geological Mapping, Structural Measurements, Petrography and GIS Mapping"
+
+  category: "Engineering Field Project"
+
+  featured: true
+
+  status: "Completed"
+
+  hero_image: "media/engineering/field_mapping/images/outcrop1.jpg"
+
+  project_type: "Geological Field Mapping"
+
+  institution: "Kwame Nkrumah University of Science and Technology"
+
+  location: "Ghana"
+
+  laboratory: "Geological Engineering Department"
+
+  duration: "Field Mapping Exercise"
+
+  client: "Academic Field Project"
+
+  supervisor: "Department of Geological Engineering"
+
+  software:
+
+    - QGIS
+    - ArcGIS
+    - Microsoft Excel
+
+  skills:
+
+    - Geological Mapping
+    - Structural Geology
+    - Compass Traversing
+    - Strike and Dip Measurement
+    - Petrography
+    - Thin Section Analysis
+    - GIS Mapping
+    - Geological Interpretation
+
+  metrics:
+
+    duration: "2 Weeks"
+
+    software: "3"
+
+    workflow_steps: "12"
+
+    deliverables: "Geological Map"
+
+overview: >
+
+  This project involved detailed geological field mapping,
+  structural interpretation, petrographic analysis and geological
+  map production. Field observations were integrated with
+  laboratory analyses to produce geological and structural maps
+  of the study area.
+
+objectives:
+
+  - Produce a detailed geological map.
+
+  - Identify lithological units.
+
+  - Measure geological structures.
+
+  - Interpret deformation history.
+
+  - Prepare thin sections.
+
+  - Produce structural maps.
+
+study_area: >
+
+  Geological mapping was conducted within the designated field
+  area where lithological contacts, geological structures and
+  deformation features were mapped and interpreted.
+
+methodology:
+
+  - Field reconnaissance
+
+  - Traverse planning
+
+  - Compass traversing
+
+  - Outcrop description
+
+  - Structural measurements
+
+  - Sample collection
+
+  - Thin section preparation
+
+  - Petrographic analysis
+
+  - Geological interpretation
+
+  - GIS map production
+
+workflow:
+
+  - Team briefing
+
+  - Traverse planning
+
+  - Compass navigation
+
+  - Outcrop identification
+
+  - Lithological description
+
+  - Structural measurements
+
+  - Sample collection
+
+  - Thin section preparation
+
+  - Petrographic interpretation
+
+  - Geological map production
+
+  - Structural map preparation
+
+  - Final report preparation
+
+results:
+
+  - Geological units were successfully mapped.
+
+  - Structural measurements identified the dominant deformation trends.
+
+  - Thin section analysis confirmed field observations.
+
+  - Geological and structural maps were produced.
+
+lessons:
+
+  - Importance of careful field observations.
+
+  - Accurate structural measurements improve interpretation.
+
+  - Petrography complements field mapping.
+
+  - GIS significantly improves geological map production.
+
+project:
+  hero_image: media/engineering/field_mapping/images/outcrop1.jpg
+
+gallery:
+
+  - step: 1
+    title: Field Team
+    image: team.jpg
+    caption: Geological field mapping team.
+
+  - step: 2
+    title: Geological Compass
+    image: compass.jpg
+    caption: Compass-clinometer used for structural measurements.
+
+  - step: 3
+    title: Outcrop Investigation I
+    image: outcrop1.jpg
+    caption: Geological outcrop investigated during mapping.
+
+  - step: 4
+    title: Outcrop Investigation II
+    image: outcrop2.jpg
+    caption: Detailed lithological observations.
+
+  - step: 5
+    title: Outcrop Investigation III
+    image: outcrop3.jpg
+    caption: Structural measurements on exposed rocks.
+
+  - step: 6
+    title: Outcrop Investigation IV
+    image: outcrop4.jpg
+    caption: Mapping lithological contacts.
+
+  - step: 7
+    title: Outcrop Investigation V
+    image: outcrop5.jpg
+    caption: Recording structural information.
+
+  - step: 8
+    title: Outcrop Investigation VI
+    image: outcrop6.jpg
+    caption: Geological observations during traversing.
+
+  - step: 9
+    title: Fold Structure
+    image: fold.jpg
+    caption: Folded geological structures observed in the field.
+
+  - step: 10
+    title: Deformation Features
+    image: deformation.jpg
+    caption: Evidence of rock deformation observed during mapping.
+
+  - step: 11
+    title: Veinlet
+    image: veinlette.jpg
+    caption: Quartz veinlet identified within the host rock.
+
+  - step: 12
+    title: Thin Section I
+    image: thin_section1.jpg
+    caption: Petrographic analysis under the microscope.
+
+  - step: 13
+    title: Thin Section II
+    image: thin_section2.jpg
+    caption: Mineralogical interpretation.
+
+  - step: 14
+    title: Thin Section III
+    image: thin_section3.jpg
+    caption: Identification of mineral textures.
+
+  - step: 15
+    title: Thin Section IV
+    image: thin_section4.jpg
+    caption: Petrographic observations supporting field interpretation.
+
+spatial_maps:
+
+  - title: Base Map
+    image: base_map.jpg
+    caption: Base map used during field mapping.
+
+  - title: Traverse Map
+    image: traverse_map.jpg
+    caption: Geological traverse routes.
+
+  - title: Outcrop Map
+    image: outcrop_map.jpg
+    caption: Distribution of mapped outcrops.
+
+  - title: Geological Map
+    image: geological_map.jpg
+    caption: Final geological map of the study area.
+
+  - title: Structural Map
+    image: structural_map.jpg
+    caption: Structural interpretation map.
+
+downloads:
+
+  - title: Field Mapping Report
+    description: Geological mapping report.
+    file: media/engineering/field_mapping/reports/Field_Mapping_Report.pdf
+
+  - title: Geological Maps
+    description: Field mapping outputs.
+    file: media/engineering/field_mapping/maps/Geological_Map.pdf
+
+references:
+
+  - Geological Society Field Guide.
+
+  - KNUST Geological Engineering Field Manual.
+
+  - Compton, R. R. (1985). Geology in the Field.
+
+  - Fossen, H. (2016). Structural Geology.

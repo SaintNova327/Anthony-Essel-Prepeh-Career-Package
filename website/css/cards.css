@@ -166,3 +166,312 @@
     margin-bottom:15px;
 
 }
+
+
+/* ==========================================================
+   Mobile Cards
+========================================================== */
+
+@media (max-width: 768px) {
+
+    .cards {
+
+        grid-template-columns: 1fr;
+
+        gap: var(--space-5);
+
+    }
+
+    .card {
+
+        padding: var(--space-5);
+
+    }
+
+    .project-tags {
+
+        gap: 6px;
+
+    }
+
+    .tag {
+
+        font-size: 0.8rem;
+
+        padding: 5px 10px;
+
+    }
+
+}
+
+/* ==========================================================
+   Engineering Cards
+========================================================== */
+
+.engineering-card{
+
+    overflow:hidden;
+
+    padding:0;
+
+}
+
+.engineering-image{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+    display:block;
+
+}
+
+.engineering-content{
+
+    padding:24px;
+
+}
+
+/* ==========================================================
+   Value Proposition
+========================================================== */
+
+.value-proposition{
+
+    margin:70px 0;
+
+}
+
+.value-proposition h2{
+
+    text-align:center;
+
+    margin-bottom:15px;
+
+}
+
+.value-proposition .cards{
+
+    margin-top:35px;
+
+}
+
+.value-proposition .card{
+
+    text-align:center;
+
+}
+
+.value-proposition h3{
+
+    color:var(--primary);
+
+    margin-bottom:15px;
+
+}
+
+/* ==========================================================
+   Dark Cards
+========================================================== */
+
+body.dark-theme .card{
+
+    background:var(--surface);
+
+    border:1px solid var(--border);
+
+}
+
+body.dark-theme .tag{
+
+    background:var(--surface-light);
+
+    color:var(--text);
+
+}
+
+/* ==========================================================
+   Engineering Case Study
+========================================================== */
+
+.project-hero{
+
+    text-align:center;
+
+    margin-bottom:50px;
+
+}
+
+.project-hero-image{
+
+    width:100%;
+
+    max-height:520px;
+
+    object-fit:cover;
+
+    border-radius:16px;
+
+    margin-bottom:30px;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.18);
+
+}
+
+.project-subtitle{
+
+    font-size:1.2rem;
+
+    color:var(--muted);
+
+    max-width:900px;
+
+    margin:0 auto;
+
+}
+
+.engineering-list{
+
+    list-style:none;
+
+    padding:0;
+
+    margin:25px 0;
+
+}
+
+.engineering-list li{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:12px;
+
+    padding:12px 0;
+
+    border-bottom:1px solid var(--border);
+
+}
+
+.engineering-list li::before{
+
+    content:"✔";
+
+    color:var(--accent);
+
+    font-weight:bold;
+
+    flex-shrink:0;
+
+}
+
+/* ==========================================================
+   Workflow Gallery
+========================================================== */
+
+.workflow-gallery{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:24px;
+
+    margin-top:35px;
+
+}
+
+.gallery-card{
+
+    overflow:hidden;
+
+    border-radius:14px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.gallery-card img{
+
+    width:100%;
+
+    height:240px;
+
+    object-fit:cover;
+
+    display:block;
+
+    transition:.35s ease;
+
+}
+
+.gallery-card img:hover{
+
+    transform:scale(1.04);
+
+}
+
+/* ==========================================================
+   Lightbox
+========================================================== */
+
+.lightbox{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.92);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.25s;
+
+    z-index:9999;
+
+}
+
+.lightbox.show{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+.lightbox-image{
+
+    max-width:92%;
+
+    max-height:92%;
+
+    border-radius:10px;
+
+}
+
+.lightbox-close{
+
+    position:absolute;
+
+    top:25px;
+
+    right:35px;
+
+    color:white;
+
+    font-size:42px;
+
+    cursor:pointer;
+
+}

@@ -34,3 +34,15 @@ footer{
     color:var(--accent);
 
 }
+
+/* ==========================================================
+   Dark Footer
+========================================================== */
+
+body.dark-theme footer{
+
+    background:var(--surface);
+
+    color:var(--text);
+
+}

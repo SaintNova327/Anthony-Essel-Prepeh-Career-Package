@@ -163,3 +163,15 @@
     line-height:1.6;
 
 }
+
+/* ==========================================================
+   Dark Timeline
+========================================================== */
+
+body.dark-theme .timeline-item{
+
+    background:var(--surface);
+
+    border:1px solid var(--border);
+
+}

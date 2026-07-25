@@ -1,0 +1,232 @@
+project:
+
+  title: "Industrial Internship"
+
+  subtitle: "Professional Mining Engineering Training"
+
+  category: "Industrial Experience"
+
+  featured: true
+
+  status: "Completed"
+
+  hero_image: "media/engineering/internship/images/hero.jpg"
+
+  project_type: "Industrial Attachment"
+
+  institution: "Kwame Nkrumah University of Science and Technology"
+
+  client: "Mining Company"
+
+  location: "Ghana"
+
+  duration: "8 Weeks"
+
+  supervisor: "Industrial Supervisor"
+
+  software:
+
+    - Microsoft Excel
+    - Leapfrog Geo
+    - QGIS
+
+  skills:
+
+  - Groundwater Exploration
+
+  - Geophysical Surveying
+
+  - Electrical Resistivity
+
+  - Borehole Drilling
+
+  - Geological Logging
+
+  - Borehole Construction
+
+  - Pump Installation
+
+  - Technical Reporting
+
+  - Field Data Collection
+
+  - Team Collaboration
+
+  metrics:
+
+    duration: "8 Weeks"
+
+    software: "3"
+
+    workflow_steps: "8"
+
+    deliverables: "Internship Report"
+
+overview: >
+
+  Industrial training carried out at a mining operation to develop
+  practical engineering skills in geology, mining operations,
+  field mapping, sampling and technical reporting.
+
+objectives:
+
+  - Apply classroom knowledge in industry.
+
+  - Learn mining operations.
+
+  - Improve geological interpretation.
+
+  - Develop professional communication.
+
+study_area: >
+
+  Industrial mining environment involving geological,
+  mining and processing activities.
+
+methodology:
+
+  - Site reconnaissance
+
+  - Geophysical survey planning
+
+  - Traverse establishment
+
+  - Electrical resistivity surveying
+
+  - Data processing
+
+  - Borehole drilling
+
+  - Lithological logging
+
+  - Borehole construction
+
+  - Pump installation
+
+  - Technical reporting
+
+workflow:
+
+  - Company orientation
+
+  - Site reconnaissance
+
+  - Traverse line establishment
+
+  - Electrode installation
+
+  - Geophysical data acquisition
+
+  - Data interpretation
+
+  - Borehole drilling
+
+  - Geological logging
+
+  - Casing installation
+
+  - Gravel packing and grouting
+
+  - Pump installation
+
+  - Borehole completion
+
+  - Final documentation
+
+results:
+
+  - Improved practical geological skills.
+
+  - Better understanding of mining operations.
+
+  - Experience working with professional engineers.
+
+lessons:
+
+  - Importance of safety.
+
+  - Teamwork.
+
+  - Professional communication.
+
+
+project:
+  hero_image: media/engineering/internship/images/hero.jpg
+
+gallery:
+
+  - step: 1
+    title: Company Introduction
+    image: company.jpg
+    caption: Introduction to the company and internship orientation.
+
+  - step: 2
+    title: ADMT Equipment
+    image: admt.jpg
+    caption: ADMT equipment used during geophysical investigations.
+
+  - step: 3
+    title: Traverse Line Establishment
+    image: traverse_line.jpg
+    caption: Establishing traverse lines prior to geophysical data acquisition.
+
+  - step: 4
+    title: Electrode Installation
+    image: electrodes.jpg
+    caption: Electrodes positioned for electrical resistivity surveying.
+
+  - step: 5
+    title: Geophysical Survey
+    image: geophysical_survey.jpg
+    caption: Conducting field geophysical investigations for groundwater exploration.
+
+  - step: 6
+    title: Contour Mapping
+    image: contour.jpg
+    caption: Preparing contour maps for interpreting the project area.
+
+  - step: 7
+    title: Borehole Drilling
+    image: borehole_drilling.jpg
+    caption: Borehole drilling operations following interpretation of geophysical results.
+
+  - step: 8
+    title: Borehole Logging
+    image: logging.jpg
+    caption: Geological logging and documentation of borehole formations.
+
+  - step: 9
+    title: Screen Pipes
+    image: pipes_screens.jpg
+    caption: Installation of screened casing for groundwater production.
+
+  - step: 10
+    title: Plain Pipes
+    image: pipes_plains.jpg
+    caption: Installing plain casing pipes during borehole completion.
+
+  - step: 11
+    title: Gravel Packing and Grouting
+    image: gravel_packing_and_grouting.jpg
+    caption: Borehole completion through gravel packing and sealing.
+
+  - step: 12
+    title: Pump Installation
+    image: pump_installation.jpg
+    caption: Installing the production pump after successful borehole development.
+
+downloads:
+
+  - title: Industrial Training Report
+    description: Internship technical report.
+    file: media/engineering/internship/reports/Industrial_Training_Report.pdf
+
+  - title: Presentation Slides
+    description: Internship presentation.
+    file: media/engineering/internship/documents/presentation.pptx
+
+references:
+
+  - Company training manuals.
+
+  - KNUST Industrial Attachment Guidelines.

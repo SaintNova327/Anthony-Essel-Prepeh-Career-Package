@@ -26,10 +26,23 @@ from renderers.featured_engineering import (
     render_featured_engineering,
 )
 
+from renderers.featured_photography import (
+    render_featured_photography,
+)
+
+from renderers.value_proposition import (
+    render_value_proposition,
+)
+
+from renderers.engineering_case_study import (
+    render_engineering_case_study,
+)
+
 import markdown
 import yaml
 from functools import lru_cache
 from renderers.hero import render_hero
+import shutil
 
 # ==========================================================
 # Paths
@@ -95,6 +108,41 @@ PAGES = [
     },
 
     {
+        "output": "engineering.html",
+        "layout": "engineering.html",
+        "title": "Engineering | Anthony Essel Prepeh",
+        "subtitle": "Geological Engineering Portfolio",
+    },
+
+    {
+        "output": "leapfrog.html",
+        "layout": "engineering_project.html",
+        "title": "Orebody Modelling using Leapfrog Geo",
+        "subtitle": "Engineering Case Study",
+    },
+
+    {
+        "output": "groundwater.html",
+        "layout": "engineering_project.html",
+        "title": "Groundwater Heavy Metal Analysis",
+        "subtitle": "Engineering Case Study",
+    },
+
+    {
+        "output": "internship.html",
+        "layout": "engineering_project.html",
+        "title": "Industrial Internship",
+        "subtitle": "Engineering Case Study",
+    }, 
+
+    {
+        "output": "field_mapping.html",
+        "layout": "engineering_project.html",
+        "title": "Field Mapping",
+        "subtitle": "Engineering Case Study",
+    },
+
+    {
         "output": "experience.html",
         "layout": "experience.html",
         "title": "Experience | Anthony Essel Prepeh",
@@ -121,6 +169,8 @@ PAGES = [
         "title": "Contact | Anthony Essel Prepeh",
         "subtitle": "Let's connect",
     },
+
+    
 
 ]
 
@@ -225,6 +275,70 @@ def save_page(filename, html):
         encoding="utf-8"
     )
 
+# ==========================================================
+# Copy Engineering Media
+# ==========================================================
+
+def copy_engineering_media():
+    """
+    Copy engineering media from the media folder into the website assets folder.
+    """
+
+    source = PROJECT_ROOT / "media" / "engineering"
+
+    destination = (
+        WEBSITE
+        / "assets"
+        / "images"
+        / "engineering"
+    )
+
+    if not source.exists():
+
+        print("No engineering media folder found.")
+
+        return
+
+    destination.mkdir(
+        parents=True,
+        exist_ok=True,
+    )
+
+    projects = [
+
+        "leapfrog",
+        "internship",
+        "groundwater",
+        "field_mapping",
+
+    ]
+
+    for project in projects:
+
+        source_images = source / project / "images"
+
+        destination_images = destination / project
+
+        if not source_images.exists():
+
+            continue
+
+        destination_images.mkdir(
+            parents=True,
+            exist_ok=True,
+        )
+
+        for image in source_images.iterdir():
+
+            if image.is_file():
+
+                shutil.copy2(
+                    image,
+                    destination_images / image.name,
+                )
+
+    print("✓ Engineering media copied")
+
 def validate_build():
     """
     Validate that all required data files exist.
@@ -299,6 +413,7 @@ def build_context():
         "projects": render_projects(),
         "featured_projects": render_featured_projects(),
         "engineering_projects": render_featured_engineering(),
+       
     
         "page_header": render_page_header(
             "Welcome",
@@ -308,6 +423,9 @@ def build_context():
         "featured_education": render_featured_education(),
         "footer": render_footer(),
         "hero": render_hero(),
+        "value_proposition": render_value_proposition(),
+
+        "featured_photography": render_featured_photography(),
 
     }
 
@@ -362,6 +480,34 @@ def build_page(page):
         context,
     )
 
+    if page["output"] == "leapfrog.html":
+
+        body = body.replace(
+            "{{ project_content }}",
+            render_engineering_case_study("leapfrog"),
+        )
+
+    elif page["output"] == "groundwater.html":
+
+        body = body.replace(
+            "{{ project_content }}",
+            render_engineering_case_study("groundwater"),
+        )
+
+    elif page["output"] == "internship.html":
+
+        body = body.replace(
+            "{{ project_content }}",
+            render_engineering_case_study("internship"),
+        )
+
+    elif page["output"] == "field_mapping.html":
+
+        body = body.replace(
+            "{{ project_content }}",
+            render_engineering_case_study("field_mapping"),
+        )
+
     # Assemble the final HTML
     page_html = base
 
@@ -410,6 +556,8 @@ def main():
         return
 
     print("Starting website generation...\n")
+
+    copy_engineering_media()
 
     for page in PAGES:
         build_page(page)

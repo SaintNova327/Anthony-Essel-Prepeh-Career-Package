@@ -1,22 +1,48 @@
 project:
+
   title: "Orebody Modelling using Leapfrog Geo"
 
+  overview: >
+    This project involved the preparation and development of a three-dimensional
+    geological model using Leapfrog Geo from drillhole data. The work included
+    systematic drill core logging, geological interpretation, drill core
+    photography, data validation, and geological modelling. Core photographs
+    were captured using a Canon EOS 5D camera mounted on a fixed horizontal
+    frame to ensure consistent image quality and accurate geological
+    documentation. The processed geological information was integrated into
+    Leapfrog Geo to construct a representative three-dimensional geological
+    model for interpretation and visualization.
+
   subtitle: "Geological Modelling, Core Logging and Drill Core Photography"
+
+  category: "Engineering Experience"
 
   featured: true
 
   status: "Completed"
 
-  category: "Engineering Experience"
+  hero_image: "media/engineering/leapfrog/images/10_final_model.jpg"
 
-  location: "KNUST Geological Engineering Laboratory"
+  project_type: "Orebody Modelling"
 
-  duration: ""
+  institution: "Kwame Nkrumah University of Science and Technology"
+
+  location: "Kumasi, Ghana"
+
+  laboratory: "KNUST Geological Engineering Laboratory"
+
+  duration: "1 Month"
+
+  client: "Academic Project"
+
+  supervisor: "Dr. Blestmond Afrifa Brako"
 
   software:
     - Leapfrog Geo
+    - Imago (Workflow Inspiration)
     - QGIS
     - Microsoft Excel
+    - Python
 
   skills:
     - Core Logging
@@ -26,35 +52,142 @@ project:
     - Orebody Modelling
     - Data Validation
 
-  overview: >
-    This project involved drill core logging, drill core photography,
-    geological interpretation, and the development of a three-dimensional
-    geological model using Leapfrog Geo.
+  metrics:
 
-  objectives:
-    - Log drill cores.
-    - Capture high-quality drill core photographs.
-    - Interpret geological units.
-    - Prepare data for Leapfrog Geo.
-    - Build a 3D geological model.
+    duration: "1 Month"
 
-  methodology:
-    - Drill core logging
-    - Geological interpretation
-    - Drill core photography
-    - Data preparation
-    - Leapfrog Geo modelling
+    software: "5"
 
-  results:
-    - Completed geological interpretation.
-    - Generated a 3D geological model.
-    - Produced high-quality core photographs.
-    - Validated drillhole data.
+    workflow_steps: "10"
 
-  report: ""
+    deliverables: "3D Geological Model"
 
-  hero_image: ""
+    status: "Completed"
 
-  gallery: []
 
-  videos: []
+
+objectives:
+
+  - Validate and organize drillhole data.
+  - Log drill cores using standard geological procedures.
+  - Produce high-quality drill core photographs.
+  - Interpret lithological and geological units.
+  - Prepare geological data for Leapfrog Geo.
+  - Develop a three-dimensional geological model.
+  - Improve understanding of the subsurface geological framework.
+
+study_area: >
+  The study was conducted using drill core data within the Geological
+  Engineering Laboratory of KNUST. Drill cores were logged, photographed,
+  interpreted and prepared for three-dimensional geological modelling using
+  Leapfrog Geo.
+
+workflow:
+
+  - Drillhole data review and validation
+  - Drill core tray preparation
+  - Geological core logging
+  - Drill core photography
+  - Lithological interpretation
+  - Data validation
+  - DEM preparation in QGIS
+  - Topography creation in Leapfrog Geo
+  - Drillhole import
+  - Geological modelling
+  - Final model interpretation
+
+methodology:
+
+  - Geological logging of drill cores
+  - Recording lithology, structures and mineralization
+  - Standardized drill core photography
+  - Geological database preparation
+  - Quality assurance and validation
+  - Construction of geological surfaces
+  - Three-dimensional geological modelling
+
+results:
+
+  - Successfully completed geological core logging.
+  - Produced standardized drill core photographs.
+  - Interpreted lithological units and geological structures.
+  - Developed a validated geological database.
+  - Built a three-dimensional geological model.
+  - Improved understanding of subsurface geology.
+
+lessons:
+
+  - Improved geological logging techniques.
+  - Strengthened geological interpretation skills.
+  - Developed professional drill core photography workflows.
+  - Learned practical orebody modelling using Leapfrog Geo.
+  - Improved geological data management skills.
+
+downloads:
+
+  - title: Final Project Report
+    description: Complete orebody modelling report.
+    file: media/engineering/leapfrog/reports/Report.pdf
+
+
+gallery:
+
+  - step: 1
+    title: Core Logging
+    image: 01_core_logging.jpg
+    caption: Drill core trays arranged prior to geological logging.
+
+  - step: 2
+    title: Camera Setup
+    image: 02_camera_setup.jpg
+    caption: Canon EOS 5D mounted on a fixed horizontal frame for standardized drill core photography.
+
+  - step: 3
+    title: Drill Core Photography
+    image: 03_core_photography.jpg
+    caption: Capturing high-resolution drill core photographs for geological documentation.
+
+  - step: 4
+    title: Core Management
+    image: 04_core_management.jpg
+    caption: Organizing and managing geological photographs for digital interpretation and documentation.
+
+  - step: 5
+    title: DEM Generation
+    image: 05_Digital_elevation_model.jpg
+    caption: Digital Elevation Model generated in QGIS for terrain representation.
+
+  - step: 6
+    title: Aerial Photograph
+    image: 06_Aerial_Photograph.jpg
+    caption: Aerial imagery prepared for integration with topographic data.
+
+  - step: 7
+    title: Topography Creation
+    image: 07_creating_topography.jpg
+    caption: Creating the project topography inside Leapfrog Geo.
+
+  - step: 8
+    title: Drillhole Import
+    image: 08_leapfrog_drillhole_import.jpg
+    caption: Importing validated drillhole data into Leapfrog Geo.
+
+  - step: 9
+    title: Geological Modelling
+    image: 09_modelling.jpg
+    caption: Developing geological contacts and modelling lithological units.
+
+  - step: 10
+    title: Final Geological Model
+    image: 10_final_model.jpg
+    caption: Completed three-dimensional geological model developed in Leapfrog Geo, integrating drillhole data, lithological interpretation and geological surfaces for visualization and engineering analysis.
+
+videos:
+
+  - title: Drill Core Photography
+    file: 03_core_photography.mp4
+    caption: High-resolution drill core photography workflow.
+
+  - title: Core Management
+    file: 04_core_management.mp4
+    caption: Organizing and managing drill core photographs.

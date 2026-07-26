@@ -33,8 +33,15 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install -r requirements.txt || true
-
+          if [ -f requirements.txt ]; then
+            pip install -r requirements.txt
+          fi
+      
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc texlive-latex-base texlive-fonts-recommended texlive-latex-extra
+      
       - name: Build website
         run: |
           python scripts/build.py

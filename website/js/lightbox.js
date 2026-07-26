@@ -1,112 +1,62 @@
-document.addEventListener("DOMContentLoaded",()=>{
+document.addEventListener("DOMContentLoaded", () => {
 
-    const images=[...document.querySelectorAll(".lightbox-image")];
+    const links = document.querySelectorAll(".lightbox");
 
-    if(images.length===0) return;
+    if (!links.length) return;
 
-    let current=0;
+    // Create overlay
+    const overlay = document.createElement("div");
+    overlay.id = "lightbox-overlay";
 
-    const overlay=document.createElement("div");
-
-    overlay.id="lightbox-overlay";
-
-    overlay.innerHTML=`
-
+    overlay.innerHTML = `
         <span id="lightbox-close">&times;</span>
-
-        <button id="lightbox-prev">&#10094;</button>
-
-        <img id="lightbox-image">
-
-        <button id="lightbox-next">&#10095;</button>
-
-        <div id="lightbox-counter"></div>
-
+        <img id="lightbox-image" src="" alt="">
     `;
 
     document.body.appendChild(overlay);
 
-    const img=document.getElementById("lightbox-image");
+    const image = document.getElementById("lightbox-image");
+    const close = document.getElementById("lightbox-close");
 
-    const counter=document.getElementById("lightbox-counter");
+    links.forEach(link => {
 
-    function show(index){
+        link.addEventListener("click", e => {
 
-        current=index;
+            e.preventDefault();
 
-        img.src=images[current].src;
+            image.src = link.href;
 
-        counter.textContent=`${current+1} / ${images.length}`;
-
-        overlay.classList.add("show");
-
-    }
-
-    images.forEach((image,index)=>{
-
-        image.addEventListener("click",()=>{
-
-            show(index);
+            overlay.classList.add("show");
 
         });
 
     });
 
-    document.getElementById("lightbox-prev").onclick=()=>{
-
-        current--;
-
-        if(current<0) current=images.length-1;
-
-        show(current);
-
-    };
-
-    document.getElementById("lightbox-next").onclick=()=>{
-
-        current++;
-
-        if(current>=images.length) current=0;
-
-        show(current);
-
-    };
-
-    document.getElementById("lightbox-close").onclick=()=>{
+    function hideLightbox(){
 
         overlay.classList.remove("show");
 
-    };
+        image.src = "";
 
-    overlay.onclick=(e)=>{
+    }
 
-        if(e.target===overlay){
+    close.addEventListener("click", hideLightbox);
 
-            overlay.classList.remove("show");
+    overlay.addEventListener("click", e => {
 
-        }
+        if(e.target === overlay){
 
-    };
-
-    document.addEventListener("keydown",(e)=>{
-
-        if(!overlay.classList.contains("show")) return;
-
-        if(e.key==="ArrowRight"){
-
-            document.getElementById("lightbox-next").click();
+            hideLightbox();
 
         }
 
-        if(e.key==="ArrowLeft"){
+    });
 
-            document.getElementById("lightbox-prev").click();
+    document.addEventListener("keydown", e => {
 
-        }
+        if(e.key === "Escape"){
 
-        if(e.key==="Escape"){
-
-            overlay.classList.remove("show");
+            hideLightbox();
 
         }
 

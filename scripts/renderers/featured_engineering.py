@@ -14,9 +14,6 @@ PROJECTS = [
 
 
 def render_featured_engineering():
-    """
-    Render featured engineering project cards.
-    """
 
     html = '<div class="cards">'
 
@@ -29,48 +26,41 @@ def render_featured_engineering():
 
         item = data.get("project", {})
 
-        image = item.get(
-            "hero_image",
-            f"media/engineering/{project}/images/hero.jpg"
-        )
-
         html += f"""
 <div class="card engineering-card">
 
     <img
         class="engineering-image"
-        src="{image}"
+        src="{item.get('hero_image', 'assets/images/placeholder.jpg')}"
         alt="{item.get('title', 'Engineering Project')}">
 
     <div class="engineering-content">
 
         <span class="project-status">
-            {item.get('status', 'Completed')}
-        </span>
-
-        <div class="project-status">
 
             {item.get("status","Completed")}
 
-        </div>
+        </span>
 
-        <h3>{item.get('title', 'Untitled Project')}</h3>
+        <h3>
+
+            {item.get("title","Engineering Project")}
+
+        </h3>
 
         <p>
-        {item.get('overview', 'Project description coming soon.')[:170]}...
+
+            {item.get("overview","")[:170]}...
+
         </p>
 
         <div class="project-tags">
 
             <span class="tag">
-            {item.get('category','Engineering')}
-            </span>
 
-            <span class="tag">
-            {item.get('project_type','Engineering')}
-            </span>
+                {item.get("category","Engineering")}
 
-            </div>
+            </span>
 
         </div>
 

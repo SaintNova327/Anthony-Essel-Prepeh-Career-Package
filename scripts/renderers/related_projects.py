@@ -9,13 +9,13 @@ def render_related_projects(current_project):
         {
             "name": "Leapfrog Geo Orebody Modelling",
             "page": "leapfrog.html",
-            "image": "media/engineering/leapfrog/images/10_final_model.jpg",
+            "image": "media/engineering/leapfrog/images/hero.jpg",
             "description": "3D geological modelling using Leapfrog Geo."
         },
         {
             "name": "Groundwater Assessment",
             "page": "groundwater.html",
-            "image": "media/engineering/groundwater/images/site.jpg",
+            "image": "media/engineering/groundwater/images/hero.jpg",
             "description": "Heavy metal pollution assessment using Python and GIS."
         },
         {

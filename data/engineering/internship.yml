@@ -2,6 +2,11 @@ project:
 
   title: "Industrial Internship"
 
+  overview: >
+    Industrial training carried out at a mining operation to develop
+    practical engineering skills in geology, mining operations,
+    field mapping, sampling and technical reporting.
+
   subtitle: "Professional Mining Engineering Training"
 
   category: "Industrial Experience"
@@ -150,8 +155,7 @@ lessons:
   - Professional communication.
 
 
-project:
-  hero_image: media/engineering/internship/images/hero.jpg
+
 
 gallery:
 

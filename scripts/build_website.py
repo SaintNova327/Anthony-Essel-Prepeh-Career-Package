@@ -9,7 +9,6 @@ from renderers import (
     render_experience,
     render_education,
     render_certificates,
-    render_projects,
     render_featured_projects,
     render_navigation,
     render_markdown,
@@ -40,7 +39,6 @@ from renderers.engineering_case_study import (
 
 import markdown
 import yaml
-from functools import lru_cache
 from renderers.hero import render_hero
 import shutil
 
@@ -67,18 +65,7 @@ REQUIRED_DATA_FILES = [
     "software.md",
 ]
 
-@lru_cache(maxsize=1)
-def load_site_config():
 
-    config_file = PROJECT_ROOT / "config" / "site_config.md"
-
-    with open(
-        config_file,
-        "r",
-        encoding="utf-8"
-    ) as f:
-
-        return yaml.safe_load(f)
 
 # ==========================================================
 # Pages
@@ -100,12 +87,7 @@ PAGES = [
         "subtitle": "Learn more about my background and career goals",
     },
 
-    {
-        "output": "projects.html",
-        "layout": "projects.html",
-        "title": "Projects | Anthony Essel Prepeh",
-        "subtitle": "Academic, engineering and software projects",
-    },
+
 
     {
         "output": "engineering.html",
@@ -276,68 +258,24 @@ def save_page(filename, html):
     )
 
 # ==========================================================
-# Copy Engineering Media
+# Engineering Media
 # ==========================================================
 
 def copy_engineering_media():
     """
-    Copy engineering media from the media folder into the website assets folder.
+    Engineering media already lives inside website/media.
+    Nothing needs copying.
     """
 
-    source = PROJECT_ROOT / "media" / "engineering"
+    media = WEBSITE / "media" / "engineering"
 
-    destination = (
-        WEBSITE
-        / "assets"
-        / "images"
-        / "engineering"
-    )
+    if media.exists():
 
-    if not source.exists():
+        print("✓ Engineering media found")
 
-        print("No engineering media folder found.")
+    else:
 
-        return
-
-    destination.mkdir(
-        parents=True,
-        exist_ok=True,
-    )
-
-    projects = [
-
-        "leapfrog",
-        "internship",
-        "groundwater",
-        "field_mapping",
-
-    ]
-
-    for project in projects:
-
-        source_images = source / project / "images"
-
-        destination_images = destination / project
-
-        if not source_images.exists():
-
-            continue
-
-        destination_images.mkdir(
-            parents=True,
-            exist_ok=True,
-        )
-
-        for image in source_images.iterdir():
-
-            if image.is_file():
-
-                shutil.copy2(
-                    image,
-                    destination_images / image.name,
-                )
-
-    print("✓ Engineering media copied")
+        print("✗ website/media/engineering is missing")
 
 def validate_build():
     """
@@ -388,7 +326,7 @@ def build_context():
     author = config["author"]
     site = config["site"]
 
-    career = load_career_database()
+    
 
     return {
 
@@ -410,7 +348,6 @@ def build_context():
         "experience": render_experience(),
         "education": render_education(),
         "certificates": render_certificates(),
-        "projects": render_projects(),
         "featured_projects": render_featured_projects(),
         "engineering_projects": render_featured_engineering(),
        
@@ -435,7 +372,7 @@ def build_page(page):
 
     # Build the page context first
     context = build_context()
-    context["current_page"] = page["output"]
+    
 
     # Create a page-specific header
     context["page_header"] = render_page_header(
@@ -443,9 +380,7 @@ def build_page(page):
         page["subtitle"],
     )
 
-    context["navigation"] = render_navigation(
-        page["output"]
-    )
+   
 
     context["current_page"] = page["output"]
 

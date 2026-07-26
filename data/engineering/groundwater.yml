@@ -1,6 +1,9 @@
 project:
 
   title: "Groundwater Quality Assessment Using Heavy Metal Pollution Indices and Multivariate Statistical Analysis"
+  
+  overview: >
+    This project evaluates groundwater quality...
 
   subtitle: "Assessment of Heavy Metal Contamination in Groundwater Using Python, GIS and Statistical Analysis"
 
@@ -10,7 +13,7 @@ project:
 
   status: "Completed"
 
-  hero_image: "media/engineering/groundwater/images/site.jpg"
+  hero_image: "media/engineering/groundwater/images/hero.jpg"
 
   project_type: "Groundwater Quality Assessment"
 
@@ -168,8 +171,7 @@ downloads:
 
 
       
-project:
-  hero_image: media/engineering/groundwater/images/site.jpg
+
 
 gallery:
 

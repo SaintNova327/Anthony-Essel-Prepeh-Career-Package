@@ -8,6 +8,63 @@
 @import "footer.css";
 @import "responsive.css";
 
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+
+
+/* ==========================================
+   Design System
+========================================== */
+
+:root{
+
+    /* Brand Colors */
+
+    --primary:#0B3D91;
+    --primary-dark:#072d6b;
+    --secondary:#005B96;
+    --accent:#F4B400;
+
+    /* Neutral Colors */
+
+    --background:#F5F7FA;
+    --surface:#FFFFFF;
+
+    --text:#1F2937;
+    --text-light:#6B7280;
+
+    --border:#E5E7EB;
+
+    /* Status */
+
+    --success:#2E7D32;
+    --warning:#F59E0B;
+    --danger:#D32F2F;
+
+    /* Shadows */
+
+    --shadow-small:0 4px 12px rgba(0,0,0,.08);
+
+    --shadow-medium:0 10px 25px rgba(0,0,0,.10);
+
+    --shadow-large:0 20px 50px rgba(0,0,0,.15);
+
+    /* Radius */
+
+    --radius:16px;
+
+    /* Layout */
+
+    --container:1200px;
+
+    --transition:.3s ease;
+
+}
+
 /* ==========================================================
    Animations
 ========================================================== */
@@ -76,9 +133,31 @@
 
     body{
 
-        background:white;
+        margin:0;
 
-        color:black;
+        background:var(--background);
+
+        color:var(--text);
+
+        font-family:
+            "Segoe UI",
+            Roboto,
+            Arial,
+            sans-serif;
+
+        line-height:1.7;
+
+        font-size:16px;
+
+    }
+
+    section{
+
+        max-width:var(--container);
+
+        margin:70px auto;
+
+        padding:0 30px;
 
     }
 
@@ -525,5 +604,182 @@ Scroll Animations
     opacity:1;
 
     transform:none;
+
+}
+
+h1{
+
+    font-size:3rem;
+
+    margin-bottom:15px;
+
+}
+
+h2{
+
+    font-size:2rem;
+
+    color:var(--primary);
+
+    margin-bottom:25px;
+
+}
+
+h3{
+
+    color:var(--primary);
+
+}
+
+.button{
+
+    display:inline-block;
+
+    padding:14px 28px;
+
+    border-radius:12px;
+
+    text-decoration:none;
+
+    transition:var(--transition);
+
+    font-weight:600;
+
+}
+
+.button.primary{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+.button.primary:hover{
+
+    background:var(--primary-dark);
+
+    transform:translateY(-2px);
+
+}
+
+.button.secondary{
+
+    background:white;
+
+    color:var(--primary);
+
+    border:2px solid var(--primary);
+
+}
+
+.button.secondary:hover{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+/* ==========================================
+   Scroll Animations
+========================================== */
+
+.hidden{
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+    transition:.7s ease;
+
+}
+
+.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+header{
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+    background:rgba(255,255,255,.96);
+
+    backdrop-filter:blur(12px);
+
+    box-shadow:0 2px 15px rgba(0,0,0,.08);
+
+}
+
+nav{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:15px 30px;
+
+}
+
+.gallery-card img,
+.engineering-image,
+.related-card img{
+
+    transition:.5s;
+
+}
+
+.gallery-card:hover img,
+.related-card:hover img{
+
+    transform:scale(1.06);
+
+}
+
+footer{
+
+    background:#0B1F33;
+
+    color:white;
+
+    text-align:center;
+
+    padding:60px 20px;
+
+}
+
+.footer-links{
+
+    margin-top:20px;
+
+}
+
+.footer-links a{
+
+    color:white;
+
+    text-decoration:none;
+
+    margin:0 12px;
+
+}
+
+.footer-links a:hover{
+
+    color:var(--accent);
 
 }

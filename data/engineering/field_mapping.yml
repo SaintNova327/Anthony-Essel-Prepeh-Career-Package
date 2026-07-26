@@ -10,7 +10,7 @@ project:
 
   status: "Completed"
 
-  hero_image: "media/engineering/field_mapping/images/outcrop1.jpg"
+  hero_image: "media/engineering/field_mapping/images/hero.jpg"
 
   project_type: "Geological Field Mapping"
 
@@ -149,8 +149,7 @@ lessons:
 
   - GIS significantly improves geological map production.
 
-project:
-  hero_image: media/engineering/field_mapping/images/outcrop1.jpg
+
 
 gallery:
 

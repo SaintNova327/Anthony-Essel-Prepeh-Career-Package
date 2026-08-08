@@ -27,12 +27,11 @@ def render_engineering_case_study(project_name):
     metrics = project.get("metrics", {})
 
     hero = project.get(
-    "hero_image",
-    f"media/engineering/{project_name}/images/hero.jpg"
+        "hero_image",
+        f"media/engineering/{project_name}/images/hero.jpg"
     )
 
     html = f"""
-
 <section
     class="project-hero"
     style="background-image:url('{hero}')">
@@ -42,30 +41,30 @@ def render_engineering_case_study(project_name):
         <div class="project-hero-content">
 
             <span class="project-category">
-
-                {project.get("category","Engineering")}
-
+                {project.get("category", "Engineering")}
             </span>
 
             <h1>
-
-                {project.get("title","")}
-
+                {project.get("title", "")}
             </h1>
 
             <p class="hero-subtitle">
-
-                {project.get("subtitle","")}
-
+                {project.get("subtitle", "")}
             </p>
 
             <div class="hero-meta">
 
-                <span>📍 {project.get("location","")}</span>
+                <span>
+                    📍 {project.get("location", "")}
+                </span>
 
-                <span>🏢 {project.get("institution","")}</span>
+                <span>
+                    🏢 {project.get("institution", "")}
+                </span>
 
-                <span>📅 {project.get("duration","")}</span>
+                <span>
+                    📅 {project.get("duration", "")}
+                </span>
 
             </div>
 
@@ -100,6 +99,7 @@ def render_engineering_case_study(project_name):
 
 </section>
 
+
 <section>
 
     <h2>Project Facts</h2>
@@ -107,88 +107,62 @@ def render_engineering_case_study(project_name):
     <div class="project-facts">
 
         <div class="fact">
-
             <strong>Project Type</strong>
-
-            <span>{project.get("project_type","")}</span>
-
+            <span>{project.get("project_type", "")}</span>
         </div>
 
         <div class="fact">
-
             <strong>Institution</strong>
-
-            <span>{project.get("institution","")}</span>
-
+            <span>{project.get("institution", "")}</span>
         </div>
 
         <div class="fact">
-
             <strong>Supervisor</strong>
-
-            <span>{project.get("supervisor","")}</span>
-
+            <span>{project.get("supervisor", "")}</span>
         </div>
 
         <div class="fact">
-
             <strong>Location</strong>
-
-            <span>{project.get("location","")}</span>
-
+            <span>{project.get("location", "")}</span>
         </div>
 
         <div class="fact">
-
             <strong>Laboratory</strong>
-
-            <span>{project.get("laboratory","")}</span>
-
+            <span>{project.get("laboratory", "")}</span>
         </div>
 
         <div class="fact">
-
             <strong>Duration</strong>
-
-            <span>{project.get("duration","")}</span>
-
+            <span>{project.get("duration", "")}</span>
         </div>
 
         <div class="fact">
-
             <strong>Status</strong>
-
-            <span>{project.get("status","")}</span>
-
+            <span>{project.get("status", "")}</span>
         </div>
 
         <div class="fact">
-
             <strong>Client</strong>
-
-            <span>{project.get("client","")}</span>
-
+            <span>{project.get("client", "")}</span>
         </div>
 
     </div>
 
 </section>
 
-<section class="project-layout">
 
-    <div class="project-main">
+<section>
 
-        <h2>Executive Summary</h2>
+    <h2>Executive Summary</h2>
 
-        <p>
-            {data.get("overview", "")}
-        </p>
-
-    </div>
-
-    {render_project_sidebar(project)}
+    <p>
+        {data.get("overview", "")}
+    </p>
 
 </section>
+
+{render_project_sidebar(project)}
+
 
 <section>
 
@@ -197,6 +171,7 @@ def render_engineering_case_study(project_name):
     {render_list(data.get("objectives", []))}
 
 </section>
+
 
 <section>
 
@@ -208,6 +183,7 @@ def render_engineering_case_study(project_name):
 
 </section>
 
+
 <section>
 
     <h2>Methodology</h2>
@@ -216,13 +192,15 @@ def render_engineering_case_study(project_name):
 
 </section>
 
+
 <section>
 
     <h2>Engineering Workflow</h2>
 
-{render_project_timeline(project_name)}
+    {render_project_timeline(project_name)}
 
 </section>
+
 
 <section>
 
@@ -232,6 +210,7 @@ def render_engineering_case_study(project_name):
 
 </section>
 
+
 <section>
 
     <h2>Results</h2>
@@ -239,6 +218,7 @@ def render_engineering_case_study(project_name):
     {render_list(data.get("results", []))}
 
 </section>
+
 
 <section>
 
@@ -248,6 +228,7 @@ def render_engineering_case_study(project_name):
 
 </section>
 
+
 <section>
 
     <h2>Software Used</h2>
@@ -255,6 +236,7 @@ def render_engineering_case_study(project_name):
     {render_list(project.get("software", []))}
 
 </section>
+
 
 <section>
 
@@ -264,6 +246,7 @@ def render_engineering_case_study(project_name):
 
 </section>
 
+
 <section>
 
     <h2>References</h2>
@@ -271,6 +254,7 @@ def render_engineering_case_study(project_name):
     {render_list(data.get("references", []))}
 
 </section>
+
 
 <section>
 
@@ -299,7 +283,6 @@ def render_engineering_case_study(project_name):
     html += render_related_projects(project_name)
 
     html += render_project_navigation(project_name)
-
 
     html += render_video_gallery(project_name)
 

@@ -37,6 +37,8 @@ from renderers.engineering_case_study import (
     render_engineering_case_study,
 )
 
+from renderers.rock_slopes import render_rock_slopes
+
 import markdown
 import yaml
 from renderers.hero import render_hero
@@ -122,6 +124,13 @@ PAGES = [
         "layout": "engineering_project.html",
         "title": "Field Mapping",
         "subtitle": "Engineering Case Study",
+    },
+
+    {
+        "output": "rock_slopes.html",
+        "layout": "engineering_project.html",
+        "title": "Rock Slopes in Civil and Mining Engineering",
+        "subtitle": "Rock Slope Engineering, Tailings Dams, Open-Pit Slopes and Numerical Modelling",
     },
 
     {
@@ -441,6 +450,13 @@ def build_page(page):
         body = body.replace(
             "{{ project_content }}",
             render_engineering_case_study("field_mapping"),
+        )
+
+    elif page["output"] == "rock_slopes.html":
+
+        body = body.replace(
+            "{{ project_content }}",
+            render_rock_slopes("rock_slopes"),
         )
 
     # Assemble the final HTML

@@ -1,0 +1,81 @@
+project:
+  title: "Rock Slopes in Civil and Mining Engineering"
+  category: "Engineering Experience"
+  subtitle: "Rock Slope Stability, Tailings Dams, Open-Pit Slopes and Numerical Modelling"
+
+  location: "KNUST, Kumasi, Ghana"
+  institution: "Kwame Nkrumah University of Science and Technology"
+  duration: "Academic Engineering Project"
+
+  project_type: "Rock Slope Engineering"
+  status: "Completed"
+
+  hero_image: "media/engineering/rock_slopes/images/hero.jpg"
+
+  metrics:
+    duration: "Academic Project"
+    software: "DIPS & Slide"
+    workflow_steps: "Multiple"
+    deliverables: "Technical Portfolio"
+
+  software:
+    - "Rocscience DIPS"
+    - "Rocscience Slide"
+
+  skills:
+    - "Rock Slope Engineering"
+    - "Slope Stability Analysis"
+    - "Kinematic Analysis"
+    - "Planar Sliding Analysis"
+    - "Wedge Sliding Analysis"
+    - "Limit Equilibrium Analysis"
+    - "Numerical Modelling"
+    - "Groundwater Effects"
+    - "Seismic Loading Analysis"
+    - "Engineering Interpretation"
+
+overview: >
+  This engineering portfolio project presents practical and academic work
+  related to rock slopes in civil and mining engineering. The project brings
+  together site investigation concepts, tailings storage facility engineering,
+  open-pit slope stability, kinematic analysis using Rocscience DIPS, and
+  slope stability analysis using Rocscience Slide.
+
+objectives:
+  - "Understand the engineering principles governing rock slope stability."
+  - "Review site investigation requirements for tailings storage facilities."
+  - "Examine design, construction and monitoring considerations for tailings dams."
+  - "Study slope water risks and slope failure mechanisms in open-pit mining."
+  - "Apply kinematic analysis concepts to planar and wedge sliding mechanisms."
+  - "Explore limit equilibrium and numerical approaches to slope stability."
+  - "Investigate the effects of groundwater, seismic loading and surface loading on slope stability."
+
+methodology:
+  - "Review engineering principles and technical literature related to rock slopes and tailings dams."
+  - "Study site investigation requirements for tailings storage facilities."
+  - "Review design, construction, monitoring and foundation considerations for tailings dams."
+  - "Examine open-pit mine water risks and common slope failure mechanisms."
+  - "Use Rocscience DIPS to investigate kinematic conditions for planar and wedge sliding."
+  - "Use Rocscience Slide to investigate slope stability using engineering modelling workflows."
+  - "Compare slope stability conditions under different groundwater, seismic and loading scenarios."
+
+results:
+  - "Developed an organized technical understanding of rock slope engineering in civil and mining applications."
+  - "Investigated planar and wedge sliding mechanisms using DIPS."
+  - "Explored slope stability analysis workflows using Slide."
+  - "Examined the influence of groundwater on slope stability."
+  - "Examined the influence of seismic loading on slope stability."
+  - "Examined the influence of constant distributed loading on slope stability."
+  - "Compiled technical presentations and engineering references for further study."
+
+lessons:
+  - "Rock slope stability requires integration of geological, structural and engineering information."
+  - "Discontinuity orientation plays an important role in kinematic failure analysis."
+  - "Groundwater can significantly influence slope stability and should be considered during engineering design."
+  - "Seismic loading can alter slope stability conditions and must be considered where appropriate."
+  - "Engineering modelling provides a useful framework for evaluating potential failure mechanisms and safety conditions."
+
+references:
+  - "Practical Rock Engineering — technical reference material."
+  - "Slide Tutorial Manual — slope stability modelling reference."
+  - "Technical presentations on tailings storage facilities and open-pit slope stability."

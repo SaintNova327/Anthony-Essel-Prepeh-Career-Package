@@ -10,6 +10,7 @@ PROJECTS = [
     "internship",
     "groundwater",
     "field_mapping",
+    "rock_slopes",
 ]
 
 

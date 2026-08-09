@@ -24,7 +24,6 @@ navigation:
   - Home
   - About
   - Engineering
-  - Projects
   - Resume
   - Education
   - Experience

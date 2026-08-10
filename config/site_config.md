@@ -1,11 +1,11 @@
 site:
   title: "Anthony Essel Prepeh"
-  tagline: "Geological Engineer | Mining Technology | Artificial Intelligence"
+  tagline: "Aspiring Geological Engineer | Mining Technology | Artificial Intelligence"
   description: "Professional portfolio and career management system."
 
 author:
   name: "Anthony Essel Prepeh"
-  profession: "Geological Engineer"
+  profession: "Aspiring Geological Engineer"
   location: "Obuasi, Ashanti Region, Ghana"
   email: "anthonyesselprepehanthony@gmail.com"
   phone: "+233 24 259 2148"

@@ -1,4 +1,4 @@
-﻿"""
+"""
 Rock Slopes in Civil and Mining Engineering renderer.
 
 Builds the specialized Rock Slopes engineering case-study page.
@@ -260,15 +260,15 @@ def render_rock_slopes(project_name="rock_slopes"):
             <div class="hero-meta">
 
                 <span>
-                    ðŸ“ {escape(project.get("location", ""))}
+                    📍 {escape(project.get("location", ""))}
                 </span>
 
                 <span>
-                    ðŸ¢ {escape(project.get("institution", ""))}
+                    🏢 {escape(project.get("institution", ""))}
                 </span>
 
                 <span>
-                    ðŸ“… {escape(project.get("duration", ""))}
+                    📅 {escape(project.get("duration", ""))}
                 </span>
 
             </div>
@@ -467,7 +467,7 @@ def render_rock_slopes(project_name="rock_slopes"):
 
 
     <h3 class="rock-subheading">
-        Rocscience DIPS â€” Workflow Demonstrations
+        Rocscience DIPS — Workflow Demonstrations
     </h3>
 
 
@@ -517,7 +517,7 @@ def render_rock_slopes(project_name="rock_slopes"):
 
 
     <h3 class="rock-subheading">
-        Rocscience Slide â€” Slope Stability Analysis
+        Rocscience Slide — Slope Stability Analysis
     </h3>
 
 

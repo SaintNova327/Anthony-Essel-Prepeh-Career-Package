@@ -1,4 +1,4 @@
-"""
+﻿"""
 Engineering case study renderer.
 """
 
@@ -260,14 +260,22 @@ def render_engineering_case_study(project_name):
 
     <h2>Project Report</h2>
 
+    {
+        (
+            f'''
     <a
         class="button primary"
-        href="assets/downloads/engineering/Leapfrog_Report.pdf"
+        href="{data.get("downloads", [])[0].get("file", "")}"
         download>
 
         Download Full Project Report
 
     </a>
+'''
+            if data.get("downloads")
+            else ""
+        )
+    }
 
 </section>
 """
